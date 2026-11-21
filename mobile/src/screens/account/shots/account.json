@@ -10,7 +10,7 @@
     "view-upgrade-pack-selected": { "links": ["jump/profile", { "link": "act/topup", "wait": 1800 }, "act/pack/2"], "wait": 900 },
     "sheet-purchase-confirm-pro": { "links": ["jump/plans", "act/buy/plan:pro"], "wait": 900 },
     "sheet-purchase-processing": { "links": ["jump/plans", { "link": "act/buy/plan:pro", "wait": 900 }, "act/byPay/plan:pro"], "wait": 500 },
-    "sheet-purchase-done-pro": { "links": ["jump/plans", { "link": "act/buy/plan:pro", "wait": 900 }, "act/byPay/plan:pro"], "wait": 1800 },
+    "sheet-purchase-done-pro": { "links": ["jump/plans", { "link": "act/buy/plan:pro", "wait": 900 }, "act/byPay/plan:pro"], "wait": 1550 },
     "overlay-plan-magic-pro": { "links": ["jump/plans", { "link": "act/buy/plan:pro", "wait": 900 }, "act/byPay/plan:pro"], "wait": 3300 },
     "view-upgrade-pro": { "links": ["jump/plans", { "link": "act/buy/plan:pro", "wait": 900 }, { "link": "act/byPay/plan:pro", "wait": 6000 }, "closeSheet"], "wait": 900 },
     "view-upgrade-ultimate": { "links": ["jump/plans", { "link": "act/buy/plan:ultimate", "wait": 900 }, { "link": "act/byPay/plan:ultimate", "wait": 6000 }, "closeSheet"], "wait": 900 },

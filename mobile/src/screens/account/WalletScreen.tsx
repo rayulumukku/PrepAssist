@@ -4,6 +4,8 @@
 // `.me-tier.lt` renders as display:grid in every capture (computed style; the CSS says inline-flex):
 // the icon sits in the first row and the label in a second row 10 px below, spilling out of the 24 px
 // pill over the line under it. Ported as rendered (column, gap 10, fixed height, overflow visible).
+// The ring arc is rotated -90deg; the browser resolves its objectBoundingBox gradient before that
+// transform, react-native-svg after it, so the gradient carries the same rotation (gradientTransform).
 import React, { useState } from 'react';
 import { Pressable, StyleSheet, TextInput, View } from 'react-native';
 import Svg, { Defs, LinearGradient, Stop } from 'react-native-svg';
@@ -43,7 +45,7 @@ function WalletScreen(): React.JSX.Element {
   return (
     <View style={ME.page}>
       <View style={s.name}>
-        <Txt style={ME.h6}>Display name</Txt>
+        <Txt style={[ME.h6, s.label]}>Display name</Txt>
         <View style={s.in}>
           <View style={s.inBox}>
             {focus ? (
@@ -85,9 +87,9 @@ function WalletScreen(): React.JSX.Element {
               track="#EEF2F7"
             />
             <Defs>
-              <LinearGradient id="wlG" x1="0" y1="0" x2="1" y2="1">
+              <LinearGradient id="wlG" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(-90 0.5 0.5)">
                 <Stop offset="0" stopColor="#7CC4F0" />
-                <Stop offset=".6" stopColor="#1B8AD3" />
+                <Stop offset="0.6" stopColor="#1B8AD3" />
                 <Stop offset="1" stopColor="#6C5DD3" />
               </LinearGradient>
             </Defs>
@@ -190,6 +192,8 @@ const s = StyleSheet.create({
     backgroundColor: '#fff',
     boxShadow: '0px 0px 0px 1px #E6EBF1',
   },
+  // <label> is inline: its line box is the section's 22.475 px line
+  label: { lineHeight: 22.475 },
   in: { flexDirection: 'row', gap: 8, marginTop: 8 },
   inBox: { flex: 1, minWidth: 0 },
   ring: {

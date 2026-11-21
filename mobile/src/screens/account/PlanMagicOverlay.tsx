@@ -128,7 +128,7 @@ function Overlay({ o }: { o: PlanMagic }): React.JSX.Element {
                 <Defs>
                   <LinearGradient id="pmH2" x1="0" y1="0" x2="0" y2="1">
                     <Stop offset="0" stopColor="#FFF3C4" />
-                    <Stop offset=".6" stopColor="#E5B84A" />
+                    <Stop offset="0.6" stopColor="#E5B84A" />
                     <Stop offset="1" stopColor="#B8861B" />
                   </LinearGradient>
                 </Defs>
