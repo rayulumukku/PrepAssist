@@ -164,6 +164,100 @@
       "regions": [
         "0,73,412,842"
       ]
+    },
+    "view-article": {
+      "links": [
+        "tab/current",
+        "push/article/c4"
+      ],
+      "wait": 900
+    },
+    "view-article-lead": {
+      "links": [
+        "tab/current",
+        "act/article/c1"
+      ],
+      "wait": 900
+    },
+    "view-article-text-larger": {
+      "links": [
+        "tab/current",
+        "act/article/c1",
+        {
+          "link": "act/arSize",
+          "wait": 3000
+        }
+      ],
+      "wait": 900
+    },
+    "view-article-text-largest": {
+      "links": [
+        "tab/current",
+        "act/article/c1",
+        {
+          "link": "act/arSize",
+          "wait": 3000
+        },
+        {
+          "link": "act/arSize",
+          "wait": 3000
+        }
+      ],
+      "wait": 900
+    },
+    "view-article-saved-toast": {
+      "links": [
+        "tab/current",
+        "act/article/c1",
+        {
+          "link": "act/arSize",
+          "wait": 3000
+        },
+        {
+          "link": "act/arSize",
+          "wait": 3000
+        },
+        {
+          "link": "act/arSize",
+          "wait": 3000
+        },
+        "act/save/c1"
+      ],
+      "wait": 600
+    },
+    "view-article-older": {
+      "links": [
+        "tab/home",
+        "act/article/a1"
+      ],
+      "wait": 900
+    },
+    "sheet-mentor-article": {
+      "links": [
+        "tab/current",
+        "act/article/c1",
+        {
+          "link": "act/arSize",
+          "wait": 3000
+        },
+        {
+          "link": "act/arSize",
+          "wait": 3000
+        },
+        {
+          "link": "act/arSize",
+          "wait": 3000
+        },
+        {
+          "link": "act/save/c1",
+          "wait": 3000
+        },
+        "act/mentor"
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ]
     }
   }
 }

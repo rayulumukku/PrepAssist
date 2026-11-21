@@ -448,8 +448,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/sheets/study/studySheets.test.tsx"
     },
     {
       "verb": "arSize",
@@ -474,8 +474,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/sheets/study/studySheets.test.tsx"
     },
     {
       "verb": "article",
@@ -515,7 +515,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
+      "native": "src/actions/study.ts",
       "test": null
     },
     {
@@ -791,8 +791,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "caDate",
@@ -867,8 +867,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "caFilter",
@@ -953,8 +953,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "caPick",
@@ -983,8 +983,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "caRecent",
@@ -1009,8 +1009,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "caReset",
@@ -1121,8 +1121,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/pages/handlers.test.ts"
     },
     {
       "verb": "changeEmail",
@@ -1280,8 +1280,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/sheets/study/studySheets.test.tsx"
     },
     {
       "verb": "credits",
@@ -1334,8 +1334,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/sheets/study/mentor/mentor.test.ts"
     },
     {
       "verb": "delAsk",
@@ -2342,8 +2342,8 @@
       ],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/sheets/study/studySheets.test.tsx"
     },
     {
       "verb": "mentorAsk",
@@ -2380,8 +2380,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/sheets/study/mentor/mentor.test.ts"
     },
     {
       "verb": "mentorSend",
@@ -2410,8 +2410,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/sheets/study/mentor/mentor.test.ts"
     },
     {
       "verb": "mm",
@@ -2444,8 +2444,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "mmGo",
@@ -2472,8 +2472,8 @@
       ],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "mmOpen",
@@ -2502,8 +2502,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "mmTry",
@@ -2535,8 +2535,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "modelOpen",
@@ -3855,8 +3855,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/pages/handlers.test.ts"
     },
     {
       "verb": "pqGo",
@@ -4985,8 +4985,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/sheets/study/studySheets.test.tsx"
     },
     {
       "verb": "saved",
@@ -5311,8 +5311,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "svRm",
@@ -5341,8 +5341,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "svRmL",
@@ -5369,8 +5369,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "svSave",
@@ -5395,8 +5395,8 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "study",
-      "native": null,
-      "test": null
+      "native": "src/actions/study.ts",
+      "test": "src/screens/study/maps/maps.test.ts"
     },
     {
       "verb": "syDrill",

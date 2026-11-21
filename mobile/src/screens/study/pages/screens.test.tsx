@@ -11,6 +11,8 @@ import { resetStore } from '../../../store';
 
 jest.useFakeTimers();
 
+let mounted: ReactTestRenderer.ReactTestRenderer | undefined;
+
 function render(): ReactTestRenderer.ReactTestRenderer {
   let r!: ReactTestRenderer.ReactTestRenderer;
   ReactTestRenderer.act(() => {
@@ -20,6 +22,7 @@ function render(): ReactTestRenderer.ReactTestRenderer {
       </AppSizeContext.Provider>,
     );
   });
+  mounted = r;
   return r;
 }
 
@@ -28,6 +31,11 @@ const texts = (r: ReactTestRenderer.ReactTestRenderer): string =>
     .findAll(n => (n.type as unknown) === 'Text')
     .map(n => n.children.filter(c => typeof c === 'string').join(''))
     .join('|');
+
+afterEach(() => {
+  ReactTestRenderer.act(() => mounted?.unmount());
+  mounted = undefined;
+});
 
 beforeEach(() => {
   __resetNavTimers();
@@ -45,6 +53,7 @@ it.each([
   const r = render();
   ReactTestRenderer.act(() => {
     (push as (v: string, a?: string) => void)(id, arg); // push is typed per view; this table mixes them
+    jest.advanceTimersByTime(100); // the page's `.in` frames
   });
   const t = texts(r);
   for (const c of copy) expect(t).toContain(c);
@@ -52,7 +61,10 @@ it.each([
 
 it('plan shows the spinner label, then the result', async () => {
   const r = render();
-  ReactTestRenderer.act(() => push('plan'));
+  ReactTestRenderer.act(() => {
+    push('plan');
+    jest.advanceTimersByTime(100);
+  });
   ReactTestRenderer.act(() => dispatch('planGo'));
   expect(texts(r)).toContain('Analysing your preparation…');
   await ReactTestRenderer.act(async () => {
