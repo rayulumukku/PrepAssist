@@ -353,6 +353,8 @@ A pixel diff will never be zero because Android and Chrome rasterise fonts diffe
 - The password-strength meter is hidden by the final CSS (`#s-auth #pwS{display:none!important}`, L1146), so it is not shown natively either.
 - Learn filter chips are dead code in the final prototype and are not ported.
 
-### Open questions for the owner
+### Owner decisions
 
-1. **X-Ray reader does not scroll in the prototype.** A late CSS selector no longer matches, so about 780 px of each X-Ray article is clipped and unreachable. Port as rendered (clipped), or make it scroll? Default until answered: as rendered, since that is the "no UI/UX change" rule.
+| Date | Question | Decision |
+|---|---|---|
+| 2026-11-21 | The X-Ray reader does not scroll in the prototype: a late CSS selector (`.page > .x4-scroll`, L9483) no longer matches, so about 780 px of each article is clipped and unreachable. Port as rendered, or make it scroll? | **Make it scroll.** The full article is readable by scrolling inside the reader. Nothing else about the X-Ray reader changes: same layout, type, colours and order as the captured top of the screen, and the remaining content exactly as recorded in the reference `dom.json` / `html.txt`. This is the one approved exception to "port as rendered". |
