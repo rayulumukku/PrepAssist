@@ -44,7 +44,8 @@
     "jump/verify",
     "act/verified"
    ],
-   "wait": 450
+   "wait": 50,
+   "note": "the verified state lasts 1100 ms before go('app'); the shot must land inside it"
   },
   "sheet-forgot": {
    "links": [

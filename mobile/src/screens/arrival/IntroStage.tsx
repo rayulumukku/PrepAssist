@@ -146,9 +146,11 @@ function IntroStage(): React.JSX.Element {
             <Icon name="back" color={C.ink} />
           </Pressable>
         </Animated.View>
-        <Btn variant={last ? 'brand' : 'ink'} label={last ? 'Get Started' : 'Next'} onPress={() => act('introNext')} style={styles.next} testID="intro.next">
-          <Icon name="arrow" color="#fff" />
-        </Btn>
+        <View style={styles.next}>
+          <Btn variant={last ? 'brand' : 'ink'} wide label={last ? 'Get Started' : 'Next'} onPress={() => act('introNext')} testID="intro.next">
+            <Icon name="arrow" color="#fff" />
+          </Btn>
+        </View>
       </View>
     </View>
   );
@@ -173,8 +175,8 @@ const styles = StyleSheet.create({
   li: { borderBottomWidth: 1, borderBottomColor: C.rule, paddingTop: 10, paddingLeft: 44 },
   // .in-toc .n: absolute, left 0, Inter Tight 700, -.03em
   n: { position: 'absolute', left: 0, ...font('serif', 700) },
-  // .in-toc .t: Inter 600 12.5px / 18.125px, .16em, uppercase
-  t: { ...font('sans', 600), fontSize: 12.5, lineHeight: 18.125, letterSpacing: 2, textTransform: 'uppercase' },
+  // .in-toc .t: Inter 600 12.5px, .16em, uppercase; an inline span: its line box is the li's 22.475px
+  t: { ...font('sans', 600), fontSize: 12.5, lineHeight: 22.475, letterSpacing: 2, textTransform: 'uppercase' },
   d: { overflow: 'hidden' },
   dIn: { position: 'absolute', left: 0, right: 0, top: 0 },
   // .in-toc .d h3: Inter Tight 700 22px / 25.3px, -0.55px, margin-bottom 6
