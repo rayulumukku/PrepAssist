@@ -9,7 +9,8 @@ function LegalScreen(): null {
 }
 
 const view: ViewDef = {
-  useTitle: arg => (arg === 'privacy' || arg === 'terms' ? LEGAL[arg].title : ''),
+  useTitle: arg =>
+    arg === 'privacy' || arg === 'terms' ? LEGAL[arg].title : '',
   Screen: LegalScreen,
 };
 
