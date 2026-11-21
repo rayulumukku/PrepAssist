@@ -1,0 +1,865 @@
+{
+  "generatedFrom": "PrepAssist.html",
+  "htmlSha256": "3ad4ba76448d6b4efefa2c15b5e2cddaa12345b6aa653dc670a27346fe4722a1",
+  "referenceEnv": {
+    "clock": "2026-01-15T04:30:00.000Z",
+    "timezoneId": "Asia/Kolkata",
+    "locale": "en-IN"
+  },
+  "modules": {
+    "subjects": {
+      "path": "src/data/subjects",
+      "exports": {
+        "SUBJ": {
+          "kind": "object",
+          "count": 8,
+          "sha256": "1a5346d9f9ac9b06e01b98b9b776163732ede361ece2e413136b60a4f6f0b223",
+          "source": "L5143-L5152"
+        }
+      }
+    },
+    "home": {
+      "path": "src/data/home",
+      "exports": {
+        "BANNERS": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "25dce92c1b0110e34a651f361eb6f15eaa1a4ab760d409b3c69d7b54305f70f3",
+          "source": "L5154-L5159"
+        },
+        "BRIEF": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "1a3ab1c2724e4bd5bfc876cd059e2ae8ed5991ce7b782eaf19da4457b09cdec5",
+          "source": "L5161-L5165"
+        },
+        "FLASH": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "a5fa7e2d74703e5103492417e5da88ed475f70df8d71c5501fd4a689a0ca4936",
+          "source": "L5167-L5178"
+        },
+        "COVER": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "5bc576ca739762efc1ab626956d83e914895207a8161f6f1176d3a317ea226e7",
+          "source": "L5180-L5182"
+        },
+        "WEEK": {
+          "kind": "array",
+          "count": 7,
+          "sha256": "fa18fc6a3b670f06b0a8410ef8dd320cbbc05d4dfe85b654e53db3d852e54fe5",
+          "source": "L5183"
+        },
+        "REVISIONS": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "fb1d3d9ee833156a3727718a2fe2159d44a0c559306f290d80894900c4814fe1",
+          "source": "L5390-L5394"
+        },
+        "REELS": {
+          "kind": "array",
+          "count": 6,
+          "sha256": "20a46a1e75fde2d003fb0cde509901fa73caf701642530340de04d08a3d94333",
+          "source": "L5396-L5421"
+        },
+        "MEGA": {
+          "kind": "string",
+          "count": 238,
+          "sha256": "0759982121d2dad6c0470a57edcdabea3bdb9e327293e36dde6f5edfd9f25ea3",
+          "source": "L6027"
+        },
+        "ANN": {
+          "kind": "object",
+          "count": 4,
+          "sha256": "5a75ac77efe2f75c920bbe772cd8814c36864a272d6b0a6e342a34fb274495fc",
+          "source": "L6028-L6033"
+        },
+        "ANN_IC": {
+          "kind": "object",
+          "count": 4,
+          "sha256": "a9e3578c0d3a0e3cb252086eb0a2044fa2e9b55cac4f7dff0bbc0f75afd3683c",
+          "source": "L6034"
+        },
+        "DAYPLAN": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "82048db2c4897b831bfb4e93255c67bcdcf9291090237506441a9467fce1f1e0",
+          "source": "L6399"
+        },
+        "SKYLINE": {
+          "kind": "string",
+          "count": 1732,
+          "sha256": "3dc7479a5cf3ea8363d1f85c76ab28631bf2056cdf81fdceb17af96e90e9ac36",
+          "source": "L6416-L6428"
+        }
+      }
+    },
+    "learn": {
+      "path": "src/data/learn",
+      "exports": {
+        "COURSES": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "30d4c7e452e2ca1d7cc9576e26582e5fb283ee4321b8ea08da8dda6e473563d4",
+          "source": "L5200-L5206"
+        },
+        "MORE_COURSES": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "ec2d130ff32efd75cb3357e3e472b01ca12d1fd6ce7a2f3637ce2f4bbad8a850",
+          "source": "L5207-L5212"
+        },
+        "LX": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "29b5bde71c23bbe09e17a38cb241bda1fbbf4b3c14f82141785cff72eaf0849d",
+          "source": "L8237-L8246"
+        }
+      }
+    },
+    "notes": {
+      "path": "src/data/notes",
+      "exports": {
+        "NOTES": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "ba467d5c1eef57b23b65a618f177e192fa3c3bec0df520681c110b76e7e0e4e6",
+          "source": "L5214-L5219"
+        },
+        "DOCS": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "30f75bd2298c1fef3fb4465b92240b06ddb0a383d43435ad8ecc74686c1e83d0",
+          "source": "L5221-L5227"
+        },
+        "MM_NOTES": {
+          "kind": "array",
+          "count": 6,
+          "sha256": "cbf4dcfdc3a4208516dfcad1257ffe233dab3492db183747934bf03cfc41c40c",
+          "source": "L6678-L6685"
+        },
+        "NOTESYS": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "fe95ea5864a38cd27e761c0c1a0d5cc96dbcc7511c7a199104d6bd5233bda878",
+          "source": "L7788-L7817"
+        }
+      }
+    },
+    "practice": {
+      "path": "src/data/practice",
+      "exports": {
+        "QUIZ": {
+          "kind": "array",
+          "count": 10,
+          "sha256": "bb619f83440dbae62f8ac24b1c7e68067eaa34d372842e886d63364de162ed4f",
+          "source": "L5295-L5362"
+        },
+        "MAINSQ": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "5886c9aecb0d5a67f5b419d3ece24b81ecf1ddb9eecb4e898acbdac2ccbefed1",
+          "source": "L5364-L5368"
+        },
+        "ANSWERBANK": {
+          "kind": "array",
+          "count": 7,
+          "sha256": "8e8241850561fa811f1019c3eb36619778ac9825fd706e9624439f43af999786",
+          "source": "L5369-L5374"
+        },
+        "AB_META": {
+          "kind": "object",
+          "count": 7,
+          "sha256": "52b3945aabca70304e86d006862c61136356bb4d81ad5763e7242db77f0eb914",
+          "source": "L7769-L7777"
+        },
+        "PASTEVALS": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "e59b5fb57cacbb6e70fb3f7e011c6ca421267d9cfee9d88eba632e3ebb5b2cdd",
+          "source": "L5375-L5380"
+        },
+        "TESTS": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "53538b7b703452e7475a53f898257101695c4371a906ac5b282560b85e99d8b3",
+          "source": "L5381-L5385"
+        },
+        "QB": {
+          "kind": "array",
+          "count": 8,
+          "sha256": "4f20fe7a19f1ad7e3c6b5a40bdeae848f5c7f6cc797fe904527e77d0356a0f75",
+          "source": "L5386-L5389"
+        },
+        "PQB": {
+          "kind": "array",
+          "count": 11,
+          "sha256": "ca35eb85b0509fa018030bdd6819520c9a2109183d71d3a23c04beb63728e1b2",
+          "source": "L7747-L7756"
+        },
+        "MODEL": {
+          "kind": "string",
+          "count": 1617,
+          "sha256": "06f7043e433872101472ade26aa9ece7c70c32a9166ca2ffa1f753d0d3d43361",
+          "source": "L6694-L6701"
+        }
+      }
+    },
+    "current": {
+      "path": "src/data/current",
+      "exports": {
+        "ARTICLES": {
+          "kind": "array",
+          "count": 11,
+          "sha256": "53156f2a070841e392d080d80b18b79eecbc835c9497f7add07aff1f6eb89461",
+          "source": "L5229-L5293"
+        },
+        "SRC": {
+          "kind": "object",
+          "count": 3,
+          "sha256": "217141c45eb3e94a18334db0b7d0a90359b01be70ca60efdd91fc225599648a2",
+          "source": "L7173"
+        },
+        "GSC": {
+          "kind": "object",
+          "count": 4,
+          "sha256": "29ab33e226a9e33c9d7f7a647b76f33653da2a76eff27fd191010f6b8992cdff",
+          "source": "L7174"
+        },
+        "TODAY": {
+          "kind": "object",
+          "count": 2,
+          "sha256": "9dc855f46fefea08480078373d5bb6d87c7dc9af09cd9935b1841f271ee90251",
+          "source": "L7092"
+        },
+        "MONS": {
+          "kind": "array",
+          "count": 12,
+          "sha256": "2d69eb5937d640f30c0ac269986f9c41607584e9e005a75fb1a8bdac73466458",
+          "source": "L7096"
+        },
+        "MONL": {
+          "kind": "array",
+          "count": 12,
+          "sha256": "81a8bf09035a18f274a4e86443bb17da2da94081c07c950ce5c1045a3b91c5b5",
+          "source": "L7097"
+        },
+        "DOWS": {
+          "kind": "array",
+          "count": 7,
+          "sha256": "557cfda7d1fcf87c89b18ca069442878391d7acdce57f6cbfea9de7b850488cf",
+          "source": "L7098"
+        }
+      }
+    },
+    "plans": {
+      "path": "src/data/plans",
+      "exports": {
+        "PLAN_N": {
+          "kind": "object",
+          "count": 3,
+          "sha256": "b0dde1e4b4ea008ab15dfdb296b5398637904ea735c54be38267f10a62af9645",
+          "source": "L7118"
+        },
+        "PLAN_CAP": {
+          "kind": "object",
+          "count": 3,
+          "sha256": "1718f4801c4908faa96b88703519753ddbdfccca4a9d94c8fc17168145e72b92",
+          "source": "L7119"
+        },
+        "PLANS": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "fde921f7d553cca75972630235df6b2b9990f42a8f64f5aecfe7d6d597694087",
+          "source": "L7120-L7127"
+        },
+        "PACKS": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "28291e100cb84c476799081b35ad25f11f41f07628e984b0878c5876ca4a0123",
+          "source": "L7128"
+        },
+        "TH": {
+          "kind": "object",
+          "count": 3,
+          "sha256": "4feb1ad2a7cede92a8a8b8b8152c8c5039f1cca6db736ce264a43c80b855efeb",
+          "source": "L10746-L10750"
+        }
+      }
+    },
+    "legal": {
+      "path": "src/data/legal",
+      "exports": {
+        "LEGAL": {
+          "kind": "object",
+          "count": 2,
+          "sha256": "da737e3fd425ec7cb542e7ed9bf5985a1b1c0b7c88667b332e467f3b2c286ede",
+          "source": "L7404-L7434"
+        }
+      }
+    },
+    "menu": {
+      "path": "src/data/menu",
+      "exports": {
+        "MT": {
+          "kind": "object",
+          "count": 13,
+          "sha256": "f75edb9aa33800e2ac799f172cfb54bf96d5221e66849608a33cac67fd43b91e",
+          "source": "L7669-L7683"
+        },
+        "SYL": {
+          "kind": "array",
+          "count": 8,
+          "sha256": "43edffe42fa634111af907292a5dc87e696f9102a3353cabf158979534b4e691",
+          "source": "L7758-L7767"
+        }
+      }
+    },
+    "tools": {
+      "path": "src/data/tools",
+      "exports": {
+        "TOOLS": {
+          "kind": "array",
+          "count": 12,
+          "sha256": "44beb19c6bc1065fafa158772ea15d14524bebeb7ea8b9d72101b39d7ffb95dd",
+          "source": "L5185-L5198"
+        }
+      }
+    },
+    "xray": {
+      "path": "src/data/xray",
+      "exports": {
+        "XSC": {
+          "kind": "array",
+          "count": 6,
+          "sha256": "e40f1e39bcc94995340342d6f911a6b42e5feba1a3bcdf41cd866a4c3e6d564b",
+          "source": "L9732-L9852"
+        },
+        "X4SUB": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "d74703dbece895510773dcf20a6c7fa75e2e3cdb8b85f76ee6301c049d938c4f",
+          "source": "L9725"
+        },
+        "TABS": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "fca076913162a925378ea32ecb17057c92ff85f0b0a69a74a1ca19c3cc5cd1d7",
+          "source": "L9728"
+        },
+        "NCOL": {
+          "kind": "object",
+          "count": 3,
+          "sha256": "acf87047425b668a529da3eeefb324832d1cd73cb77e6cdcfa954f16890cb748",
+          "source": "L9729"
+        },
+        "RIC": {
+          "kind": "object",
+          "count": 5,
+          "sha256": "971f022ef4b5d77166dec5d890d6c269c3825cabf12d9081fed837025e07f9d5",
+          "source": "L9730"
+        },
+        "XR": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "5a1039f0d62bf7ea8f30e847a74052c4f40c69211699666c12e86f096bcf902f",
+          "source": "L6686-L6692"
+        },
+        "XRB_META": {
+          "kind": "object",
+          "count": 4,
+          "sha256": "3337572858543d327412d3160464140b91c1829a81db71b8d6145aa7acdfd12b",
+          "source": "L8379-L8384"
+        },
+        "XRP": {
+          "kind": "array",
+          "count": 2,
+          "sha256": "d2bf715851ac7552d6c766056a4c58ac2aec7384d6b68ee8e0c626f3d882df48",
+          "source": "L8387-L8414"
+        },
+        "XR_LAB": {
+          "kind": "object",
+          "count": 3,
+          "sha256": "63a42cad759ffb332aa3fdc814d54f5f3e9969ce10677a04fb8788f140157464",
+          "source": "L8416"
+        }
+      }
+    },
+    "tracker": {
+      "path": "src/data/tracker",
+      "exports": {
+        "FOLDERS": {
+          "kind": "array",
+          "count": 7,
+          "sha256": "05d4c738b371fb9f1da7a7dec7a9ea3255ce869bbd07c40955c74befeb1bbe7c",
+          "source": "L7821"
+        },
+        "OPTIONALS": {
+          "kind": "array",
+          "count": 14,
+          "sha256": "d4dd92fe0face24335df5a89875f1068cac947c190002f345fc9d8ed54c6aa53",
+          "source": "L7822"
+        },
+        "NT_OPTS": {
+          "kind": "array",
+          "count": 14,
+          "sha256": "d4dd92fe0face24335df5a89875f1068cac947c190002f345fc9d8ed54c6aa53",
+          "source": "L10335"
+        },
+        "OPT_C": {
+          "kind": "string",
+          "count": 7,
+          "sha256": "9c28d8eec9d4ebe57fa01fc0785df8ad2239ff646fa18dafcfd67b8c2821c816",
+          "source": "L10338"
+        },
+        "SRC": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "6e75636fc84ae3acd6e17cc7c7a0fe84e63df6eeb77266c172d3a4a13a050242",
+          "source": "L10340-L10346"
+        },
+        "UD": {
+          "kind": "array",
+          "count": 6,
+          "sha256": "073715c2748de821d20c9d7d2a79609ed06fcdc8f25d172e557b0289feeb2c88",
+          "source": "L10347"
+        },
+        "COOP_UPS": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "19a52bca68a5785a63f4db4cb378ca4ab5ccf4e0d9a28a44f66c6f06351a5081",
+          "source": "L10349-L10354"
+        },
+        "RAW": {
+          "kind": "object",
+          "count": 7,
+          "sha256": "461f135507cd7e5cf23193db821090381954ba22c18cc2a65b7688840032079b",
+          "source": "L10367-L10429"
+        },
+        "NT": {
+          "kind": "object",
+          "count": 7,
+          "sha256": "9989bb796d4def1771047c515988afc0c48cedbb99a25169fe5990ae6ee2aad2",
+          "source": "L10431"
+        }
+      }
+    },
+    "book": {
+      "path": "src/data/book",
+      "exports": {
+        "CAM_CLOSED": {
+          "kind": "object",
+          "count": 5,
+          "sha256": "b8ccc027b47fae163a7efeaf9b71f34a28a859b6d367a6c1d2a2168f57694d31",
+          "source": "L5756"
+        },
+        "CAM_SPREAD": {
+          "kind": "object",
+          "count": 5,
+          "sha256": "05e87d24aa982e44f6eac553e76cce11b1d12fe97efe2bf11037a238a1e38d60",
+          "source": "L5757"
+        },
+        "CAM_FINAL": {
+          "kind": "object",
+          "count": 5,
+          "sha256": "8c5e1ff12038b492c4b9ebd1e09d7ebcf6044e6ae18544ba74c691f169591339",
+          "source": "L5758"
+        },
+        "SFX": {
+          "kind": "object",
+          "count": 3,
+          "sha256": "ef530a3d7469ac35d8ff3da37dc0b98cd9119926e9272faad9296cf81034ee63",
+          "source": "L5688"
+        }
+      }
+    },
+    "auth": {
+      "path": "src/data/auth",
+      "exports": {
+        "PRELIMS_AT": {
+          "kind": "object",
+          "count": 2,
+          "sha256": "3b81748197a02efd976b4f1c8918f569c07d4f4e5f0d81440443940223fdef2d",
+          "source": "L5930"
+        }
+      }
+    },
+    "onestep": {
+      "path": "src/data/onestep",
+      "exports": {
+        "IN_OUTLINE": {
+          "kind": "array",
+          "count": 105,
+          "sha256": "0f9e5f36b881e738239a7f5a84e739b9aba16ff667520dd7cd017ee0d3eea17e",
+          "source": "L8503"
+        },
+        "IN_PATH": {
+          "kind": "string",
+          "count": 1341,
+          "sha256": "f852a9b846f817917c2ae96b2c743bd13a9dcef7a15e6befd8c82dfa18bb3fe7",
+          "source": "L8505"
+        },
+        "IN_CITIES": {
+          "kind": "array",
+          "count": 20,
+          "sha256": "5dd87b61f39d114e33dd82378f85183b48e4207d7b7cc55ac697b21e03e204c6",
+          "source": "L8506"
+        },
+        "STS": {
+          "kind": "object",
+          "count": 3,
+          "sha256": "1bf1feec5963866b76376f4ad1748ce6ca5e02805a4b7e6dcf612389d87c8180",
+          "source": "L8510"
+        }
+      }
+    },
+    "illustrations": {
+      "path": "src/data/illustrations",
+      "exports": {
+        "INDIA": {
+          "kind": "string",
+          "count": 242,
+          "sha256": "ff7375310ef38d518306f099ca3b7145f25fedc332408fa9c308713dda528b21",
+          "source": "L5442"
+        },
+        "ART": {
+          "kind": "object",
+          "count": 4,
+          "sha256": "ef64e887309128d40ba6f0a5b8a3f133fda70e750000cadf8e9a5d3b1a75773c",
+          "source": "L5519-L5559"
+        }
+      }
+    },
+    "inline": {
+      "path": "src/data/inline",
+      "exports": {
+        "INLINE_renderLearn_L6203": {
+          "kind": "array",
+          "count": 6,
+          "sha256": "48705917512af3c3be45ef7a5159d2d5a6d4c40ce654d6ba811e67cf6e33caa0",
+          "source": "L6203"
+        },
+        "INLINE_qbank_L6631": {
+          "kind": "object",
+          "count": 5,
+          "sha256": "f28f4dd2725c3bd295c8576e9116a4b18424ea0dd73b188688c052062b0338d7",
+          "source": "L6631"
+        },
+        "INLINE_calSlots_L6663": {
+          "kind": "array",
+          "count": 6,
+          "sha256": "3671441755ace35a41f78b874d1d46ec6a8ec80babcdfe651ee6dea01f3af2fa",
+          "source": "L6663"
+        },
+        "INLINE_mindmapSVG_L6667": {
+          "kind": "array",
+          "count": 6,
+          "sha256": "4569524a86124bed132273b5183d1d10cce113d922dcc40addfb18a0994ab43e",
+          "source": "L6667-L6670"
+        },
+        "INLINE_renderMains_L6786": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "ae1a34b7bee56c44475d3e5e5e8b730d13a017ef669a438a31c144cd8e59a5e8",
+          "source": "L6786"
+        },
+        "INLINE_ctx_L6836": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "4cea72bd8e543f1acda6204aa1eb4f5c105efa67e24e1462a6151698680dbe19",
+          "source": "L6836"
+        },
+        "INLINE_ctx_L6840": {
+          "kind": "object",
+          "count": 3,
+          "sha256": "6ee2d7606cbf53b6895bc8853d1ac97b36f65ff07069b435e36502829ea30a3a",
+          "source": "L6840"
+        },
+        "INLINE_ctx_L6843": {
+          "kind": "object",
+          "count": 6,
+          "sha256": "c232f2408f7138b4af0f142ea1d4f63a9646ac198907df284d8d47e008a2b050",
+          "source": "L6843"
+        },
+        "INLINE_credits_L6919": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "e318f222d58afa45c07a704a7a1b3e193222386f866198d6570687ee6ea572cd",
+          "source": "L6919"
+        },
+        "INLINE_prefs_L6926": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "bbc27798b16a843e81fa22032f57d6cac6bb7dd9cb7b80f0b8ceb30a9e4fc270",
+          "source": "L6926"
+        },
+        "INLINE_payments_L6930": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "c049c2d3f8d50f583213639cf4f9399b0f84ed9955ebf1400c2c174b13457272",
+          "source": "L6930"
+        },
+        "INLINE_settings_L6931": {
+          "kind": "array",
+          "count": 5,
+          "sha256": "069af661b9981c3beeeee87f623f45f0ef084a0c041798b90e844ae8133f5417",
+          "source": "L6931"
+        },
+        "INLINE_privacy_L6932": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "8bcdcbf27566909cd4ed5184b4190d6fac2f3210be6511af638885a85f641801",
+          "source": "L6932"
+        },
+        "INLINE_upload_L6935": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "5bbd727552ad94cb5c51f9cf910d4d44906f7e44bec28027ce4206f0c7146b1c",
+          "source": "L6935"
+        },
+        "INLINE_draw_L6943": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "9c0e9d9f190a593348d9e3243771dceec2c30eeed491d700fc92c14b3bd3145a",
+          "source": "L6943"
+        },
+        "INLINE_openTool_L6957": {
+          "kind": "object",
+          "count": 11,
+          "sha256": "3126a0a344b5ebeefa24fbaef060250482a8c8960098a9a23336c2f6a5f1f877",
+          "source": "L6957"
+        },
+        "INLINE_qdbAnswer_L7048": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "73977341710d688e3fa79ecd61e93df42f231f8dcf66031cf4694e1715135748",
+          "source": "L7048"
+        },
+        "INLINE_planResult_L7052": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "54fa6a53fc9f69d4e502bdf22df7652702473048f0d664e7d9ab47bdfe32d4e8",
+          "source": "L7052-L7054"
+        },
+        "INLINE_caFilter_L7596": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "229db0f493726a8e602819e099ea203a908679053f722eff1816669c63a8ba1f",
+          "source": "L7596"
+        },
+        "INLINE_meTog_L7625": {
+          "kind": "object",
+          "count": 9,
+          "sha256": "682b22398c9f8d789fe3b3cccf27df604631753bd9235eb1d1daebde7bbff435",
+          "source": "L7625"
+        },
+        "INLINE_VIEWS_mindmap_L8013": {
+          "kind": "array",
+          "count": 6,
+          "sha256": "3844435afd3be61f985690850411c73fcac76b51e745cf787c59d223af9f8021",
+          "source": "L8013"
+        },
+        "INLINE_qdOutHTML_L8102": {
+          "kind": "array",
+          "count": 3,
+          "sha256": "b5103790a1c36398c7a1b2ea3b7d0fbe07748ee61ddd382c7fe87aab371e3b5b",
+          "source": "L8102"
+        },
+        "INLINE_renderLearn_L8253": {
+          "kind": "array",
+          "count": 11,
+          "sha256": "34f8bc7514c2f08ff54efdf423f7616c93d3db7a2b02aa2d537d2fa98a1d84c0",
+          "source": "L8253"
+        },
+        "INLINE_ntMerge_L10602": {
+          "kind": "array",
+          "count": 4,
+          "sha256": "3c76511bcb51a4d730c70e1bd88251a6842e124363cc29b2b58114c9ed764a59",
+          "source": "L10602"
+        }
+      }
+    }
+  },
+  "markers": {
+    "envDerived": 50,
+    "functionsInData": 4
+  },
+  "initialState": {
+    "kind": "object",
+    "count": 46,
+    "sha256": "397d8bdb1981b570aec01aab1f5e926bb683a7ecbf21e6ec43148d6f6200cdbc",
+    "fields": [
+      "stage",
+      "tab",
+      "stack",
+      "lang",
+      "fcLang",
+      "fc",
+      "hero",
+      "heroTimer",
+      "intro",
+      "authMode",
+      "authTries",
+      "user",
+      "saved",
+      "ca",
+      "quiz",
+      "toolGroup",
+      "mlog",
+      "ctxOn",
+      "rendered",
+      "mainsQ",
+      "pages",
+      "revDone",
+      "arSize",
+      "me",
+      "menuQ",
+      "savedLinks",
+      "pqb",
+      "tq",
+      "mv",
+      "ab",
+      "syl",
+      "sylDone",
+      "up",
+      "vlt",
+      "qdb2",
+      "maps",
+      "nsys",
+      "optional",
+      "folders",
+      "nsRead",
+      "nsSaved",
+      "nh",
+      "xr",
+      "xr2",
+      "x4",
+      "ntSort"
+    ],
+    "source": "L5126-L5133",
+    "envKeys": [
+      "ca.date"
+    ],
+    "laterFields": 7
+  },
+  "i18n": {
+    "kind": "object",
+    "count": 2,
+    "sha256": "cbb0b9a0870404670081a869a4d9190ac2187db30c8b6d3472cad2a24af26d33",
+    "langs": [
+      "en",
+      "hi"
+    ],
+    "keys": 16,
+    "source": "L5136-L5139"
+  },
+  "indexAliases": [
+    {
+      "name": "SRC",
+      "module": "tracker",
+      "alias": "SRC__tracker"
+    }
+  ],
+  "icons": {
+    "count": 84,
+    "names": [
+      "home",
+      "learn",
+      "practice",
+      "current",
+      "profile",
+      "search",
+      "arrow",
+      "back",
+      "chev",
+      "chevl",
+      "chevd",
+      "close",
+      "bookmark",
+      "star",
+      "spark",
+      "play",
+      "upload",
+      "camera",
+      "file",
+      "cloud",
+      "calendar",
+      "mindmap",
+      "xray",
+      "db",
+      "notes",
+      "pen",
+      "mic",
+      "check",
+      "x",
+      "clock",
+      "settings",
+      "lock",
+      "globe",
+      "card",
+      "shield",
+      "logout",
+      "plus",
+      "eye",
+      "eyeoff",
+      "mail",
+      "bolt",
+      "history",
+      "layers",
+      "chart",
+      "send",
+      "refresh",
+      "bell",
+      "list",
+      "share",
+      "flame",
+      "target",
+      "lecture",
+      "bank",
+      "test",
+      "folder",
+      "scale",
+      "doc",
+      "user",
+      "sliders",
+      "language",
+      "receipt",
+      "help",
+      "filter",
+      "hl",
+      "logo",
+      "pulse",
+      "phone",
+      "trash",
+      "crown",
+      "wifi",
+      "volume",
+      "download",
+      "type",
+      "motion",
+      "device",
+      "grid",
+      "hash",
+      "image",
+      "scissors",
+      "link",
+      "flag",
+      "sort",
+      "warn",
+      "type2"
+    ],
+    "sha256": "3c4d15858000d8d93e3a15fac77f80e8a3e19e080a8d1fba4462f7bb43bb338b",
+    "illustrationSymbols": [
+      "s4A",
+      "s4B",
+      "s4C"
+    ],
+    "illustrationSha256": "f2cc6681bc541098bf2527d1b9b49ac2323840726e93030893bf1a7838bae1e1"
+  },
+  "actions": {
+    "verbs": 236,
+    "verbsSha256": "cb5947c30fd5fe0e933c23f1c13f2b0a134dde93507f6b1b41244adda06985b7",
+    "withoutHandler": 0
+  }
+}

@@ -1,0 +1,1237 @@
+{
+  "about": "What the strings inside the extracted data contain: every HTML/SVG tag, class, inline style property, attribute (as \"tag attribute\") and entity, with the number of occurrences, the number of constants they occur in and two example constants. Covers every exported constant, the i18n table, the initial state, the returned strings of functions kept in data, and the inline literals. `fields` lists each field that holds markup, line breaks or X-Ray markers.",
+  "generatedFrom": "PrepAssist.html",
+  "summary": {
+    "constants": 100,
+    "strings": 3248,
+    "stringsWithMarkup": 113,
+    "distinctTags": 15,
+    "distinctClasses": 8,
+    "distinctStyleProperties": 0,
+    "distinctEntities": 1
+  },
+  "tags": {
+    "rect": {
+      "count": 167,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "p": {
+      "count": 93,
+      "constants": 5,
+      "examples": [
+        "NOTESYS",
+        "MODEL"
+      ]
+    },
+    "li": {
+      "count": 72,
+      "constants": 4,
+      "examples": [
+        "NOTESYS",
+        "LEGAL"
+      ]
+    },
+    "b": {
+      "count": 56,
+      "constants": 7,
+      "examples": [
+        "FLASH",
+        "NOTESYS"
+      ]
+    },
+    "h5": {
+      "count": 54,
+      "constants": 2,
+      "examples": [
+        "COOP_UPS@#notes2js",
+        "NT@#notes2js"
+      ]
+    },
+    "circle": {
+      "count": 53,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "ul": {
+      "count": 22,
+      "constants": 4,
+      "examples": [
+        "NOTESYS",
+        "LEGAL"
+      ]
+    },
+    "path": {
+      "count": 17,
+      "constants": 5,
+      "examples": [
+        "MEGA",
+        "ANN"
+      ]
+    },
+    "g": {
+      "count": 13,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "text": {
+      "count": 12,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "svg": {
+      "count": 10,
+      "constants": 4,
+      "examples": [
+        "MEGA",
+        "ANN"
+      ]
+    },
+    "i": {
+      "count": 6,
+      "constants": 3,
+      "examples": [
+        "MODEL",
+        "COOP_UPS@#notes2js"
+      ]
+    },
+    "h4": {
+      "count": 5,
+      "constants": 3,
+      "examples": [
+        "LEGAL",
+        "COOP_UPS@#notes2js"
+      ]
+    },
+    "br": {
+      "count": 2,
+      "constants": 1,
+      "examples": [
+        "ANSWERBANK"
+      ]
+    },
+    "ol": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "LEGAL"
+      ]
+    }
+  },
+  "classes": {
+    "lg-ul": {
+      "count": 3,
+      "constants": 1,
+      "examples": [
+        "LEGAL"
+      ]
+    },
+    "lg-dl": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "LEGAL"
+      ]
+    },
+    "lg-ol": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "LEGAL"
+      ]
+    },
+    "mg": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "MEGA"
+      ]
+    },
+    "sk-b": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "SKYLINE"
+      ]
+    },
+    "sk-f": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "SKYLINE"
+      ]
+    },
+    "sk-flag": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "SKYLINE"
+      ]
+    },
+    "sk-w": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "SKYLINE"
+      ]
+    }
+  },
+  "styleProperties": {},
+  "attributes": {
+    "rect height": {
+      "count": 167,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "rect width": {
+      "count": 167,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "rect x": {
+      "count": 161,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "rect y": {
+      "count": 161,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "rect rx": {
+      "count": 137,
+      "constants": 3,
+      "examples": [
+        "ANN",
+        "LX"
+      ]
+    },
+    "rect fill": {
+      "count": 120,
+      "constants": 3,
+      "examples": [
+        "ANN",
+        "LX"
+      ]
+    },
+    "rect opacity": {
+      "count": 84,
+      "constants": 3,
+      "examples": [
+        "ANN",
+        "LX"
+      ]
+    },
+    "circle cx": {
+      "count": 53,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "circle cy": {
+      "count": 53,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "circle r": {
+      "count": 53,
+      "constants": 4,
+      "examples": [
+        "ANN",
+        "SKYLINE"
+      ]
+    },
+    "path d": {
+      "count": 17,
+      "constants": 5,
+      "examples": [
+        "MEGA",
+        "ANN"
+      ]
+    },
+    "circle fill": {
+      "count": 12,
+      "constants": 3,
+      "examples": [
+        "ANN",
+        "LX"
+      ]
+    },
+    "text fill": {
+      "count": 12,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "text font-size": {
+      "count": 12,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "text x": {
+      "count": 12,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "text y": {
+      "count": 12,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "text font-weight": {
+      "count": 11,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "svg viewBox": {
+      "count": 10,
+      "constants": 4,
+      "examples": [
+        "MEGA",
+        "ANN"
+      ]
+    },
+    "path stroke": {
+      "count": 7,
+      "constants": 4,
+      "examples": [
+        "MEGA",
+        "ANN"
+      ]
+    },
+    "path stroke-width": {
+      "count": 7,
+      "constants": 4,
+      "examples": [
+        "MEGA",
+        "ANN"
+      ]
+    },
+    "g transform": {
+      "count": 6,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "text letter-spacing": {
+      "count": 6,
+      "constants": 1,
+      "examples": [
+        "ART"
+      ]
+    },
+    "path stroke-linecap": {
+      "count": 5,
+      "constants": 4,
+      "examples": [
+        "MEGA",
+        "ANN"
+      ]
+    },
+    "svg preserveAspectRatio": {
+      "count": 5,
+      "constants": 2,
+      "examples": [
+        "SKYLINE",
+        "ART"
+      ]
+    },
+    "text font-family": {
+      "count": 5,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "text text-anchor": {
+      "count": 5,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "circle stroke": {
+      "count": 4,
+      "constants": 3,
+      "examples": [
+        "ANN",
+        "LX"
+      ]
+    },
+    "circle stroke-width": {
+      "count": 4,
+      "constants": 3,
+      "examples": [
+        "ANN",
+        "LX"
+      ]
+    },
+    "g fill": {
+      "count": 4,
+      "constants": 2,
+      "examples": [
+        "LX",
+        "ART"
+      ]
+    },
+    "rect stroke": {
+      "count": 4,
+      "constants": 2,
+      "examples": [
+        "LX",
+        "ART"
+      ]
+    },
+    "ul class": {
+      "count": 4,
+      "constants": 1,
+      "examples": [
+        "LEGAL"
+      ]
+    },
+    "path fill": {
+      "count": 3,
+      "constants": 2,
+      "examples": [
+        "MEGA",
+        "ANN"
+      ]
+    },
+    "circle opacity": {
+      "count": 2,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "ART"
+      ]
+    },
+    "g class": {
+      "count": 2,
+      "constants": 1,
+      "examples": [
+        "SKYLINE"
+      ]
+    },
+    "g stroke": {
+      "count": 2,
+      "constants": 1,
+      "examples": [
+        "LX"
+      ]
+    },
+    "g stroke-linecap": {
+      "count": 2,
+      "constants": 1,
+      "examples": [
+        "LX"
+      ]
+    },
+    "g stroke-width": {
+      "count": 2,
+      "constants": 1,
+      "examples": [
+        "LX"
+      ]
+    },
+    "path class": {
+      "count": 2,
+      "constants": 1,
+      "examples": [
+        "SKYLINE"
+      ]
+    },
+    "rect stroke-width": {
+      "count": 2,
+      "constants": 2,
+      "examples": [
+        "LX",
+        "ART"
+      ]
+    },
+    "rect transform": {
+      "count": 2,
+      "constants": 2,
+      "examples": [
+        "ANN",
+        "LX"
+      ]
+    },
+    "svg font-family": {
+      "count": 2,
+      "constants": 1,
+      "examples": [
+        "ART"
+      ]
+    },
+    "g opacity": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "ART"
+      ]
+    },
+    "g stroke-linejoin": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "LX"
+      ]
+    },
+    "ol class": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "LEGAL"
+      ]
+    },
+    "path fill-rule": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "SKYLINE"
+      ]
+    },
+    "svg class": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "MEGA"
+      ]
+    }
+  },
+  "entities": {
+    "&amp;": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "INLINE_caFilter_L7596"
+      ]
+    }
+  },
+  "cssVariables": {
+    "--polity": {
+      "count": 6,
+      "constants": 5,
+      "examples": [
+        "SUBJ",
+        "BRIEF"
+      ]
+    },
+    "--eco": {
+      "count": 4,
+      "constants": 4,
+      "examples": [
+        "SUBJ",
+        "BRIEF"
+      ]
+    },
+    "--brand": {
+      "count": 3,
+      "constants": 3,
+      "examples": [
+        "INLINE_calSlots_L6663",
+        "INLINE_credits_L6919"
+      ]
+    },
+    "--history": {
+      "count": 3,
+      "constants": 3,
+      "examples": [
+        "SUBJ",
+        "INLINE_calSlots_L6663"
+      ]
+    },
+    "--ir": {
+      "count": 3,
+      "constants": 3,
+      "examples": [
+        "SUBJ",
+        "BRIEF"
+      ]
+    },
+    "--env": {
+      "count": 2,
+      "constants": 2,
+      "examples": [
+        "SUBJ",
+        "INLINE_planResult_L7052"
+      ]
+    },
+    "--geo": {
+      "count": 2,
+      "constants": 2,
+      "examples": [
+        "SUBJ",
+        "DOCS"
+      ]
+    },
+    "--ink": {
+      "count": 2,
+      "constants": 2,
+      "examples": [
+        "INLINE_calSlots_L6663",
+        "INLINE_credits_L6919"
+      ]
+    },
+    "--sky": {
+      "count": 2,
+      "constants": 2,
+      "examples": [
+        "DOCS",
+        "INLINE_credits_L6919"
+      ]
+    },
+    "--ethics": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "SUBJ"
+      ]
+    },
+    "--snt": {
+      "count": 1,
+      "constants": 1,
+      "examples": [
+        "SUBJ"
+      ]
+    }
+  },
+  "fields": [
+    {
+      "constant": "FLASH",
+      "module": "src/data/home.ts",
+      "field": "FLASH[*].en[*]",
+      "strings": 10,
+      "markupStrings": 5,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "b"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "FLASH",
+      "module": "src/data/home.ts",
+      "field": "FLASH[*].hi[*]",
+      "strings": 10,
+      "markupStrings": 5,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "b"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "MEGA",
+      "module": "src/data/home.ts",
+      "field": "MEGA",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "path",
+        "svg"
+      ],
+      "classes": [
+        "mg"
+      ],
+      "entities": []
+    },
+    {
+      "constant": "ANN",
+      "module": "src/data/home.ts",
+      "field": "ANN.plan.art",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "circle",
+        "rect",
+        "svg",
+        "text"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "ANN",
+      "module": "src/data/home.ts",
+      "field": "ANN.notice.art",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "circle",
+        "g",
+        "rect",
+        "svg"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "ANN",
+      "module": "src/data/home.ts",
+      "field": "ANN.xray.art",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "circle",
+        "path",
+        "rect",
+        "svg"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "ANN",
+      "module": "src/data/home.ts",
+      "field": "ANN.live.art",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "circle",
+        "path",
+        "rect",
+        "svg",
+        "text"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "SKYLINE",
+      "module": "src/data/home.ts",
+      "field": "SKYLINE",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 1,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "circle",
+        "g",
+        "path",
+        "rect",
+        "svg"
+      ],
+      "classes": [
+        "sk-b",
+        "sk-f",
+        "sk-flag",
+        "sk-w"
+      ],
+      "entities": []
+    },
+    {
+      "constant": "LX",
+      "module": "src/data/learn.ts",
+      "field": "LX[*].art",
+      "strings": 4,
+      "markupStrings": 4,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "circle",
+        "g",
+        "path",
+        "rect"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "NOTESYS",
+      "module": "src/data/notes.ts",
+      "field": "NOTESYS[*].sec[*][*]",
+      "strings": 40,
+      "markupStrings": 13,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "b",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "ANSWERBANK",
+      "module": "src/data/practice.ts",
+      "field": "ANSWERBANK[*].fw[*][*]",
+      "strings": 10,
+      "markupStrings": 1,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "b",
+        "br"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "MODEL",
+      "module": "src/data/practice.ts",
+      "field": "MODEL",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 1,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "b",
+        "i",
+        "p"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "LEGAL",
+      "module": "src/data/legal.ts",
+      "field": "LEGAL.privacy.secs[*][*]",
+      "strings": 22,
+      "markupStrings": 11,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "b",
+        "h4",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [
+        "lg-dl",
+        "lg-ul"
+      ],
+      "entities": []
+    },
+    {
+      "constant": "LEGAL",
+      "module": "src/data/legal.ts",
+      "field": "LEGAL.terms.secs[*][*]",
+      "strings": 20,
+      "markupStrings": 10,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "b",
+        "li",
+        "ol",
+        "p",
+        "ul"
+      ],
+      "classes": [
+        "lg-ol",
+        "lg-ul"
+      ],
+      "entities": []
+    },
+    {
+      "constant": "XSC@window",
+      "module": "src/data/xray.ts",
+      "field": "XSC@window[*].paras[*]",
+      "strings": 11,
+      "markupStrings": 0,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 11,
+      "tags": [],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "XRP",
+      "module": "src/data/xray.ts",
+      "field": "XRP[*].runs[*][*]",
+      "strings": 44,
+      "markupStrings": 0,
+      "stringsWithNewline": 2,
+      "stringsWithXrayMarkers": 0,
+      "tags": [],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "COOP_UPS@#notes2js",
+      "module": "src/data/tracker.ts",
+      "field": "COOP_UPS@#notes2js[*].h",
+      "strings": 4,
+      "markupStrings": 4,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "b",
+        "h4",
+        "h5",
+        "i",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "NT@#notes2js",
+      "module": "src/data/tracker.ts",
+      "field": "NT@#notes2js.polity[*].ups[*].h",
+      "strings": 20,
+      "markupStrings": 20,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "b",
+        "h4",
+        "h5",
+        "i",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "NT@#notes2js",
+      "module": "src/data/tracker.ts",
+      "field": "NT@#notes2js.history[*].ups[*].h",
+      "strings": 3,
+      "markupStrings": 3,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "h5",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "NT@#notes2js",
+      "module": "src/data/tracker.ts",
+      "field": "NT@#notes2js.geo[*].ups[*].h",
+      "strings": 5,
+      "markupStrings": 5,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "h5",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "NT@#notes2js",
+      "module": "src/data/tracker.ts",
+      "field": "NT@#notes2js.eco[*].ups[*].h",
+      "strings": 9,
+      "markupStrings": 9,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "h5",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "NT@#notes2js",
+      "module": "src/data/tracker.ts",
+      "field": "NT@#notes2js.env[*].ups[*].h",
+      "strings": 5,
+      "markupStrings": 5,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "h5",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "NT@#notes2js",
+      "module": "src/data/tracker.ts",
+      "field": "NT@#notes2js.art[*].ups[*].h",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "h5",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "NT@#notes2js",
+      "module": "src/data/tracker.ts",
+      "field": "NT@#notes2js.snt[*].ups[*].h",
+      "strings": 5,
+      "markupStrings": 5,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "h5",
+        "li",
+        "p",
+        "ul"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "ART",
+      "module": "src/data/illustrations.ts",
+      "field": "ART.plan()",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 1,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "g",
+        "rect",
+        "svg",
+        "text"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "ART",
+      "module": "src/data/illustrations.ts",
+      "field": "ART.notice()",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 1,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "circle",
+        "g",
+        "path",
+        "rect",
+        "svg",
+        "text"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "ART",
+      "module": "src/data/illustrations.ts",
+      "field": "ART.xray()",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 1,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "circle",
+        "g",
+        "path",
+        "rect",
+        "svg",
+        "text"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "ART",
+      "module": "src/data/illustrations.ts",
+      "field": "ART.live()",
+      "strings": 1,
+      "markupStrings": 1,
+      "stringsWithNewline": 1,
+      "stringsWithXrayMarkers": 0,
+      "tags": [
+        "circle",
+        "g",
+        "rect",
+        "svg",
+        "text"
+      ],
+      "classes": [],
+      "entities": []
+    },
+    {
+      "constant": "INLINE_caFilter_L7596",
+      "module": "src/data/inline.ts",
+      "field": "INLINE_caFilter_L7596[*]",
+      "strings": 4,
+      "markupStrings": 1,
+      "stringsWithNewline": 0,
+      "stringsWithXrayMarkers": 0,
+      "tags": [],
+      "classes": [],
+      "entities": [
+        "&amp;"
+      ]
+    }
+  ],
+  "xrayMarkup": {
+    "usedIn": "XSC[*].paras[*] (mobile/src/data/xray.ts)",
+    "grammar": {
+      "paragraph": "plain text with zero or more insight spans and term spans; no HTML tags",
+      "insightSpan": "\"[[\" DIGITS \"|\" TEXT \"]]\"  where DIGITS is the zero-based index into the scan's `ins` array and TEXT is matched lazily up to the first \"]]\"",
+      "termSpan": "\"{{\" TERM \"}}\"  where TERM is matched lazily (one or more characters, no line breaks) and is a key of the scan's `terms` object",
+      "nesting": "A term span may sit inside an insight span or outside one. Insight spans do not nest.",
+      "order": "x4Para applies the insight pattern first, then the term pattern over the result, so terms inside insights are still linked."
+    },
+    "consumers": {
+      "x4Para (PrepAssist.html L9893-L9896)": "insight -> <mark class=\"x4-i [seen]\" id=\"x4i{n}\" data-act=\"x4Ins:{n}\"><b class=\"x4-pin\">{n+1}</b>TEXT</mark>; term -> <span class=\"x4-t\" data-act=\"x4Term:{encodeURIComponent(TERM)}\" role=\"button\">TERM</span>",
+      "plain (L9857)": "removes the braces of term spans, keeping TERM",
+      "insText (L9858)": "finds the text of insight n in a scan: first paragraph matching [[n|…]], with term braces removed",
+      "termCount (L9859)": "counts occurrences of \"{{TERM}}\" across all paragraphs of a scan"
+    },
+    "regexes": {
+      "insight": "/\\[\\[(\\d+)\\|([\\s\\S]*?)\\]\\]/g",
+      "term": "/\\{\\{(.+?)\\}\\}/g"
+    },
+    "stats": {
+      "scans": 6,
+      "paragraphs": 11,
+      "insightSpans": 10,
+      "termSpans": 15,
+      "termsInsideInsight": 14,
+      "termsOutsideInsight": 1,
+      "paragraphsWithoutMarkers": 0
+    },
+    "examples": [
+      "[[0|India’s long-standing negotiations to sign new bilateral investment treaties ({{BITs}}) and free trade agreements ({{FTAs}}) with its prominent economic partners are bearing fruit.]]",
+      "[[1|a dispute-resolution system that is predictable, enforceable and trusted.]]"
+    ],
+    "problems": []
+  },
+  "notInThisFile": {
+    "about": "Markup written inside functions as template strings (views, sheets, mentor replies …) and the static document markup are code, not data, and are not counted above. They are inventoried separately.",
+    "file": "tools/reference/extract/out/template-inventory.json",
+    "tagsThatOccurOnlyThere": [
+      "a",
+      "animate",
+      "animateTransform",
+      "article",
+      "aside",
+      "blockquote",
+      "button",
+      "canvas",
+      "clipPath",
+      "defs",
+      "div",
+      "ellipse",
+      "em",
+      "feColorMatrix",
+      "feComponentTransfer",
+      "feFuncA",
+      "feGaussianBlur",
+      "feMerge",
+      "feMergeNode",
+      "feTurbulence",
+      "filter",
+      "footer",
+      "form",
+      "h1",
+      "h2",
+      "h3",
+      "h6",
+      "header",
+      "img",
+      "input",
+      "kbd",
+      "label",
+      "linearGradient",
+      "mark",
+      "nav",
+      "polyline",
+      "radialGradient",
+      "section",
+      "small",
+      "span",
+      "stop",
+      "sup",
+      "symbol",
+      "table",
+      "tbody",
+      "td",
+      "template",
+      "textarea",
+      "th",
+      "tr",
+      "u",
+      "use"
+    ]
+  }
+}
