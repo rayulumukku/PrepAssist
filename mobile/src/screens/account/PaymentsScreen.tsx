@@ -4,7 +4,11 @@
 // sum.toLocaleString('en-IN') is written out by hand (Hermes' Intl grouping is not relied upon).
 import React, { useEffect } from 'react';
 import { Platform, Pressable, StyleSheet, View } from 'react-native';
-import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
+import Animated, {
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 import Svg, { Circle, Ellipse, Path } from 'react-native-svg';
 import { act } from '../../actions';
 import { Icon } from '../../components';
@@ -41,7 +45,10 @@ function Receipt({ p }: { p: Payment }): React.JSX.Element {
   useEffect(() => {
     v.value = withTiming(1, { duration: 350, easing: easeVar });
   }, [v]);
-  const st = useAnimatedStyle(() => ({ opacity: v.value, transform: [{ translateY: 6 * (1 - v.value) }] }));
+  const st = useAnimatedStyle(() => ({
+    opacity: v.value,
+    transform: [{ translateY: 6 * (1 - v.value) }],
+  }));
   const r = RI[p.k] ?? RI.pro;
   return (
     <Animated.View style={[s.rc, st]}>
@@ -63,7 +70,11 @@ function Receipt({ p }: { p: Payment }): React.JSX.Element {
           <Icon name="check" size={13} strokeWidth={2.4} color="#2F8A4A" />
           <Txt style={s.paidT}>Paid</Txt>
         </View>
-        <Pressable style={s.inv} onPress={() => act(`toast:Invoice ${p.id} saved to Downloads`)} testID={`payments.invoice.${p.id}`}>
+        <Pressable
+          style={s.inv}
+          onPress={() => act(`toast:Invoice ${p.id} saved to Downloads`)}
+          testID={`payments.invoice.${p.id}`}
+        >
           <Icon name="download" size={13} color="#14161C" />
           <Txt style={s.invT}>Invoice</Txt>
         </Pressable>
@@ -85,7 +96,10 @@ function PaymentsScreen(): React.JSX.Element {
     <View style={ME.page}>
       <View style={s.sum}>
         {cells.map(([k, v], i) => (
-          <View key={k} style={[{ flex: [1.2, 0.8, 1][i] }, i > 0 && s.sumNext]}>
+          <View
+            key={k}
+            style={[{ flex: [1.2, 0.8, 1][i] }, i > 0 && s.sumNext]}
+          >
             <Txt style={s.sumS}>{k}</Txt>
             <Txt style={s.sumB} numberOfLines={1}>
               {v}
@@ -104,20 +118,65 @@ function PaymentsScreen(): React.JSX.Element {
         <View style={s.empty}>
           <Svg width={160} height={130} viewBox="0 0 160 130">
             <Ellipse cx="80" cy="120" rx="52" ry="6" fill="#E6EEF7" />
-            <Path d="M48 18h56v92l-7-5-7 5-7-5-7 5-7-5-7 5-7-5-7 5Z" fill="#fff" stroke="#D6E0EB" strokeWidth={2} strokeLinejoin="round" />
-            <Path d="M58 34h36M58 44h28M58 54h32M58 72h36" stroke="#E3EAF2" strokeWidth={3} strokeLinecap="round" />
-            <Path d="M58 84h18" stroke="#1B8AD3" strokeWidth={3} strokeLinecap="round" />
-            <Circle cx="110" cy="40" r="17" fill="#FFF4E2" stroke="#F5A01F" strokeWidth={2.5} />
-            <Path d="M110 31v9l6 4" stroke="#E8890C" strokeWidth={2.5} fill="none" strokeLinecap="round" />
-            <Path d="M34 46v8M30 50h8M126 86v6M123 89h6" stroke="#9FD0F2" strokeWidth={2} strokeLinecap="round" />
+            <Path
+              d="M48 18h56v92l-7-5-7 5-7-5-7 5-7-5-7 5-7-5-7 5Z"
+              fill="#fff"
+              stroke="#D6E0EB"
+              strokeWidth={2}
+              strokeLinejoin="round"
+            />
+            <Path
+              d="M58 34h36M58 44h28M58 54h32M58 72h36"
+              stroke="#E3EAF2"
+              strokeWidth={3}
+              strokeLinecap="round"
+            />
+            <Path
+              d="M58 84h18"
+              stroke="#1B8AD3"
+              strokeWidth={3}
+              strokeLinecap="round"
+            />
+            <Circle
+              cx="110"
+              cy="40"
+              r="17"
+              fill="#FFF4E2"
+              stroke="#F5A01F"
+              strokeWidth={2.5}
+            />
+            <Path
+              d="M110 31v9l6 4"
+              stroke="#E8890C"
+              strokeWidth={2.5}
+              fill="none"
+              strokeLinecap="round"
+            />
+            <Path
+              d="M34 46v8M30 50h8M126 86v6M123 89h6"
+              stroke="#9FD0F2"
+              strokeWidth={2}
+              strokeLinecap="round"
+            />
           </Svg>
           <Txt style={s.emptyB}>No payments yet</Txt>
-          <Txt style={s.emptyP}>Every plan and credit pack you buy shows up here as a receipt you can download.</Txt>
-          <Pressable style={s.cta} onPress={() => act('push:upgrade')} testID="payments.plans">
+          <Txt style={s.emptyP}>
+            Every plan and credit pack you buy shows up here as a receipt you
+            can download.
+          </Txt>
+          <Pressable
+            style={s.cta}
+            onPress={() => act('push:upgrade')}
+            testID="payments.plans"
+          >
             <Icon name="spark" size={16} color="#FFD27A" />
             <Txt style={s.ctaT}>Explore plans</Txt>
           </Pressable>
-          <Pressable style={s.lnk} onPress={() => act('restore')} testID="payments.restore">
+          <Pressable
+            style={s.lnk}
+            onPress={() => act('restore')}
+            testID="payments.restore"
+          >
             <Icon name="refresh" size={14} color="#7A8494" />
             <Txt style={s.lnkT}>Restore purchases</Txt>
           </Pressable>
@@ -132,19 +191,66 @@ const s = StyleSheet.create({
     flexDirection: 'row',
     padding: 16,
     borderRadius: 20,
-    backgroundImage: 'radial-gradient(80% 100% at 100% 0%, rgba(63, 208, 138, 0.35), transparent 60%), linear-gradient(135deg, #0B5B52, #0E9A8A)',
+    backgroundImage:
+      'radial-gradient(80% 100% at 100% 0%, rgba(63, 208, 138, 0.35), transparent 60%), linear-gradient(135deg, #0B5B52, #0E9A8A)',
   },
-  sumNext: { borderLeftWidth: 1, borderLeftColor: 'rgba(255, 255, 255, 0.2)', paddingLeft: 12 },
-  sumS: { ...font('sans', 700), fontSize: 10.5, lineHeight: 15.225, letterSpacing: 1.26, textTransform: 'uppercase', color: '#fff', opacity: 0.75 },
-  sumB: { ...font('serif', 800), fontSize: 20, lineHeight: 29, color: '#fff', marginTop: 4 },
+  sumNext: {
+    borderLeftWidth: 1,
+    borderLeftColor: 'rgba(255, 255, 255, 0.2)',
+    paddingLeft: 12,
+  },
+  sumS: {
+    ...font('sans', 700),
+    fontSize: 10.5,
+    lineHeight: 15.225,
+    letterSpacing: 1.26,
+    textTransform: 'uppercase',
+    color: '#fff',
+    opacity: 0.75,
+  },
+  sumB: {
+    ...font('serif', 800),
+    fontSize: 20,
+    lineHeight: 29,
+    color: '#fff',
+    marginTop: 4,
+  },
   h: { marginTop: 22, marginHorizontal: 4, marginBottom: 10 },
-  rc: { marginBottom: 12, borderRadius: 16, backgroundColor: '#fff', boxShadow: '0px 0px 0px 1px #E6EBF1' },
-  rt: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingTop: 14, paddingHorizontal: 14, paddingBottom: 12 },
-  ri: { width: 38, height: 38, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
+  rc: {
+    marginBottom: 12,
+    borderRadius: 16,
+    backgroundColor: '#fff',
+    boxShadow: '0px 0px 0px 1px #E6EBF1',
+  },
+  rt: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    paddingTop: 14,
+    paddingHorizontal: 14,
+    paddingBottom: 12,
+  },
+  ri: {
+    width: 38,
+    height: 38,
+    borderRadius: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   rtBody: { flex: 1, minWidth: 0 },
-  rtB: { ...font('sans', 600), fontSize: 14.5, lineHeight: 21.025, color: '#14161C' },
+  rtB: {
+    ...font('sans', 600),
+    fontSize: 14.5,
+    lineHeight: 21.025,
+    color: '#14161C',
+  },
   rtS: { fontSize: 11.5, lineHeight: 16.675, color: '#7A8494', marginTop: 2 },
-  amt: { ...font('serif', 800), fontSize: 18, lineHeight: 26.1, color: '#14161C' },
+  amt: {
+    ...font('serif', 800),
+    fontSize: 18,
+    lineHeight: 26.1,
+    color: '#14161C',
+  },
   rb: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -166,11 +272,35 @@ const s = StyleSheet.create({
   },
   notchL: { left: -7 },
   notchR: { right: -7 },
-  id: { flex: 1, fontFamily: MONO, fontSize: 11.5, lineHeight: 16.675, color: '#9AA3AF' },
+  id: {
+    flex: 1,
+    fontFamily: MONO,
+    fontSize: 11.5,
+    lineHeight: 16.675,
+    color: '#9AA3AF',
+  },
   paid: { flexDirection: 'row', alignItems: 'center', gap: 4 },
-  paidT: { ...font('sans', 800), fontSize: 11.5, lineHeight: 16.675, color: '#2F8A4A' },
-  inv: { flexDirection: 'row', alignItems: 'center', gap: 5, height: 28, paddingHorizontal: 10, borderRadius: 9, backgroundColor: '#F1F5FA' },
-  invT: { ...font('sans', 700), fontSize: 11.5, lineHeight: 16.675, color: '#14161C' },
+  paidT: {
+    ...font('sans', 800),
+    fontSize: 11.5,
+    lineHeight: 16.675,
+    color: '#2F8A4A',
+  },
+  inv: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    height: 28,
+    paddingHorizontal: 10,
+    borderRadius: 9,
+    backgroundColor: '#F1F5FA',
+  },
+  invT: {
+    ...font('sans', 700),
+    fontSize: 11.5,
+    lineHeight: 16.675,
+    color: '#14161C',
+  },
   empty: {
     alignItems: 'center',
     marginTop: 16,
@@ -181,12 +311,45 @@ const s = StyleSheet.create({
     backgroundColor: '#fff',
     boxShadow: '0px 0px 0px 1px #E6EBF1',
   },
-  emptyB: { ...font('book', 500), fontSize: 22, lineHeight: 31.9, color: '#14161C', marginTop: 6, textAlign: 'center' },
-  emptyP: { fontSize: 13.5, lineHeight: 20.25, color: '#7A8494', marginTop: 6, maxWidth: 260, textAlign: 'center' },
-  cta: { flexDirection: 'row', alignItems: 'center', gap: 7, height: 46, paddingHorizontal: 20, marginTop: 18, borderRadius: 14, backgroundColor: '#14161C' },
-  ctaT: { ...font('sans', 600), fontSize: 14.5, lineHeight: 21.025, color: '#fff' },
+  emptyB: {
+    ...font('book', 500),
+    fontSize: 22,
+    lineHeight: 31.9,
+    color: '#14161C',
+    marginTop: 6,
+    textAlign: 'center',
+  },
+  emptyP: {
+    fontSize: 13.5,
+    lineHeight: 20.25,
+    color: '#7A8494',
+    marginTop: 6,
+    maxWidth: 260,
+    textAlign: 'center',
+  },
+  cta: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 7,
+    height: 46,
+    paddingHorizontal: 20,
+    marginTop: 18,
+    borderRadius: 14,
+    backgroundColor: '#14161C',
+  },
+  ctaT: {
+    ...font('sans', 600),
+    fontSize: 14.5,
+    lineHeight: 21.025,
+    color: '#fff',
+  },
   lnk: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 12 },
-  lnkT: { ...font('sans', 600), fontSize: 12.5, lineHeight: 18.125, color: '#7A8494' },
+  lnkT: {
+    ...font('sans', 600),
+    fontSize: 12.5,
+    lineHeight: 18.125,
+    color: '#7A8494',
+  },
 });
 
 const view: ViewDef = {

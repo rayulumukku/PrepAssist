@@ -16,8 +16,22 @@
 // The Ultimate title is gradient text (background-clip:text): drawn as SVG text with a gradient fill.
 import React, { useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
-import Animated, { Easing, useAnimatedStyle, useSharedValue, withDelay, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
-import Svg, { Defs, LinearGradient, Path, Stop, Text as SvgText } from 'react-native-svg';
+import Animated, {
+  Easing,
+  useAnimatedStyle,
+  useSharedValue,
+  withDelay,
+  withRepeat,
+  withSequence,
+  withTiming,
+} from 'react-native-reanimated';
+import Svg, {
+  Defs,
+  LinearGradient,
+  Path,
+  Stop,
+  Text as SvgText,
+} from 'react-native-svg';
 import { Icon } from '../../components';
 import { TH } from '../../data/plans';
 import type { IconName } from '../../icons/iconPaths.generated';
@@ -29,7 +43,8 @@ import { font, Txt } from '../../theme';
 
 const BG = {
   pro: 'radial-gradient(90% 70% at 100% 0%, rgba(244, 114, 182, 0.55), transparent 60%), radial-gradient(70% 60% at 0% 100%, rgba(96, 165, 250, 0.45), transparent 60%), linear-gradient(160deg, #1C0F57, #5631D1 55%, #8B69FF)',
-  ultimate: 'radial-gradient(70% 50% at 50% 40%, rgba(247, 215, 116, 0.35), transparent 65%), linear-gradient(160deg, #050403, #1B150A 55%, #3D2C0E)',
+  ultimate:
+    'radial-gradient(70% 50% at 50% 40%, rgba(247, 215, 116, 0.35), transparent 65%), linear-gradient(160deg, #050403, #1B150A 55%, #3D2C0E)',
   free: 'radial-gradient(90% 70% at 100% 0%, #4FB0EC, transparent 60%), linear-gradient(160deg, #0F5E99, #1B8AD3 60%, #5DB6EE)',
 } as const;
 
@@ -37,23 +52,43 @@ const IN_EASE = Easing.bezier(0.7, 0, 0.25, 1);
 const OUT_EASE = Easing.bezier(0.5, 0, 0.3, 1);
 const SP_EASE = Easing.bezier(0.15, 0.7, 0.3, 1);
 
-function Spark({ sp, color }: { sp: PlanMagic['sparks'][number]; color: string }): React.JSX.Element {
+function Spark({
+  sp,
+  color,
+}: {
+  sp: PlanMagic['sparks'][number];
+  color: string;
+}): React.JSX.Element {
   // keyframe timing functions apply per interval: transform runs 0 -> 100 %, opacity 0 -> 20 % -> 100 %
   const e = useSharedValue(0);
   const o = useSharedValue(0);
   useEffect(() => {
     const d = sp.d * 1000;
     e.value = withDelay(d, withTiming(1, { duration: 1600, easing: SP_EASE }));
-    o.value = withDelay(d, withSequence(withTiming(1, { duration: 320, easing: SP_EASE }), withTiming(0, { duration: 1280, easing: SP_EASE })));
+    o.value = withDelay(
+      d,
+      withSequence(
+        withTiming(1, { duration: 320, easing: SP_EASE }),
+        withTiming(0, { duration: 1280, easing: SP_EASE }),
+      ),
+    );
   }, [e, o, sp.d]);
   const st = useAnimatedStyle(() => ({
     opacity: o.value,
-    transform: [{ translateX: sp.tx * e.value }, { translateY: sp.ty * e.value }, { scale: 0.2 + 0.8 * e.value }, { rotate: `${160 * e.value}deg` }],
+    transform: [
+      { translateX: sp.tx * e.value },
+      { translateY: sp.ty * e.value },
+      { scale: 0.2 + 0.8 * e.value },
+      { rotate: `${160 * e.value}deg` },
+    ],
   }));
   return (
     <Animated.View style={[s.sp, { width: sp.s, height: sp.s }, st]}>
       <Svg width={sp.s} height={sp.s} viewBox="0 0 10 10">
-        <Path d="M5 0q.6 4.4 5 5q-4.4.6-5 5q-.6-4.4-5-5q4.4-.6 5-5Z" fill={color} />
+        <Path
+          d="M5 0q.6 4.4 5 5q-4.4.6-5 5q-.6-4.4-5-5q4.4-.6 5-5Z"
+          fill={color}
+        />
       </Svg>
     </Animated.View>
   );
@@ -62,19 +97,47 @@ function Spark({ sp, color }: { sp: PlanMagic['sparks'][number]; color: string }
 function Swatch({ c, i }: { c: string; i: number }): React.JSX.Element {
   const v = useSharedValue(0);
   useEffect(() => {
-    v.value = withDelay(900 + i * 100, withTiming(1, { duration: 400, easing: easeVar }));
+    v.value = withDelay(
+      900 + i * 100,
+      withTiming(1, { duration: 400, easing: easeVar }),
+    );
   }, [v, i]);
-  const st = useAnimatedStyle(() => ({ opacity: v.value, transform: [{ scaleX: v.value }] }));
+  const st = useAnimatedStyle(() => ({
+    opacity: v.value,
+    transform: [{ scaleX: v.value }],
+  }));
   return <Animated.View style={[s.swI, { backgroundColor: c }, st]} />;
 }
 
 function Ring({ ult }: { ult: boolean }): React.JSX.Element {
   const v = useSharedValue(0);
   useEffect(() => {
-    v.value = withDelay(500, withRepeat(withTiming(1, { duration: 1600, easing: Easing.out(Easing.ease) }), -1, false));
+    v.value = withDelay(
+      500,
+      withRepeat(
+        withTiming(1, { duration: 1600, easing: Easing.out(Easing.ease) }),
+        -1,
+        false,
+      ),
+    );
   }, [v]);
-  const st = useAnimatedStyle(() => ({ opacity: 1 - v.value, transform: [{ scale: 0.85 + 0.65 * v.value }] }));
-  return <Animated.View style={[s.ring, { borderColor: ult ? 'rgba(247, 215, 116, 0.6)' : 'rgba(255, 255, 255, 0.35)' }, st]} />;
+  const st = useAnimatedStyle(() => ({
+    opacity: 1 - v.value,
+    transform: [{ scale: 0.85 + 0.65 * v.value }],
+  }));
+  return (
+    <Animated.View
+      style={[
+        s.ring,
+        {
+          borderColor: ult
+            ? 'rgba(247, 215, 116, 0.6)'
+            : 'rgba(255, 255, 255, 0.35)',
+        },
+        st,
+      ]}
+    />
+  );
 }
 
 function Overlay({ o }: { o: PlanMagic }): React.JSX.Element {
@@ -89,7 +152,10 @@ function Overlay({ o }: { o: PlanMagic }): React.JSX.Element {
   const tx = useSharedValue(0);
   useEffect(() => {
     rin.value = withTiming(1, { duration: 750, easing: IN_EASE });
-    tx.value = withDelay(450, withTiming(1, { duration: 700, easing: easeVar }));
+    tx.value = withDelay(
+      450,
+      withTiming(1, { duration: 700, easing: easeVar }),
+    );
   }, [rin, tx]);
   useEffect(() => {
     if (o.out) out.value = withTiming(1, { duration: 700, easing: OUT_EASE });
@@ -98,31 +164,56 @@ function Overlay({ o }: { o: PlanMagic }): React.JSX.Element {
   const clip = useAnimatedStyle(() => {
     const r = out.value > 0 ? full : full * rin.value;
     const ccy = out.value > 0 ? h * 0.5 : cy;
-    return { left: cx - r, top: ccy - r, width: 2 * r, height: 2 * r, borderRadius: r };
+    return {
+      left: cx - r,
+      top: ccy - r,
+      width: 2 * r,
+      height: 2 * r,
+      borderRadius: r,
+    };
   });
   const inner = useAnimatedStyle(() => {
     const r = out.value > 0 ? full : full * rin.value;
     const ccy = out.value > 0 ? h * 0.5 : cy;
     return { left: r - cx, top: r - ccy };
   });
-  const fade = useAnimatedStyle(() => ({ opacity: 1 - out.value, transform: [{ scale: 1 + 0.06 * out.value }] }));
+  const fade = useAnimatedStyle(() => ({
+    opacity: 1 - out.value,
+    transform: [{ scale: 1 + 0.06 * out.value }],
+  }));
   const content = useAnimatedStyle(() => ({
     opacity: tx.value,
-    transform: [{ translateY: 14 * (1 - tx.value) }, { scale: 0.96 + 0.04 * tx.value }],
+    transform: [
+      { translateY: 14 * (1 - tx.value) },
+      { scale: 0.96 + 0.04 * tx.value },
+    ],
   }));
   return (
     <Animated.View style={[StyleSheet.absoluteFill, fade]} pointerEvents="none">
       <Animated.View style={[s.clip, clip]}>
-        <Animated.View style={[s.ov, { width: w, height: h, backgroundImage: BG[o.p] }, inner]}>
+        <Animated.View
+          style={[
+            s.ov,
+            { width: w, height: h, backgroundImage: BG[o.p] },
+            inner,
+          ]}
+        >
           {o.sparks.map((sp, i) => (
             <Spark key={i} sp={sp} color={T.sw[2 + (i % 2)]} />
           ))}
           <Animated.View style={[s.c, content]}>
             <View style={[s.ic, ult && s.icU]}>
               <Ring ult={ult} />
-              <Icon name={T.ic as IconName} size={42} strokeWidth={1.7} color={ult ? '#1B150A' : '#fff'} />
+              <Icon
+                name={T.ic as IconName}
+                size={42}
+                strokeWidth={1.7}
+                color={ult ? '#1B150A' : '#fff'}
+              />
             </View>
-            <Txt style={s.small}>{o.p === 'free' ? 'Back to' : 'Welcome to'}</Txt>
+            <Txt style={s.small}>
+              {o.p === 'free' ? 'Back to' : 'Welcome to'}
+            </Txt>
             {ult ? (
               <Svg width={280} height={46} style={s.h2Svg}>
                 <Defs>
@@ -139,7 +230,8 @@ function Overlay({ o }: { o: PlanMagic }): React.JSX.Element {
                   fill="url(#pmH2)"
                   fontFamily={font('book', 500).fontFamily}
                   fontSize={46}
-                  letterSpacing={-0.46}>
+                  letterSpacing={-0.46}
+                >
                   {T.n}
                 </SvgText>
               </Svg>
@@ -166,7 +258,11 @@ function PlanMagicOverlay(): React.JSX.Element | null {
   const list = useStore(st => st.planMagic);
   if (!list.length) return null;
   return (
-    <View style={StyleSheet.absoluteFill} pointerEvents="none" testID="overlay.planMagic">
+    <View
+      style={StyleSheet.absoluteFill}
+      pointerEvents="none"
+      testID="overlay.planMagic"
+    >
       {list.map(o => (
         <Overlay key={o.n} o={o} />
       ))}
@@ -186,14 +282,24 @@ const s = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'rgba(255, 255, 255, 0.14)',
-    boxShadow: 'inset 0px 0px 0px 1px rgba(255, 255, 255, 0.28), 0px 20px 40px -16px rgba(0, 0, 0, 0.6)',
+    boxShadow:
+      'inset 0px 0px 0px 1px rgba(255, 255, 255, 0.28), 0px 20px 40px -16px rgba(0, 0, 0, 0.6)',
   },
   icU: {
     backgroundColor: undefined,
     backgroundImage: 'linear-gradient(150deg, #F7DE8E, #C8961E 55%, #7A560A)',
-    boxShadow: '0px 0px 0px 1px rgba(255, 236, 170, 0.6), 0px 0px 60px -6px rgba(247, 215, 116, 0.7)',
+    boxShadow:
+      '0px 0px 0px 1px rgba(255, 236, 170, 0.6), 0px 0px 60px -6px rgba(247, 215, 116, 0.7)',
   },
-  ring: { position: 'absolute', left: -14, top: -14, right: -14, bottom: -14, borderRadius: 40, borderWidth: 1.5 },
+  ring: {
+    position: 'absolute',
+    left: -14,
+    top: -14,
+    right: -14,
+    bottom: -14,
+    borderRadius: 40,
+    borderWidth: 1.5,
+  },
   small: {
     ...font('sans', 800),
     fontSize: 11,
@@ -204,9 +310,23 @@ const s = StyleSheet.create({
     marginTop: 26,
     textAlign: 'center',
   },
-  h2: { ...font('book', 500), fontSize: 46, lineHeight: 46, letterSpacing: -0.46, color: '#fff', marginTop: 8, textAlign: 'center' },
+  h2: {
+    ...font('book', 500),
+    fontSize: 46,
+    lineHeight: 46,
+    letterSpacing: -0.46,
+    color: '#fff',
+    marginTop: 8,
+    textAlign: 'center',
+  },
   h2Svg: { marginTop: 8 },
-  p: { fontSize: 14, lineHeight: 20.3, color: 'rgba(255, 255, 255, 0.8)', marginTop: 10, textAlign: 'center' },
+  p: {
+    fontSize: 14,
+    lineHeight: 20.3,
+    color: 'rgba(255, 255, 255, 0.8)',
+    marginTop: 10,
+    textAlign: 'center',
+  },
   pb: { ...font('sans', 700), color: '#fff' },
   pbU: { color: '#F7DE8E' },
   sw: { flexDirection: 'row', justifyContent: 'center', gap: 6, marginTop: 18 },

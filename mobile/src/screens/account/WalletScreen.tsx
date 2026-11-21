@@ -87,7 +87,14 @@ function WalletScreen(): React.JSX.Element {
               track="#EEF2F7"
             />
             <Defs>
-              <LinearGradient id="wlG" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(-90 0.5 0.5)">
+              <LinearGradient
+                id="wlG"
+                x1="0"
+                y1="0"
+                x2="1"
+                y2="1"
+                gradientTransform="rotate(-90 0.5 0.5)"
+              >
                 <Stop offset="0" stopColor="#7CC4F0" />
                 <Stop offset="0.6" stopColor="#1B8AD3" />
                 <Stop offset="1" stopColor="#6C5DD3" />

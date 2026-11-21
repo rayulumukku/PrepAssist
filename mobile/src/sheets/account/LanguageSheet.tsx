@@ -18,7 +18,10 @@ function LanguageSheet(): React.JSX.Element {
   const lang = useStore(st => st.lang);
   return (
     <SheetFrame title="Language" testID="sheet.language">
-      <Txt style={s.p}>Changes the app’s labels and greetings. Study content is available in both languages.</Txt>
+      <Txt style={s.p}>
+        Changes the app’s labels and greetings. Study content is available in
+        both languages.
+      </Txt>
       <SheetList>
         {LANGS.map(([k, t, sub]) => (
           <SheetListItem
@@ -37,7 +40,12 @@ function LanguageSheet(): React.JSX.Element {
 }
 
 const s = StyleSheet.create({
-  p: { fontSize: 13.5, lineHeight: 19.575, color: palettes.free.muted, marginBottom: 8 },
+  p: {
+    fontSize: 13.5,
+    lineHeight: 19.575,
+    color: palettes.free.muted,
+    marginBottom: 8,
+  },
   hi: { ...font('deva', 600), lineHeight: 23.2 },
 });
 

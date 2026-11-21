@@ -7,7 +7,16 @@
 // A.ssRerun re-renders the page (refreshTop): S.ssRun is the key that remounts it.
 import React, { useEffect, useState } from 'react';
 import { Pressable, StyleSheet, View } from 'react-native';
-import Animated, { Easing, useAnimatedProps, useAnimatedStyle, useSharedValue, withDelay, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
+import Animated, {
+  Easing,
+  useAnimatedProps,
+  useAnimatedStyle,
+  useSharedValue,
+  withDelay,
+  withRepeat,
+  withSequence,
+  withTiming,
+} from 'react-native-reanimated';
 import Svg, { Path } from 'react-native-svg';
 import { act } from '../../actions';
 import { Icon } from '../../components';
@@ -33,9 +42,15 @@ const OUT = Easing.out(Easing.ease);
 function Wave({ delay }: { delay: number }): React.JSX.Element {
   const v = useSharedValue(0);
   useEffect(() => {
-    v.value = withDelay(delay, withRepeat(withTiming(1, { duration: 2600, easing: OUT }), -1, false));
+    v.value = withDelay(
+      delay,
+      withRepeat(withTiming(1, { duration: 2600, easing: OUT }), -1, false),
+    );
   }, [v, delay]);
-  const st = useAnimatedStyle(() => ({ opacity: 1 - v.value, transform: [{ scale: 0.55 + 0.6 * v.value }] }));
+  const st = useAnimatedStyle(() => ({
+    opacity: 1 - v.value,
+    transform: [{ scale: 0.55 + 0.6 * v.value }],
+  }));
   return <Animated.View style={[s.w, st]} />;
 }
 
@@ -45,12 +60,29 @@ function Pulse(): React.JSX.Element {
   useEffect(() => {
     const e = Easing.inOut(Easing.ease);
     // one keyframe animation with stops 0 / 50 / 100 %: the timing function applies per half
-    v.value = withRepeat(withSequence(withTiming(110, { duration: 0 }), withTiming(0, { duration: 1200, easing: e }), withTiming(-110, { duration: 1200, easing: e })), -1, false);
+    v.value = withRepeat(
+      withSequence(
+        withTiming(110, { duration: 0 }),
+        withTiming(0, { duration: 1200, easing: e }),
+        withTiming(-110, { duration: 1200, easing: e }),
+      ),
+      -1,
+      false,
+    );
   }, [v]);
   const ap = useAnimatedProps(() => ({ strokeDashoffset: v.value }));
   return (
     <Svg width={58} height={29} viewBox="0 0 64 32">
-      <APath d="M2 16h14l5-11 9 22 6-14 4 3h22" fill="none" stroke="#fff" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" strokeDasharray="110" animatedProps={ap} />
+      <APath
+        d="M2 16h14l5-11 9 22 6-14 4 3h22"
+        fill="none"
+        stroke="#fff"
+        strokeWidth={3}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeDasharray="110"
+        animatedProps={ap}
+      />
     </Svg>
   );
 }
@@ -65,9 +97,15 @@ function Bar({ h, last }: { h: number; last: boolean }): React.JSX.Element {
 function Sp(): React.JSX.Element {
   const r = useSharedValue(0);
   useEffect(() => {
-    r.value = withRepeat(withTiming(360, { duration: 800, easing: Easing.linear }), -1, false);
+    r.value = withRepeat(
+      withTiming(360, { duration: 800, easing: Easing.linear }),
+      -1,
+      false,
+    );
   }, [r]);
-  const st = useAnimatedStyle(() => ({ transform: [{ rotate: `${r.value}deg` }] }));
+  const st = useAnimatedStyle(() => ({
+    transform: [{ rotate: `${r.value}deg` }],
+  }));
   return <Animated.View style={[s.sp, st]} />;
 }
 
@@ -75,7 +113,10 @@ function Sp(): React.JSX.Element {
 function OkPill({ label }: { label: string }): React.JSX.Element {
   const v = useSharedValue(0.7);
   useEffect(() => {
-    v.value = withTiming(1, { duration: 350, easing: Easing.bezier(0.3, 1.6, 0.5, 1) });
+    v.value = withTiming(1, {
+      duration: 350,
+      easing: Easing.bezier(0.3, 1.6, 0.5, 1),
+    });
   }, [v]);
   const st = useAnimatedStyle(() => ({ transform: [{ scale: v.value }] }));
   return (
@@ -86,7 +127,13 @@ function OkPill({ label }: { label: string }): React.JSX.Element {
   );
 }
 
-function Handshake({ h, i }: { h: (typeof HS)[number]; i: number }): React.JSX.Element {
+function Handshake({
+  h,
+  i,
+}: {
+  h: (typeof HS)[number];
+  i: number;
+}): React.JSX.Element {
   const [ok, setOk] = useState(false);
   useEffect(() => {
     const t = setTimeout(() => setOk(true), 500 + i * 420);
@@ -113,7 +160,9 @@ function Handshake({ h, i }: { h: (typeof HS)[number]; i: number }): React.JSX.E
 }
 
 function Status(): React.JSX.Element {
-  const [hist, setHist] = useState(() => Array.from({ length: 16 }, () => 34 + Math.random() * 18));
+  const [hist, setHist] = useState(() =>
+    Array.from({ length: 16 }, () => 34 + Math.random() * 18),
+  );
   const [lat, setLat] = useState(42);
   const [n, setN] = useState(0);
   useEffect(() => {
@@ -181,7 +230,11 @@ function Status(): React.JSX.Element {
           <Handshake key={h[1]} h={h} i={i} />
         ))}
       </View>
-      <Pressable style={s.re} onPress={() => act('ssRerun')} testID="status.rerun">
+      <Pressable
+        style={s.re}
+        onPress={() => act('ssRerun')}
+        testID="status.rerun"
+      >
         <Icon name="refresh" size={16} color="#14161C" />
         <Txt style={s.reT}>Run diagnostics again</Txt>
       </Pressable>
@@ -196,48 +249,151 @@ function StatusScreen(): React.JSX.Element {
 
 const s = StyleSheet.create({
   ss: { alignItems: 'stretch' },
-  orb: { width: 150, height: 150, marginTop: 14, alignSelf: 'center', alignItems: 'center', justifyContent: 'center' },
-  w: { ...StyleSheet.absoluteFill, borderRadius: 75, backgroundColor: 'rgba(47, 158, 98, 0.14)' },
+  orb: {
+    width: 150,
+    height: 150,
+    marginTop: 14,
+    alignSelf: 'center',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  w: {
+    ...StyleSheet.absoluteFill,
+    borderRadius: 75,
+    backgroundColor: 'rgba(47, 158, 98, 0.14)',
+  },
   core: {
     width: 96,
     height: 96,
     borderRadius: 48,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundImage: 'radial-gradient(circle at 35% 30%, #4FD39A, #2F9E62 60%, #1F7A4A)',
-    boxShadow: '0px 18px 30px -12px rgba(47, 158, 98, 0.8), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.35)',
+    backgroundImage:
+      'radial-gradient(circle at 35% 30%, #4FD39A, #2F9E62 60%, #1F7A4A)',
+    boxShadow:
+      '0px 18px 30px -12px rgba(47, 158, 98, 0.8), inset 0px 2px 0px 0px rgba(255, 255, 255, 0.35)',
   },
-  t: { ...font('book', 500), fontSize: 28, lineHeight: 40.6, color: '#14161C', marginTop: 14, textAlign: 'center' },
-  s: { fontSize: 13.5, lineHeight: 19.575, color: '#7A8494', marginTop: 4, textAlign: 'center' },
+  t: {
+    ...font('book', 500),
+    fontSize: 28,
+    lineHeight: 40.6,
+    color: '#14161C',
+    marginTop: 14,
+    textAlign: 'center',
+  },
+  s: {
+    fontSize: 13.5,
+    lineHeight: 19.575,
+    color: '#7A8494',
+    marginTop: 4,
+    textAlign: 'center',
+  },
   ago: { ...font('sans', 600), color: '#2F8A4A' },
   tiles: { flexDirection: 'row', gap: 10, marginTop: 20 },
-  tile: { flex: 1, padding: 14, borderRadius: 18, backgroundColor: '#fff', boxShadow: '0px 0px 0px 1px #E6EBF1' },
+  tile: {
+    flex: 1,
+    padding: 14,
+    borderRadius: 18,
+    backgroundColor: '#fff',
+    boxShadow: '0px 0px 0px 1px #E6EBF1',
+  },
   tileH: { flexDirection: 'row', alignItems: 'center', gap: 5 },
-  tileHT: { ...font('sans', 800), fontSize: 10.5, lineHeight: 15.225, letterSpacing: 1.05, textTransform: 'uppercase', color: '#8A93A0' },
-  tileB: { ...font('serif', 800), fontSize: 28, lineHeight: 40.6, letterSpacing: -0.56, color: '#14161C', marginTop: 6 },
+  tileHT: {
+    ...font('sans', 800),
+    fontSize: 10.5,
+    lineHeight: 15.225,
+    letterSpacing: 1.05,
+    textTransform: 'uppercase',
+    color: '#8A93A0',
+  },
+  tileB: {
+    ...font('serif', 800),
+    fontSize: 28,
+    lineHeight: 40.6,
+    letterSpacing: -0.56,
+    color: '#14161C',
+    marginTop: 6,
+  },
   // .ss-tile b em: margin-left 2px (drawn as a thin space), 14.5px #9AA3AF
   tileEm: { fontSize: 14.5, color: '#9AA3AF', letterSpacing: -0.56 },
-  spark: { flexDirection: 'row', alignItems: 'flex-end', gap: 2, height: 30, marginTop: 8 },
+  spark: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    gap: 2,
+    height: 30,
+    marginTop: 8,
+  },
   bar: { flex: 1, borderRadius: 2, backgroundColor: '#9FD0F2' },
   barLast: { backgroundColor: '#1B8AD3' },
   days: { gap: 2, marginTop: 10 },
   daysRow: { flexDirection: 'row', gap: 2 },
   day: { flex: 1, height: 8, borderRadius: 2, backgroundColor: '#5BC48A' },
   dayA: { backgroundColor: '#F5A01F' },
-  list: { marginTop: 16, paddingTop: 14, paddingHorizontal: 16, paddingBottom: 6, borderRadius: 18, backgroundColor: '#fff', boxShadow: '0px 0px 0px 1px #E6EBF1' },
-  h: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 11 },
+  list: {
+    marginTop: 16,
+    paddingTop: 14,
+    paddingHorizontal: 16,
+    paddingBottom: 6,
+    borderRadius: 18,
+    backgroundColor: '#fff',
+    boxShadow: '0px 0px 0px 1px #E6EBF1',
+  },
+  h: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    paddingVertical: 11,
+  },
   hFirst: { marginTop: 4 },
   hNext: { borderTopWidth: 1, borderTopColor: '#F1F4F8' },
-  hi: { width: 34, height: 34, borderRadius: 10, backgroundColor: '#F1F5FA', alignItems: 'center', justifyContent: 'center' },
-  hiOk: { ...StyleSheet.absoluteFill, borderRadius: 10, backgroundColor: '#E6F4EA', alignItems: 'center', justifyContent: 'center' },
+  hi: {
+    width: 34,
+    height: 34,
+    borderRadius: 10,
+    backgroundColor: '#F1F5FA',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  hiOk: {
+    ...StyleSheet.absoluteFill,
+    borderRadius: 10,
+    backgroundColor: '#E6F4EA',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   hBody: { flex: 1, minWidth: 0 },
-  hB: { ...font('sans', 600), fontSize: 13.5, lineHeight: 19.575, color: '#14161C' },
+  hB: {
+    ...font('sans', 600),
+    fontSize: 13.5,
+    lineHeight: 19.575,
+    color: '#14161C',
+  },
   // inline <small> in the 22.475 px line of its block
   hS: { fontSize: 11.5, lineHeight: 22.475, color: '#9AA3AF' },
   em: { flexDirection: 'row', alignItems: 'center' },
-  sp: { width: 16, height: 16, borderRadius: 8, borderWidth: 2, borderColor: '#DCE4EE', borderTopColor: '#1B8AD3' },
-  pill: { flexDirection: 'row', alignItems: 'center', gap: 4, backgroundColor: '#E6F4EA', paddingVertical: 4, paddingHorizontal: 8, borderRadius: 8 },
-  pillT: { ...font('sans', 800), fontSize: 11.5, lineHeight: 16.675, color: '#2F8A4A' },
+  sp: {
+    width: 16,
+    height: 16,
+    borderRadius: 8,
+    borderWidth: 2,
+    borderColor: '#DCE4EE',
+    borderTopColor: '#1B8AD3',
+  },
+  pill: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+    backgroundColor: '#E6F4EA',
+    paddingVertical: 4,
+    paddingHorizontal: 8,
+    borderRadius: 8,
+  },
+  pillT: {
+    ...font('sans', 800),
+    fontSize: 11.5,
+    lineHeight: 16.675,
+    color: '#2F8A4A',
+  },
   re: {
     alignSelf: 'center',
     flexDirection: 'row',
@@ -250,7 +406,12 @@ const s = StyleSheet.create({
     backgroundColor: '#fff',
     boxShadow: '0px 0px 0px 1px #E1E8F0',
   },
-  reT: { ...font('sans', 700), fontSize: 13.5, lineHeight: 19.575, color: '#14161C' },
+  reT: {
+    ...font('sans', 700),
+    fontSize: 13.5,
+    lineHeight: 19.575,
+    color: '#14161C',
+  },
 });
 
 const view: ViewDef = {

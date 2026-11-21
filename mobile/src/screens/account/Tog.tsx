@@ -6,7 +6,10 @@
 // Not React Native's Switch: the HTML draws its own control.
 import React from 'react';
 import { Pressable, StyleSheet } from 'react-native';
-import Animated, { interpolateColor, useAnimatedStyle } from 'react-native-reanimated';
+import Animated, {
+  interpolateColor,
+  useAnimatedStyle,
+} from 'react-native-reanimated';
 import { easeCss, easeVar, useTransition } from '../../shell/anim';
 import { palettes } from '../../theme';
 
@@ -17,13 +20,32 @@ export interface TogProps {
   testID?: string;
 }
 
-export function Tog({ on, onPress, label, testID }: TogProps): React.JSX.Element {
+export function Tog({
+  on,
+  onPress,
+  label,
+  testID,
+}: TogProps): React.JSX.Element {
   const bg = useTransition(on ? 1 : 0, 250, easeCss);
   const kn = useTransition(on ? 1 : 0, 250, easeVar);
-  const track = useAnimatedStyle(() => ({ backgroundColor: interpolateColor(bg.value, [0, 1], [palettes.free.rule2, '#1B8AD3']) }));
-  const knob = useAnimatedStyle(() => ({ transform: [{ translateX: 18 * kn.value }] }));
+  const track = useAnimatedStyle(() => ({
+    backgroundColor: interpolateColor(
+      bg.value,
+      [0, 1],
+      [palettes.free.rule2, '#1B8AD3'],
+    ),
+  }));
+  const knob = useAnimatedStyle(() => ({
+    transform: [{ translateX: 18 * kn.value }],
+  }));
   return (
-    <Pressable onPress={onPress} accessibilityRole="switch" accessibilityState={{ checked: on }} accessibilityLabel={label} testID={testID}>
+    <Pressable
+      onPress={onPress}
+      accessibilityRole="switch"
+      accessibilityState={{ checked: on }}
+      accessibilityLabel={label}
+      testID={testID}
+    >
       <Animated.View style={[s.tog, track]}>
         <Animated.View style={[s.knob, knob]} />
       </Animated.View>
