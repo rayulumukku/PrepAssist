@@ -69,8 +69,8 @@ sleep 4
 
 # 4. the command
 "$@"
-status=$?
+rc=$?
 
 # surface JavaScript errors from this session, if any
 "$ADB" logcat -d -t 300 2>/dev/null | grep -E 'ReactNativeJS: .*(Error|error:)|FATAL EXCEPTION' | tail -8
-exit $status
+exit $rc
