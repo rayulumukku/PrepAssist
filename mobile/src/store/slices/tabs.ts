@@ -15,8 +15,8 @@ export interface TabsSlice {
   toolGroup: string;
   /** S.revDone (L5132): REVISIONS ids marked done. */
   revDone: Set<string>;
-  /** S.ca (L5130, extended L7104): Current tab filters, edition date and read set. */
-  ca: StateCa;
+  /** S.ca (L5130, extended L7104): Current tab filters, edition date and read set (retyped: read holds ids; tmp and view are set by caCal L7599, study area). */
+  ca: TabsCa;
   /** S.menuQ (L7649): Menu search text. */
   menuQ: string;
   /** S.reelSeen (created L6369): REELS ids that were opened. */
@@ -25,7 +25,18 @@ export interface TabsSlice {
   learnF: string | undefined;
   /** S.px (created L7019): 'pre' | 'mains' on the Practice tab. */
   px: string | undefined;
+  // ---- DOM state of the tab panes (not fields of S) ----
+  /** animateHome() L6010 runs: bumped 60 ms after each setTab('home'); the Home bars grow to data-w / data-h on it. */
+  homeAnim: number;
+  /** renderHome() reruns (L7012, L7013): the Home content is rebuilt, so the bars start again from 0. */
+  homeGen: number;
+  /** #fc.flip (A.flip L7005, cleared by setFc L6160). */
+  fcFlip: boolean;
+  /** #reelV.on and RV (L6367): open, reel index i, slide index j. */
+  reel: { on: boolean; i: number; j: number };
 }
+
+export type TabsCa = Omit<StateCa, 'read'> & { read: Set<string>; tmp?: Date; view?: Date };
 
 export function createTabsSlice(seed: InitialState): TabsSlice {
   return {
@@ -34,10 +45,14 @@ export function createTabsSlice(seed: InitialState): TabsSlice {
     hero: seed.hero,
     toolGroup: seed.toolGroup,
     revDone: new Set<string>(seed.revDone),
-    ca: seed.ca,
+    ca: { ...seed.ca, read: new Set<string>() },
     menuQ: seed.menuQ,
     reelSeen: new Set<string>(),
     learnF: undefined,
     px: undefined,
+    homeAnim: 0,
+    homeGen: 0,
+    fcFlip: false,
+    reel: { on: false, i: 0, j: 0 },
   };
 }
