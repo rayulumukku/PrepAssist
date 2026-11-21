@@ -183,6 +183,116 @@
         "act/x4Term/BITs"
       ],
       "wait": 900
+    },
+    "view-tracker": {
+      "links": [
+        "tab/learn",
+        "push/tracker"
+      ],
+      "wait": 900
+    },
+    "view-folder": {
+      "links": [
+        "tab/learn",
+        "push/folder/Polity"
+      ],
+      "wait": 900
+    },
+    "view-folder-sort-az": {
+      "links": [
+        "tab/learn",
+        "push/folder/Polity",
+        "act/ntSort/az"
+      ],
+      "wait": 900
+    },
+    "view-folder-sort-starred": {
+      "links": [
+        "tab/learn",
+        "push/folder/Polity",
+        "act/ntSort/star"
+      ],
+      "wait": 900
+    },
+    "view-ntNote": {
+      "links": [
+        "tab/learn",
+        "push/ntNote/nt1"
+      ],
+      "wait": 900
+    },
+    "sheet-note-updates": {
+      "links": [
+        "tab/learn",
+        "push/ntNote/nt1",
+        "act/ntUps/nt1"
+      ],
+      "wait": 900
+    },
+    "sheet-tracker-inbox": {
+      "links": [
+        "tab/learn",
+        "push/tracker",
+        "act/ntInbox"
+      ],
+      "wait": 900
+    },
+    "sheet-tracker-optional": {
+      "links": [
+        "tab/learn",
+        "push/tracker",
+        "act/ntOpt"
+      ],
+      "wait": 900
+    },
+    "sheet-tracker-new-folder": {
+      "links": [
+        "tab/learn",
+        "push/tracker",
+        "act/ntAdd"
+      ],
+      "wait": 900
+    },
+    "sheet-tracker-split-pdf": {
+      "links": [
+        "tab/learn",
+        "push/tracker",
+        "act/nsSplit"
+      ],
+      "wait": 900
+    },
+    "sheet-note-new-type": {
+      "links": [
+        "tab/learn",
+        "push/tracker",
+        "act/ntNew"
+      ],
+      "wait": 900
+    },
+    "sheet-note-updates-merged": {
+      "links": [
+        "tab/learn",
+        "push/ntNote/nt1",
+        "act/ntUps/nt1",
+        {
+          "link": "act/ntMerge/nt1",
+          "wait": 2400
+        }
+      ],
+      "wait": 600
+    },
+    "view-ntNote-merged": {
+      "links": [
+        "tab/learn",
+        "push/ntNote/nt1",
+        "act/ntUps/nt1",
+        {
+          "link": "act/ntMerge/nt1",
+          "wait": 2400
+        },
+        "act/ntView/nt1"
+      ],
+      "wait": 900
     }
   }
 }

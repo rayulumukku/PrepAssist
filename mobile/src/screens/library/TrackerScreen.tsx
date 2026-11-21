@@ -111,7 +111,8 @@ function TrackerScreen(): React.JSX.Element {
           </View>
         ) : null}
       </TlHero>
-      <SySearch placeholder="Search subjects, topics or #tags…" value={v} onChangeText={setV} testID="tracker.search" />
+      {/* margin-top 4 collapses into the hero's margin-bottom 16 */}
+      <SySearch placeholder="Search subjects, topics or #tags…" value={v} onChangeText={setV} testID="tracker.search" style={{ marginTop: 0 }} />
       <View style={t.two}>
         <Pressable style={[t.twoB, t.twoP]} onPress={() => act('ntNew')} testID="tracker.new">
           <Icon name="plus" size={16} color="#9BE3B0" />

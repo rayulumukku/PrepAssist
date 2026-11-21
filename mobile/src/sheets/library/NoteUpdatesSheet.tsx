@@ -33,7 +33,8 @@ function UpCard({ id, u, k }: { id: string; u: NtValueItemUpsItem; k: number }):
   const uc = u.src.c;
   const el: NtEl = { toggle: () => setOpen(o => !o) };
   return (
-    <View style={s.u}>
+    // the first card's margin-top 10 collapses into the paragraph's margin-bottom 12
+    <View style={[s.u, k === 0 && s.uFirst]}>
       <View style={s.uh}>
         <View style={s.uhI} />
         <View style={s.uhD}>
@@ -185,6 +186,7 @@ export const s = StyleSheet.create({
   shb: { flex: 1 },
   shbC: { paddingTop: 14, paddingHorizontal: 20, paddingBottom: 20 },
   shp: { fontSize: 13, lineHeight: 19.5, color: '#6B7380', marginTop: 2, marginBottom: 12 },
+  uFirst: { marginTop: 0 },
   u: { marginTop: 10, padding: 14, borderRadius: 16, backgroundColor: '#FFFFFF', boxShadow: '0px 0px 0px 1px #E8ECF2' },
   uh: { flexDirection: 'row', alignItems: 'flex-start', gap: 8 },
   uhI: { width: 8, height: 8, borderRadius: 4, backgroundColor: '#1FA463', marginTop: 5, flexShrink: 0 },
