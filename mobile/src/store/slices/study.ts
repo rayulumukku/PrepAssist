@@ -1,8 +1,7 @@
 // Study slice: OWNED BY THE STUDY WORKSTREAM (lesson, courses, course, note, mindmap, mindmaps,
 // calendar, plan, article, saved; mentor sheet, search sheet, edition calendar sheet).
-// Seeded with the fields of the prototype's `S` that those views and handlers use. Add fields here
-// (and to createStudySlice) as you port; keep the prototype's names. Retype the seeded fields when the
-// generated type is too narrow (the generator only saw the initial values).
+// Seeded with the fields of the prototype's `S` that those views and handlers use, plus the DOM state
+// of those views that handlers change from outside the component (the HTML keeps it in the DOM).
 import type { InitialState, StateMapsItem } from '../../data/initialState';
 
 export interface StudySlice {
@@ -20,6 +19,10 @@ export interface StudySlice {
   arSize: number;
   /** S.maps (L7663 block): generated mindmaps. */
   maps: StateMapsItem[];
+  // --- pages group fields (lesson, courses, course, note, calendar, plan) ---
+  // --- end pages group fields ---
+  // --- maps group fields (mindmap, mindmaps, saved, saved add-link sheet, edition calendar) ---
+  // --- end maps group fields ---
 }
 
 export function createStudySlice(seed: InitialState): StudySlice {
@@ -31,5 +34,9 @@ export function createStudySlice(seed: InitialState): StudySlice {
     mctx: undefined,
     arSize: seed.arSize,
     maps: seed.maps,
+    // --- pages group seeds ---
+    // --- end pages group seeds ---
+    // --- maps group seeds ---
+    // --- end maps group seeds ---
   };
 }
