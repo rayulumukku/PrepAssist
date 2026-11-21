@@ -1,0 +1,3128 @@
+{
+ "generatedAt": "2026-11-21T04:46:47.262Z",
+ "source": "PrepAssist.html, read from the live page in headless Chromium (Playwright)",
+ "fixedClock": "2026-10-24T09:41:00+05:30",
+ "timezone": "Asia/Kolkata",
+ "locale": "en-IN",
+ "environment": {
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/159.0.8154.6 Safari/537.36",
+  "innerWidth": 412,
+  "innerHeight": 915,
+  "devicePixelRatio": 1,
+  "hoverNone": true,
+  "pointerCoarse": true,
+  "maxTouchPoints": 1,
+  "safeAreaTop": "0px",
+  "safeAreaBottom": "0px",
+  "reducedMotion": false
+ },
+ "registries": {
+  "VIEWS": [
+   "lesson",
+   "course",
+   "courses",
+   "note",
+   "xray",
+   "mindmap",
+   "querydb",
+   "calendar",
+   "cloud",
+   "tracker",
+   "engine",
+   "tests",
+   "history",
+   "answerbank",
+   "answer",
+   "pastevals",
+   "qbank",
+   "plan",
+   "article",
+   "quiz",
+   "mains",
+   "mainsResult",
+   "account",
+   "wallet",
+   "payments",
+   "upgrade",
+   "settings",
+   "status",
+   "legal",
+   "pqb",
+   "testquiz",
+   "syllabus",
+   "saved",
+   "upload",
+   "folder",
+   "mindmaps",
+   "notesys",
+   "note2",
+   "noteshub",
+   "xrayhome",
+   "onestep",
+   "ntNote"
+  ],
+  "SHEETS": [
+   "credits",
+   "revisions",
+   "forgot",
+   "changeEmail",
+   "account",
+   "prefs",
+   "language",
+   "subscription",
+   "payments",
+   "settings",
+   "privacy",
+   "coverage",
+   "allTools",
+   "upload",
+   "ledger",
+   "lowCredits",
+   "delAsk"
+  ],
+  "A": [
+   "learnF",
+   "reel",
+   "reelStep",
+   "reelJump",
+   "reelClose",
+   "reelSave",
+   "reelAsk",
+   "jump",
+   "bookExit",
+   "bookNext",
+   "bookReplay",
+   "sound",
+   "introNext",
+   "introPrev",
+   "introGo",
+   "introSkip",
+   "authTab",
+   "signin",
+   "signup",
+   "eye",
+   "forgot",
+   "forgotSend",
+   "social",
+   "verified",
+   "resend",
+   "logout",
+   "changeEmail",
+   "emailSave",
+   "tab",
+   "push",
+   "back",
+   "article",
+   "quiz",
+   "quizClose",
+   "opt",
+   "qSubmit",
+   "qNext",
+   "qPrev",
+   "qResults",
+   "qGo",
+   "heroGo",
+   "flip",
+   "fcNav",
+   "fcLang",
+   "fcRate",
+   "toolGroup",
+   "tool",
+   "cmdk",
+   "allTools",
+   "credits",
+   "revisions",
+   "revDo",
+   "revAll",
+   "sheet",
+   "closeSheet",
+   "mentor",
+   "mentorAsk",
+   "mentorSend",
+   "ctxToggle",
+   "save",
+   "caSrc",
+   "caTopic",
+   "caDay",
+   "pxGo",
+   "engN",
+   "mPick",
+   "mStep",
+   "mAdd",
+   "mSubmit",
+   "mainsWith",
+   "modelOpen",
+   "xr",
+   "mm",
+   "qdb",
+   "qdbAsk",
+   "engineGo",
+   "planGo",
+   "testStart",
+   "qbank",
+   "calDay",
+   "chipToggle",
+   "chipOne",
+   "tog",
+   "setLang",
+   "upload",
+   "uploaded",
+   "saved",
+   "toast",
+   "target",
+   "caGs",
+   "caFilter",
+   "caDate",
+   "caReset",
+   "caCal",
+   "caPick",
+   "caMon",
+   "caRecent",
+   "caDone",
+   "arSize",
+   "arNext",
+   "ledger",
+   "topup",
+   "pack",
+   "buy",
+   "byPay",
+   "byReceipt",
+   "restore",
+   "wlSave",
+   "acEdit",
+   "acCancel",
+   "acSave",
+   "delAsk",
+   "delGo",
+   "meTog",
+   "ssRerun",
+   "lgGo",
+   "legalSwap",
+   "mForce",
+   "nrJump",
+   "nrSave",
+   "nrDl",
+   "nrTest",
+   "nrBackSync",
+   "nrNext",
+   "pqPick",
+   "pqNav",
+   "pqLang",
+   "pqReset",
+   "pqHist",
+   "pqGo",
+   "tqTab",
+   "tqLang",
+   "tqPick",
+   "tqClear",
+   "tqGo",
+   "tqStart",
+   "abLang",
+   "abP",
+   "abOpen",
+   "mvMode",
+   "mvLim",
+   "mvCtx",
+   "mvAdd",
+   "mvDel",
+   "mvRun",
+   "syOpen",
+   "sySt",
+   "syP",
+   "syReset",
+   "syTopic",
+   "syDrill",
+   "syMains",
+   "syFilter",
+   "svAdd",
+   "svSave",
+   "svRm",
+   "svRmL",
+   "upPick",
+   "upClear",
+   "upFolder",
+   "upTagRm",
+   "upGo",
+   "vlTab",
+   "vlSort",
+   "vlWarn",
+   "vlDel",
+   "vlDelGo",
+   "nsSplit",
+   "nsSplitGo",
+   "ntAdd",
+   "ntCol",
+   "ntAddGo",
+   "ntOpt",
+   "ntOptSet",
+   "qdSubj",
+   "qdAdd",
+   "qdRm",
+   "qdAsk",
+   "qdGo",
+   "mmTry",
+   "mmGo",
+   "mmOpen",
+   "nsSubj",
+   "nhTab",
+   "nhS",
+   "lxScanNote",
+   "lxUp",
+   "lxPyq",
+   "xrScan",
+   "xr2Toggle",
+   "xr2Lens",
+   "xr2Tap",
+   "xr2Close",
+   "xr2Pg",
+   "xr2Practise",
+   "xr2Syl",
+   "xr2Unhl",
+   "stepGo",
+   "stepReplay",
+   "stepSnd",
+   "x4Sub",
+   "x4Up",
+   "x4Lens",
+   "x4Ins",
+   "x4Open",
+   "x4Nav",
+   "x4Step",
+   "x4Tab",
+   "x4Mcq",
+   "x4McqReset",
+   "x4Save",
+   "x4Ask",
+   "x4Quiz",
+   "x4Term",
+   "x4Flash",
+   "x4Coach",
+   "x4Aa",
+   "ntSort",
+   "ntStar",
+   "ntUps",
+   "ntMore",
+   "ntIgn",
+   "ntIgnAll",
+   "ntMerge",
+   "ntView",
+   "ntInbox",
+   "ntNew",
+   "ntMode",
+   "ntSubj",
+   "ntImg",
+   "ntCap",
+   "ntPick",
+   "ntFileX",
+   "ntSave",
+   "ntOptCus",
+   "planFree"
+  ],
+  "counts": {
+   "VIEWS": 42,
+   "SHEETS": 17,
+   "A": 236
+  },
+  "stages": [
+   "book",
+   "intro",
+   "auth",
+   "verify",
+   "app"
+  ],
+  "tabs": [
+   "home",
+   "learn",
+   "practice",
+   "current",
+   "menu",
+   "profile"
+  ],
+  "hashJumpTargets": [
+   "book",
+   "auth",
+   "verify",
+   "home",
+   "learn",
+   "practice",
+   "quiz",
+   "current",
+   "mains",
+   "mentor",
+   "menu",
+   "profile",
+   "article",
+   "plans",
+   "status"
+  ],
+  "iconSymbols": [
+   "i-home",
+   "i-learn",
+   "i-practice",
+   "i-current",
+   "i-profile",
+   "i-search",
+   "i-arrow",
+   "i-back",
+   "i-chev",
+   "i-chevl",
+   "i-chevd",
+   "i-close",
+   "i-bookmark",
+   "i-star",
+   "i-spark",
+   "i-play",
+   "i-upload",
+   "i-camera",
+   "i-file",
+   "i-cloud",
+   "i-calendar",
+   "i-mindmap",
+   "i-xray",
+   "i-db",
+   "i-notes",
+   "i-pen",
+   "i-mic",
+   "i-check",
+   "i-x",
+   "i-clock",
+   "i-settings",
+   "i-lock",
+   "i-globe",
+   "i-card",
+   "i-shield",
+   "i-logout",
+   "i-plus",
+   "i-eye",
+   "i-eyeoff",
+   "i-mail",
+   "i-bolt",
+   "i-history",
+   "i-layers",
+   "i-chart",
+   "i-send",
+   "i-refresh",
+   "i-bell",
+   "i-list",
+   "i-share",
+   "i-flame",
+   "i-target",
+   "i-lecture",
+   "i-bank",
+   "i-test",
+   "i-folder",
+   "i-scale",
+   "i-doc",
+   "i-user",
+   "i-sliders",
+   "i-language",
+   "i-receipt",
+   "i-help",
+   "i-filter",
+   "i-hl",
+   "logo",
+   "i-pulse",
+   "i-phone",
+   "i-trash",
+   "i-crown",
+   "i-wifi",
+   "i-volume",
+   "i-download",
+   "i-type",
+   "i-motion",
+   "i-device",
+   "i-grid",
+   "i-hash",
+   "i-image",
+   "i-scissors",
+   "i-link",
+   "i-flag",
+   "i-sort",
+   "i-warn",
+   "i-type2"
+  ],
+  "i18nKeys": [
+   "home",
+   "learn",
+   "practice",
+   "current",
+   "menu",
+   "profile",
+   "greet_morning",
+   "greet_afternoon",
+   "greet_evening",
+   "today",
+   "brief",
+   "flash",
+   "progress",
+   "tools",
+   "days",
+   "name"
+  ]
+ },
+ "initialState_S": {
+  "stage": "app",
+  "tab": "home",
+  "stack": [],
+  "lang": "en",
+  "fcLang": "en",
+  "fc": 0,
+  "hero": 0,
+  "heroTimer": "[timer id]",
+  "intro": 0,
+  "authMode": "in",
+  "authTries": 0,
+  "user": {
+   "name": "Divya Sharma",
+   "first": "Divya",
+   "email": "divya.sharma@gmail.com"
+  },
+  "saved": {
+   "__set": [
+    "a3"
+   ]
+  },
+  "ca": {
+   "src": "All",
+   "topic": "All",
+   "day": 22,
+   "date": "2026-10-24",
+   "gs": "All",
+   "read": {
+    "__set": []
+   }
+  },
+  "quiz": null,
+  "toolGroup": "learn",
+  "mlog": [],
+  "ctxOn": true,
+  "rendered": true,
+  "mainsQ": "mq1",
+  "pages": 0,
+  "revDone": {
+   "__set": []
+  },
+  "arSize": 1,
+  "me": {
+   "plan": "free",
+   "credits": 10,
+   "vault": false,
+   "pack": 0,
+   "edit": false,
+   "phone": "89249 65117",
+   "haptics": true,
+   "sound": true,
+   "push": true,
+   "plan7": true,
+   "nudges": true,
+   "dataSaver": false,
+   "wifi": true,
+   "motion": false,
+   "bigText": false,
+   "payments": [],
+   "ledger": [
+    {
+     "t": "X-Ray Reader · Laxmikanth Ch. 7",
+     "d": "24 Oct",
+     "v": -10
+    },
+    {
+     "t": "AI Mentor · 1 answer",
+     "d": "22 Oct",
+     "v": -2
+    },
+    {
+     "t": "AI Mindmap · Fundamental Rights",
+     "d": "20 Oct",
+     "v": -3
+    },
+    {
+     "t": "AI Prelims Engine · 10-question test",
+     "d": "16 Oct",
+     "v": -5
+    },
+    {
+     "t": "Welcome credits · Free tier",
+     "d": "1 Oct",
+     "v": 30
+    }
+   ]
+  },
+  "menuQ": "",
+  "savedLinks": [],
+  "pqb": {
+   "i": 0,
+   "sel": {},
+   "lang": "en",
+   "done": 0
+  },
+  "tq": {
+   "tab": "new",
+   "file": null,
+   "lang": "en",
+   "busy": false,
+   "lib": [
+    {
+     "t": "Mock Test 12 · GS Paper I",
+     "q": 100,
+     "best": 62,
+     "att": 2,
+     "d": "12 Oct",
+     "lang": "English"
+    },
+    {
+     "t": "Sectional Test · Modern History",
+     "q": 50,
+     "best": 34,
+     "att": 1,
+     "d": "3 Oct",
+     "lang": "English"
+    }
+   ]
+  },
+  "mv": {
+   "mode": "hand",
+   "q": "",
+   "limit": 250,
+   "notes": true,
+   "ca": true,
+   "pages": 0,
+   "typed": ""
+  },
+  "ab": {
+   "lang": "en",
+   "p": "All",
+   "open": {}
+  },
+  "syl": {
+   "q": "",
+   "st": "All",
+   "p": "All",
+   "open": {
+    "0": true
+   }
+  },
+  "sylDone": {
+   "Preamble as a Key to the Constitution": 18,
+   "Sovereign, Socialist, Secular Republic": 9,
+   "Regulating Act 1773 to Charter Acts": 22,
+   "Government of India Act, 1935": 40,
+   "Repo, Reverse Repo and the LAF Corridor": 12
+  },
+  "up": {
+   "file": null,
+   "folder": "Polity",
+   "tags": [
+    "#gs2"
+   ],
+   "prog": -1
+  },
+  "vlt": {
+   "tab": "all",
+   "q": "",
+   "sort": "new",
+   "warn": true
+  },
+  "qdb2": {
+   "subj": "Polity",
+   "items": [],
+   "out": null,
+   "busy": false
+  },
+  "maps": [
+   {
+    "t": "Fundamental Rights",
+    "d": "20 Oct",
+    "n": 6,
+    "id": "fr"
+   }
+  ],
+  "nsys": {
+   "subj": "All",
+   "q": ""
+  },
+  "optional": null,
+  "folders": [],
+  "nsRead": {
+   "ns1": 60,
+   "ns2": 20
+  },
+  "nsSaved": {
+   "__set": []
+  },
+  "nh": {
+   "tab": "mine",
+   "q": "",
+   "s": "all"
+  },
+  "xr": {
+   "done": {
+    "0": 12
+   },
+   "busy": -1
+  },
+  "xr2": {
+   "pg": 0,
+   "lens": "all",
+   "sel": null
+  },
+  "x4": {
+   "sub": "polity",
+   "scan": "arb",
+   "lens": "all",
+   "cur": 0,
+   "tab": 0,
+   "seen": {
+    "arb:0": 1
+   },
+   "mcq": {},
+   "coach": true,
+   "fs": 0,
+   "busy": null
+  },
+  "ntSort": "new"
+ },
+ "cssCustomProperties": {
+  "note": "root = getComputedStyle(document.documentElement) for every custom property name declared anywhere in the stylesheets. Themes are switched with the page's own window.planMagic(plan), which sets html[data-plan]. Properties that are only declared on narrower selectors are empty at :root and are listed under declarations.",
+  "names": [
+   "--accent",
+   "--accent-deep",
+   "--accent-tint",
+   "--bad",
+   "--bad-tint",
+   "--book",
+   "--brand",
+   "--brand-deep",
+   "--brand-tint",
+   "--brand-tint-2",
+   "--cloth",
+   "--cloth-tex",
+   "--cover-bg",
+   "--desk-tex",
+   "--ds-act",
+   "--ds-brand",
+   "--ds-btn",
+   "--ds-chip",
+   "--ds-cta",
+   "--ds-faint",
+   "--ds-feat",
+   "--ds-gap",
+   "--ds-icon",
+   "--ds-ink",
+   "--ds-ink-2",
+   "--ds-line",
+   "--ds-muted",
+   "--ds-pad",
+   "--ds-r-card",
+   "--ds-r-ctl",
+   "--ds-r-hero",
+   "--ds-r-pill",
+   "--ds-r-sm",
+   "--ds-r-tile",
+   "--ds-sec",
+   "--ease",
+   "--eco",
+   "--env",
+   "--ethics",
+   "--faint",
+   "--fc",
+   "--flip",
+   "--geo",
+   "--gx",
+   "--gy",
+   "--hand",
+   "--history",
+   "--hl",
+   "--ink",
+   "--ink-2",
+   "--ir",
+   "--muted",
+   "--nav-h",
+   "--ok",
+   "--ok-tint",
+   "--paper",
+   "--paper-2",
+   "--paper-3",
+   "--paper-tex",
+   "--pg-h",
+   "--pg-w",
+   "--pl-a",
+   "--pl-b",
+   "--polity",
+   "--read",
+   "--rule",
+   "--rule-2",
+   "--rx",
+   "--s",
+   "--sab",
+   "--sans",
+   "--sat",
+   "--serif",
+   "--sheet",
+   "--sky",
+   "--sky-tint",
+   "--snt",
+   "--tc",
+   "--x",
+   "--x4c",
+   "--x4cb",
+   "--x4y",
+   "--x4ys"
+  ],
+  "byPlanTheme": {
+   "free": {
+    "dataPlan": "free",
+    "root": {
+     "--accent": "#F5A01F",
+     "--accent-deep": "#B86E00",
+     "--accent-tint": "#FFF4E2",
+     "--bad": "#B23B2E",
+     "--bad-tint": "#F8E5E1",
+     "--book": "'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+     "--brand": "#1B8AD3",
+     "--brand-deep": "#0F5E99",
+     "--brand-tint": "#E8F3FC",
+     "--brand-tint-2": "#CFE5F7",
+     "--cloth": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='1.6 .35' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>\"),linear-gradient(165deg,#1C3150 0%,#14243D 55%,#0F1C31 100%)",
+     "--cloth-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='1.6 .35' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>\")",
+     "--cover-bg": "linear-gradient(90deg,rgba(0,0,0,.45) 0,rgba(0,0,0,.15) 3%,rgba(255,255,255,.08) 4.5%,rgba(0,0,0,0) 7%),linear-gradient(155deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,0) 32%,rgba(0,0,0,0) 65%,rgba(0,0,0,.25) 100%),linear-gradient(170deg,#1D3557 0%,#152843 55%,#0E1C31 100%)",
+     "--desk-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='d'><feTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .4  0 0 0 0 .38  0 0 0 0 .35  0 0 0 .05 0'/></filter><rect width='100%' height='100%' filter='url(%23d)'/></svg>\")",
+     "--ds-act": "36px",
+     "--ds-brand": "#1B8AD3",
+     "--ds-btn": "46px",
+     "--ds-chip": "34px",
+     "--ds-cta": "52px",
+     "--ds-faint": "#8A93A0",
+     "--ds-feat": "44px",
+     "--ds-gap": "12px",
+     "--ds-icon": "38px",
+     "--ds-ink": "#14161C",
+     "--ds-ink-2": "#3A404B",
+     "--ds-line": "0 0 0 1px #E6EBF1",
+     "--ds-muted": "#7A8494",
+     "--ds-pad": "16px",
+     "--ds-r-card": "18px",
+     "--ds-r-ctl": "12px",
+     "--ds-r-hero": "24px",
+     "--ds-r-pill": "999px",
+     "--ds-r-sm": "10px",
+     "--ds-r-tile": "14px",
+     "--ds-sec": "28px",
+     "--ease": "cubic-bezier(.2,.8,.2,1)",
+     "--eco": "#3B5BCC",
+     "--env": "#3E9A55",
+     "--ethics": "#C8622B",
+     "--faint": "#A9AEB8",
+     "--geo": "#0E9A8A",
+     "--hand": "'Caveat', 'Segoe Print', cursive",
+     "--history": "#E8890C",
+     "--hl": "#FFD27A",
+     "--ink": "#25272D",
+     "--ink-2": "#4A4E57",
+     "--ir": "#6C5DD3",
+     "--muted": "#7A7F8A",
+     "--nav-h": "64px",
+     "--ok": "#2F7A4F",
+     "--ok-tint": "#E4F1E8",
+     "--paper": "#FFFFFF",
+     "--paper-2": "#F4F6F9",
+     "--paper-3": "#E6EAF0",
+     "--paper-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .3  0 0 0 0 .22  0 0 0 .055 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
+     "--pg-h": "486px",
+     "--pg-w": "330px",
+     "--polity": "#1667B0",
+     "--read": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--rule": "#E8EBF0",
+     "--rule-2": "#D7DCE4",
+     "--sab": "0px",
+     "--sans": "'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--sat": "0px",
+     "--serif": "'Inter Tight', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--sheet": "#FFFFFF",
+     "--sky": "#F5A01F",
+     "--sky-tint": "#FFF4E2",
+     "--snt": "#0A97B8",
+     "--tc": "rgb(27, 138, 211)",
+     "--x4c": "#0B7FA6",
+     "--x4cb": "#E2F5FB",
+     "--x4y": "#FFE27A",
+     "--x4ys": "#FFF2C2"
+    },
+    "differsOnApp": {}
+   },
+   "pro": {
+    "dataPlan": "pro",
+    "root": {
+     "--accent": "#F5A01F",
+     "--accent-deep": "#B86E00",
+     "--accent-tint": "#FFF4E2",
+     "--bad": "#B23B2E",
+     "--bad-tint": "#F8E5E1",
+     "--book": "'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+     "--brand": "#6A45E8",
+     "--brand-deep": "#4526B8",
+     "--brand-tint": "#F1ECFE",
+     "--brand-tint-2": "#DDD3FD",
+     "--cloth": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='1.6 .35' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>\"),linear-gradient(165deg,#1C3150 0%,#14243D 55%,#0F1C31 100%)",
+     "--cloth-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='1.6 .35' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>\")",
+     "--cover-bg": "linear-gradient(90deg,rgba(0,0,0,.45) 0,rgba(0,0,0,.15) 3%,rgba(255,255,255,.08) 4.5%,rgba(0,0,0,0) 7%),linear-gradient(155deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,0) 32%,rgba(0,0,0,0) 65%,rgba(0,0,0,.25) 100%),linear-gradient(170deg,#1D3557 0%,#152843 55%,#0E1C31 100%)",
+     "--desk-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='d'><feTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .4  0 0 0 0 .38  0 0 0 0 .35  0 0 0 .05 0'/></filter><rect width='100%' height='100%' filter='url(%23d)'/></svg>\")",
+     "--ds-act": "36px",
+     "--ds-brand": "#6A45E8",
+     "--ds-btn": "46px",
+     "--ds-chip": "34px",
+     "--ds-cta": "52px",
+     "--ds-faint": "#8A93A0",
+     "--ds-feat": "44px",
+     "--ds-gap": "12px",
+     "--ds-icon": "38px",
+     "--ds-ink": "#14161C",
+     "--ds-ink-2": "#3A404B",
+     "--ds-line": "0 0 0 1px #E6EBF1",
+     "--ds-muted": "#7A8494",
+     "--ds-pad": "16px",
+     "--ds-r-card": "18px",
+     "--ds-r-ctl": "12px",
+     "--ds-r-hero": "24px",
+     "--ds-r-pill": "999px",
+     "--ds-r-sm": "10px",
+     "--ds-r-tile": "14px",
+     "--ds-sec": "28px",
+     "--ease": "cubic-bezier(.2,.8,.2,1)",
+     "--eco": "#3B5BCC",
+     "--env": "#3E9A55",
+     "--ethics": "#C8622B",
+     "--faint": "#A9AEB8",
+     "--geo": "#0E9A8A",
+     "--hand": "'Caveat', 'Segoe Print', cursive",
+     "--history": "#E8890C",
+     "--hl": "#FFD27A",
+     "--ink": "#25272D",
+     "--ink-2": "#4A4E57",
+     "--ir": "#6C5DD3",
+     "--muted": "#7A7F8A",
+     "--nav-h": "64px",
+     "--ok": "#2F7A4F",
+     "--ok-tint": "#E4F1E8",
+     "--paper": "#FFFFFF",
+     "--paper-2": "#F4F6F9",
+     "--paper-3": "#E6EAF0",
+     "--paper-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .3  0 0 0 0 .22  0 0 0 .055 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
+     "--pg-h": "486px",
+     "--pg-w": "330px",
+     "--pl-a": "#6A45E8",
+     "--pl-b": "#EC6BB4",
+     "--polity": "#1667B0",
+     "--read": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--rule": "#E8EBF0",
+     "--rule-2": "#D7DCE4",
+     "--sab": "0px",
+     "--sans": "'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--sat": "0px",
+     "--serif": "'Inter Tight', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--sheet": "#FFFFFF",
+     "--sky": "#F5A01F",
+     "--sky-tint": "#FFF4E2",
+     "--snt": "#0A97B8",
+     "--tc": "rgb(27, 138, 211)",
+     "--x4c": "#0B7FA6",
+     "--x4cb": "#E2F5FB",
+     "--x4y": "#FFE27A",
+     "--x4ys": "#FFF2C2"
+    },
+    "differsOnApp": {}
+   },
+   "ultimate": {
+    "dataPlan": "ultimate",
+    "root": {
+     "--accent": "#F5A01F",
+     "--accent-deep": "#B86E00",
+     "--accent-tint": "#FFF4E2",
+     "--bad": "#B23B2E",
+     "--bad-tint": "#F8E5E1",
+     "--book": "'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+     "--brand": "#B8861B",
+     "--brand-deep": "#7A560A",
+     "--brand-tint": "#FBF4E1",
+     "--brand-tint-2": "#F2E2B4",
+     "--cloth": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='1.6 .35' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>\"),linear-gradient(165deg,#1C3150 0%,#14243D 55%,#0F1C31 100%)",
+     "--cloth-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='1.6 .35' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>\")",
+     "--cover-bg": "linear-gradient(90deg,rgba(0,0,0,.45) 0,rgba(0,0,0,.15) 3%,rgba(255,255,255,.08) 4.5%,rgba(0,0,0,0) 7%),linear-gradient(155deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,0) 32%,rgba(0,0,0,0) 65%,rgba(0,0,0,.25) 100%),linear-gradient(170deg,#1D3557 0%,#152843 55%,#0E1C31 100%)",
+     "--desk-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='d'><feTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .4  0 0 0 0 .38  0 0 0 0 .35  0 0 0 .05 0'/></filter><rect width='100%' height='100%' filter='url(%23d)'/></svg>\")",
+     "--ds-act": "36px",
+     "--ds-brand": "#B8861B",
+     "--ds-btn": "46px",
+     "--ds-chip": "34px",
+     "--ds-cta": "52px",
+     "--ds-faint": "#8A93A0",
+     "--ds-feat": "44px",
+     "--ds-gap": "12px",
+     "--ds-icon": "38px",
+     "--ds-ink": "#14161C",
+     "--ds-ink-2": "#3A404B",
+     "--ds-line": "0 0 0 1px #E6EBF1",
+     "--ds-muted": "#7A8494",
+     "--ds-pad": "16px",
+     "--ds-r-card": "18px",
+     "--ds-r-ctl": "12px",
+     "--ds-r-hero": "24px",
+     "--ds-r-pill": "999px",
+     "--ds-r-sm": "10px",
+     "--ds-r-tile": "14px",
+     "--ds-sec": "28px",
+     "--ease": "cubic-bezier(.2,.8,.2,1)",
+     "--eco": "#3B5BCC",
+     "--env": "#3E9A55",
+     "--ethics": "#C8622B",
+     "--faint": "#A9AEB8",
+     "--geo": "#0E9A8A",
+     "--hand": "'Caveat', 'Segoe Print', cursive",
+     "--history": "#E8890C",
+     "--hl": "#FFD27A",
+     "--ink": "#25272D",
+     "--ink-2": "#4A4E57",
+     "--ir": "#6C5DD3",
+     "--muted": "#7A7F8A",
+     "--nav-h": "64px",
+     "--ok": "#2F7A4F",
+     "--ok-tint": "#E4F1E8",
+     "--paper": "#FFFFFF",
+     "--paper-2": "#F4F6F9",
+     "--paper-3": "#E6EAF0",
+     "--paper-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .3  0 0 0 0 .22  0 0 0 .055 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
+     "--pg-h": "486px",
+     "--pg-w": "330px",
+     "--pl-a": "#D9A93A",
+     "--pl-b": "#F7DE8E",
+     "--polity": "#1667B0",
+     "--read": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--rule": "#E8EBF0",
+     "--rule-2": "#D7DCE4",
+     "--sab": "0px",
+     "--sans": "'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--sat": "0px",
+     "--serif": "'Inter Tight', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--sheet": "#FFFFFF",
+     "--sky": "#F5A01F",
+     "--sky-tint": "#FFF4E2",
+     "--snt": "#0A97B8",
+     "--tc": "rgb(27, 138, 211)",
+     "--x4c": "#0B7FA6",
+     "--x4cb": "#E2F5FB",
+     "--x4y": "#FFE27A",
+     "--x4ys": "#FFF2C2"
+    },
+    "differsOnApp": {}
+   }
+  },
+  "changedByPlanTheme": {
+   "--brand": {
+    "free": "#1B8AD3",
+    "pro": "#6A45E8",
+    "ultimate": "#B8861B"
+   },
+   "--brand-deep": {
+    "free": "#0F5E99",
+    "pro": "#4526B8",
+    "ultimate": "#7A560A"
+   },
+   "--brand-tint": {
+    "free": "#E8F3FC",
+    "pro": "#F1ECFE",
+    "ultimate": "#FBF4E1"
+   },
+   "--brand-tint-2": {
+    "free": "#CFE5F7",
+    "pro": "#DDD3FD",
+    "ultimate": "#F2E2B4"
+   },
+   "--ds-brand": {
+    "free": "#1B8AD3",
+    "pro": "#6A45E8",
+    "ultimate": "#B8861B"
+   },
+   "--pl-a": {
+    "free": null,
+    "pro": "#6A45E8",
+    "ultimate": "#D9A93A"
+   },
+   "--pl-b": {
+    "free": null,
+    "pro": "#EC6BB4",
+    "ultimate": "#F7DE8E"
+   }
+  },
+  "declarations": [
+   {
+    "selector": ":root",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--paper": "#FFFFFF",
+     "--paper-2": "#F4F6F9",
+     "--paper-3": "#E6EAF0",
+     "--sheet": "#FFFFFF",
+     "--ink": "#25272D",
+     "--ink-2": "#4A4E57",
+     "--muted": "#7A7F8A",
+     "--faint": "#A9AEB8",
+     "--rule": "#E8EBF0",
+     "--rule-2": "#D7DCE4",
+     "--brand": "#1B8AD3",
+     "--brand-deep": "#0F5E99",
+     "--brand-tint": "#E8F3FC",
+     "--brand-tint-2": "#CFE5F7",
+     "--sky": "#F5A01F",
+     "--sky-tint": "#FFF4E2",
+     "--accent": "#F5A01F",
+     "--accent-deep": "#B86E00",
+     "--accent-tint": "#FFF4E2",
+     "--hl": "#FFD27A",
+     "--polity": "#1667B0",
+     "--history": "#E8890C",
+     "--geo": "#0E9A8A",
+     "--eco": "#3B5BCC",
+     "--env": "#3E9A55",
+     "--ir": "#6C5DD3",
+     "--snt": "#0A97B8",
+     "--ethics": "#C8622B",
+     "--ok": "#2F7A4F",
+     "--ok-tint": "#E4F1E8",
+     "--bad": "#B23B2E",
+     "--bad-tint": "#F8E5E1",
+     "--serif": "'Inter Tight', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--book": "'EB Garamond', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif",
+     "--read": "'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--sans": "'Inter', 'Noto Sans Devanagari', system-ui, -apple-system, 'Segoe UI', sans-serif",
+     "--hand": "'Caveat', 'Segoe Print', cursive",
+     "--nav-h": "64px",
+     "--sat": "env(safe-area-inset-top,0px)",
+     "--sab": "env(safe-area-inset-bottom,0px)",
+     "--ease": "cubic-bezier(.2,.8,.2,1)"
+    }
+   },
+   {
+    "selector": "html.framed #app",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--sat": "22px",
+     "--sab": "22px"
+    }
+   },
+   {
+    "selector": ":root",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--paper-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .3  0 0 0 0 .22  0 0 0 .055 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>\")",
+     "--desk-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='d'><feTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .4  0 0 0 0 .38  0 0 0 0 .35  0 0 0 .05 0'/></filter><rect width='100%' height='100%' filter='url(%23d)'/></svg>\")",
+     "--cloth-tex": "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='c'><feTurbulence type='fractalNoise' baseFrequency='1.6 .35' numOctaves='2' seed='4' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23c)'/></svg>\")",
+     "--cloth": "var(--cloth-tex),linear-gradient(165deg,#1C3150 0%,#14243D 55%,#0F1C31 100%)",
+     "--pg-w": "330px",
+     "--pg-h": "486px",
+     "--cover-bg": "linear-gradient(90deg,rgba(0,0,0,.45) 0,rgba(0,0,0,.15) 3%,rgba(255,255,255,.08) 4.5%,rgba(0,0,0,0) 7%),linear-gradient(155deg,rgba(255,255,255,.16) 0%,rgba(255,255,255,0) 32%,rgba(0,0,0,0) 65%,rgba(0,0,0,.25) 100%),linear-gradient(170deg,#1D3557 0%,#152843 55%,#0E1C31 100%)"
+    }
+   },
+   {
+    "selector": ".b3",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--gx": "62px",
+     "--gy": "410px",
+     "--rx": "28deg",
+     "--s": ".8"
+    }
+   },
+   {
+    "selector": "#s-book.spread .b3",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--gx": "195px",
+     "--gy": "430px",
+     "--rx": "40deg",
+     "--s": ".53"
+    }
+   },
+   {
+    "selector": "#s-book.close .b3",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--gx": "22px",
+     "--gy": "440px",
+     "--rx": "0deg",
+     "--s": "1.08"
+    }
+   },
+   {
+    "selector": "#s-book.final .b3",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--gx": "22px",
+     "--gy": "440px",
+     "--rx": "0deg",
+     "--s": "1.08"
+    }
+   },
+   {
+    "selector": ".pass.flip",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--flip": "180deg"
+    }
+   },
+   {
+    "selector": "#s-book",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--pg-h": "486px"
+    }
+   },
+   {
+    "selector": "#s-book.close, #s-book.final",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--pg-h": "724px"
+    }
+   },
+   {
+    "selector": "#s-verify",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--x": "radial-gradient(120% 60% at 50% -10%,#DCEBF8 0%,#EEF4FB 45%,#F7F9FC 100%)"
+    }
+   },
+   {
+    "selector": ".up2-stage .tl-cta",
+    "sheet": "<style> #1",
+    "media": null,
+    "props": {
+     "--tc": "#E8890C"
+    }
+   },
+   {
+    "selector": ":root",
+    "sheet": "<style id=\"ds-handoff\">",
+    "media": null,
+    "props": {
+     "--ds-r-hero": "24px",
+     "--ds-r-card": "18px",
+     "--ds-r-tile": "14px",
+     "--ds-r-ctl": "12px",
+     "--ds-r-sm": "10px",
+     "--ds-r-pill": "999px",
+     "--ds-line": "0 0 0 1px #E6EBF1",
+     "--ds-ink": "#14161C",
+     "--ds-ink-2": "#3A404B",
+     "--ds-muted": "#7A8494",
+     "--ds-faint": "#8A93A0",
+     "--ds-brand": "#1B8AD3",
+     "--ds-cta": "52px",
+     "--ds-btn": "46px",
+     "--ds-act": "36px",
+     "--ds-chip": "34px",
+     "--ds-icon": "38px",
+     "--ds-feat": "44px",
+     "--ds-sec": "28px",
+     "--ds-gap": "12px",
+     "--ds-pad": "16px"
+    }
+   },
+   {
+    "selector": ":root",
+    "sheet": "<style id=\"xray4\">",
+    "media": null,
+    "props": {
+     "--x4y": "#FFE27A",
+     "--x4ys": "#FFF2C2",
+     "--x4c": "#0B7FA6",
+     "--x4cb": "#E2F5FB"
+    }
+   },
+   {
+    "selector": ".n2-f.add",
+    "sheet": "<style id=\"notes2\">",
+    "media": null,
+    "props": {
+     "--fc": "#5B6472"
+    }
+   },
+   {
+    "selector": "html[data-plan=\"pro\"]",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "props": {
+     "--brand": "#6A45E8",
+     "--brand-deep": "#4526B8",
+     "--brand-tint": "#F1ECFE",
+     "--brand-tint-2": "#DDD3FD",
+     "--ds-brand": "#6A45E8",
+     "--pl-a": "#6A45E8",
+     "--pl-b": "#EC6BB4"
+    }
+   },
+   {
+    "selector": "html[data-plan=\"ultimate\"]",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "props": {
+     "--brand": "#B8861B",
+     "--brand-deep": "#7A560A",
+     "--brand-tint": "#FBF4E1",
+     "--brand-tint-2": "#F2E2B4",
+     "--ds-brand": "#B8861B",
+     "--pl-a": "#D9A93A",
+     "--pl-b": "#F7DE8E"
+    }
+   }
+  ]
+ },
+ "keyframes": {
+  "count": 144,
+  "distinctNames": 143,
+  "note": "effective=false means a later @keyframes with the same name overrides this one",
+  "list": [
+   {
+    "name": "stageIn",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes stageIn { \n  0% { opacity: 0; }\n  100% { opacity: 1; }\n}",
+    "effective": true
+   },
+   {
+    "name": "float",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes float { \n  50% { transform: translateY(-6px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "beam",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes beam { \n  0% { transform: translateX(-4%) rotate(-1deg); }\n  100% { transform: translateX(5%) rotate(1.5deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "leaves",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes leaves { \n  0% { transform: translate(0px, 0px) rotate(0deg); }\n  50% { transform: translate(2%, -1.5%) rotate(1.5deg); }\n  100% { transform: translate(-1.5%, 1%) rotate(-1deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "hintPulse",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes hintPulse { \n  50% { transform: translateY(-3px); box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 20px -10px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "autobar",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes autobar { \n  100% { width: 100%; }\n}",
+    "effective": true
+   },
+   {
+    "name": "pop",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes pop { \n  0% { transform: scale(0.7); }\n}",
+    "effective": true
+   },
+   {
+    "name": "holo",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes holo { \n  100% { --hx: 360deg; }\n}",
+    "effective": true
+   },
+   {
+    "name": "passIn",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes passIn { \n  0% { transform: translateY(-30px) rotateX(35deg) rotateZ(-6deg); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "formIn",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes formIn { \n  0% { opacity: 0; transform: translateY(8px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "blob1",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes blob1 { \n  100% { transform: translate(70px, 50px) scale(1.15); }\n}",
+    "effective": true
+   },
+   {
+    "name": "blob2",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes blob2 { \n  100% { transform: translate(-60px, 40px) scale(0.9); }\n}",
+    "effective": true
+   },
+   {
+    "name": "rings",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes rings { \n  100% { transform: rotate(360deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "live",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes live { \n  0% { box-shadow: rgba(245, 160, 31, 0.6) 0px 0px 0px 0px; }\n  70% { box-shadow: rgba(245, 160, 31, 0) 0px 0px 0px 7px; }\n  100% { box-shadow: rgba(245, 160, 31, 0) 0px 0px 0px 0px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "tick",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes tick { \n  0% { opacity: 0.3; }\n}",
+    "effective": true
+   },
+   {
+    "name": "sheetUp",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes sheetUp { \n  0% { transform: translateY(60px); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "sign",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes sign { \n  100% { stroke-dashoffset: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "penSheen",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes penSheen { \n  0%, 55% { left: -80px; }\n  100% { left: 110%; }\n}",
+    "effective": true
+   },
+   {
+    "name": "penWrite",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes penWrite { \n  0% { transform: none; }\n  20% { transform: translate(-6px, -4px) rotate(-3deg); }\n  45% { transform: translate(4px, 2px) rotate(1deg); }\n  70% { transform: translate(-3px, -2px) rotate(-2deg); }\n  100% { transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "spin",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes spin { \n  100% { transform: rotate(360deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "breathe",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes breathe { \n  50% { transform: scale(1.12); opacity: 0.7; }\n}",
+    "effective": true
+   },
+   {
+    "name": "shine",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes shine { \n  0%, 60% { background-position: 120% 0px; }\n  100% { background-position: -60% 0px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "markIn",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes markIn { \n  0% { transform: translate(-50%, -50%) scale(0.6) rotate(-10deg); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "tw",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes tw { \n  0%, 100% { opacity: 0; transform: translate(-50%,-50%) scale(calc(var(--z)*.3)) rotate(0); }\n  50% { opacity: 1; transform: translate(-50%,-50%) scale(var(--z)) rotate(45deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "penSign",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes penSign { \n  0% { transform: rotate(-4deg); }\n  15% { transform: translate(-40px, -46px) rotate(-14deg); }\n  35% { transform: translate(-20px, -40px) rotate(-10deg); }\n  55% { transform: translate(10px, -44px) rotate(-14deg); }\n  75% { transform: translate(40px, -40px) rotate(-10deg); }\n  100% { transform: rotate(-4deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "penW",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes penW { \n  0%, 100% { transform: rotate(-8deg) translateX(6px); }\n  25% { transform: rotate(-18deg) translate(-6px, -4px); }\n  50% { transform: rotate(-4deg) translate(10px, 2px); }\n  75% { transform: rotate(-16deg) translate(-2px, -3px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "penW2",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes penW2 { \n  0%, 100% { transform: none; }\n  25% { transform: translate(-4px, -3px) rotate(-1.5deg); }\n  50% { transform: translate(6px, 1px) rotate(0.8deg); }\n  75% { transform: translate(-2px, -2px) rotate(-1deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "hvIn",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes hvIn { \n  0% { opacity: 0; translate: 0px 14px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "hvF",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes hvF { \n  50% { translate: 0px -5px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "letterUp",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes letterUp { \n  100% { transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "tw2",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes tw2 { \n  50% { opacity: 0.35; }\n}",
+    "effective": true
+   },
+   {
+    "name": "rvb",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes rvb { \n  100% { width: 100%; }\n}",
+    "effective": true
+   },
+   {
+    "name": "rvin",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes rvin { \n  0% { opacity: 0; transform: translateY(12px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "sunP",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes sunP { \n  50% { opacity: 0.85; }\n}",
+    "effective": true
+   },
+   {
+    "name": "dpu",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes dpu { \n  70% { box-shadow: rgba(245, 160, 31, 0) 0px 0px 0px 8px; }\n  100% { box-shadow: rgba(245, 160, 31, 0) 0px 0px 0px 0px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "ringIn",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes ringIn { \n  0% { stroke-dashoffset: var(--c); }\n}",
+    "effective": true
+   },
+   {
+    "name": "lfade",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes lfade { \n  0% { opacity: 0; transform: translateY(6px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "hl",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes hl { \n  100% { width: calc(100% + 6px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "mk",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes mk { \n  0% { opacity: 0; transform: translate(0px, 0px) rotate(-24deg); }\n  20% { opacity: 1; }\n  100% { opacity: 1; transform: translate(120px, 24px) rotate(-24deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "pick",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes pick { \n  100% { border-color: var(--ok); background: var(--ok-tint); }\n}",
+    "effective": true
+   },
+   {
+    "name": "sp",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes sp { \n  100% { transform: rotate(360deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "envIn",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes envIn { \n  0% { transform: translate(-50%, -40%) rotate(-10deg); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "tabIn",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes tabIn { \n  0% { opacity: 0; transform: translateY(6px); }\n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "pgfill",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes pgfill { \n  0% { width: 0px; }\n  100% { width: 100%; }\n}",
+    "effective": true
+   },
+   {
+    "name": "pulse",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes pulse { \n  70% { box-shadow: rgba(22, 103, 176, 0) 0px 0px 0px 7px; }\n  100% { box-shadow: rgba(22, 103, 176, 0) 0px 0px 0px 0px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "ty",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes ty { \n  0%, 100% { opacity: 0.25; transform: translateY(0px); }\n  50% { opacity: 1; transform: translateY(-3px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "burst",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes burst { \n  0% { opacity: 1; transform: rotate(var(--a)) translateY(-30px); }\n  100% { opacity: 0; transform: rotate(var(--a)) translateY(-70px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "ssw",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes ssw { \n  0% { transform: scale(0.55); opacity: 1; }\n  100% { transform: scale(1.15); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "ssd",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes ssd { \n  0% { stroke-dashoffset: 110; }\n  50% { stroke-dashoffset: 0; }\n  100% { stroke-dashoffset: -110; }\n}",
+    "effective": true
+   },
+   {
+    "name": "bxClip",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes bxClip { \n  0% { clip-path: circle(0px at 22% 6%); }\n  10% { clip-path: circle(58px at 22% 6%); }\n  35% { clip-path: circle(58px at 72% 26%); }\n  60% { clip-path: circle(58px at 30% 52%); }\n  82% { clip-path: circle(58px at 70% 82%); }\n  92% { clip-path: circle(58px at 55% 92%); opacity: 1; }\n  100% { clip-path: circle(58px at 55% 92%); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "bxRing",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes bxRing { \n  0% { left: 22%; top: 6%; opacity: 0; transform: scale(0.6); }\n  10% { left: 22%; top: 6%; opacity: 1; transform: none; }\n  35% { left: 72%; top: 26%; }\n  60% { left: 30%; top: 52%; }\n  82% { left: 70%; top: 82%; }\n  92% { left: 55%; top: 92%; opacity: 1; }\n  100% { left: 55%; top: 92%; opacity: 0; transform: scale(1.15); }\n}",
+    "effective": true
+   },
+   {
+    "name": "fxb",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes fxb { \n  0% { opacity: 1; transform: translateY(-40px); }\n  90% { opacity: 1; }\n  100% { opacity: 0; transform: translateY(320px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "fcu",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes fcu { \n  0%, 100% { transform: translateY(0px); }\n  50% { transform: translateY(-5px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "mmp",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes mmp { \n  0% { opacity: 0.2; transform-box: fill-box; transform-origin: center center; transform: scale(0.6); }\n  100% { opacity: 1; transform: scale(1.1); }\n}",
+    "effective": true
+   },
+   {
+    "name": "lxBeam",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes lxBeam { \n  0% { transform: translateY(-30px); }\n  60% { transform: translateY(130px); }\n  100% { transform: translateY(130px); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "xhRun",
+    "sheet": "<style> #1",
+    "media": null,
+    "cssText": "@keyframes xhRun { \n  0% { transform: translateX(-100%); }\n  100% { transform: translateX(340%); }\n}",
+    "effective": true
+   },
+   {
+    "name": "xvHl",
+    "sheet": "<style id=\"xray2\">",
+    "media": null,
+    "cssText": "@keyframes xvHl { \n  0%, 30% { transform: scaleX(0); }\n  45%, 90% { transform: scaleX(1); }\n  100% { transform: scaleX(1); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "xvBeam",
+    "sheet": "<style id=\"xray2\">",
+    "media": null,
+    "cssText": "@keyframes xvBeam { \n  0% { transform: translateY(-24px); }\n  55% { transform: translateY(140px); }\n  100% { transform: translateY(140px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "xvTag",
+    "sheet": "<style id=\"xray2\">",
+    "media": null,
+    "cssText": "@keyframes xvTag { \n  0%, 35% { opacity: 0; transform: scale(0.8); }\n  45%, 90% { opacity: 1; transform: none; }\n  100% { opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "xlRun",
+    "sheet": "<style id=\"xray2\">",
+    "media": null,
+    "cssText": "@keyframes xlRun { \n  0% { background: rgb(238, 242, 247); }\n  100% { background: rgb(95, 176, 232); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stTw",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stTw { \n  100% { opacity: 0.15; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stFlag",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stFlag { \n  100% { transform: skewY(-6deg) scaleX(0.92); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stPrint",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stPrint { \n  0% { opacity: 0; }\n  20% { opacity: 0.95; }\n  100% { opacity: 0.45; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stCrowd",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stCrowd { \n  100% { opacity: 0.55; filter: blur(0.6px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stSway",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stSway { \n  100% { transform-box: fill-box; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stHalo",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stHalo { \n  50% { transform: scale(1.25); opacity: 0.4; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stWalk",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stWalk { \n  0% { transform: translate(180px, 462px) scale(0.74); }\n  12% { transform: translate(182px, 440px) scale(0.72); }\n  26% { transform: translate(186px, 420px) scale(0.68); }\n  40% { transform: translate(175px, 392px) scale(0.62); }\n  54% { transform: translate(185px, 364px) scale(0.56); }\n  68% { transform: translate(176px, 338px) scale(0.5); }\n  84% { transform: translate(184px, 314px) scale(0.45); }\n  100% { transform: translate(180px, 298px) scale(0.42); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stBob",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stBob { \n  50% { transform: translateY(-6px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stLine3",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stLine3 { \n  0% { opacity: 0; transform: translateY(10px); }\n  25%, 100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stLine",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stLine { \n  0% { opacity: 0; transform: translateY(10px); }\n  20%, 75% { opacity: 1; transform: none; }\n  100% { opacity: 0; transform: translateY(-8px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stRays",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stRays { \n  0% { transform: rotate(-4deg); }\n  50% { transform: rotate(4deg); }\n  100% { transform: rotate(-4deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stDrift",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stDrift { \n  100% { transform: translateX(18px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stMote",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stMote { \n  0% { opacity: 0; transform: translate(0px, 0px); }\n  30% { opacity: 0.9; }\n  100% { opacity: 0; transform: translate(var(--x),-90px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stHalo2",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stHalo2 { \n  50% { opacity: 0.3; transform: scale(1.12); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stStride",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stStride { \n  0% { transform: scaleX(1); }\n  50% { transform: scaleX(-1); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stWalk2",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stWalk2 { \n  0% { transform: translate(180px, 518px) scale(0.6); }\n  14% { transform: translate(182px, 470px) scale(0.52); }\n  30% { transform: translate(184px, 440px) scale(0.46); }\n  45% { transform: translate(177px, 410px) scale(0.4); }\n  60% { transform: translate(184px, 380px) scale(0.35); }\n  74% { transform: translate(177px, 352px) scale(0.31); }\n  88% { transform: translate(183px, 326px) scale(0.27); }\n  100% { transform: translate(180px, 304px) scale(0.24); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stBob2",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stBob2 { \n  50% { transform: translateY(-3px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stDraw",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stDraw { \n  100% { stroke-dashoffset: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stDot",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stDot { \n  0% { opacity: 0; transform: scale(0.2); }\n  60% { opacity: 0.9; }\n  100% { opacity: 0.42; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stFade",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stFade { \n  100% { opacity: 1; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stCity",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stCity { \n  0% { opacity: 0; }\n  30% { opacity: 1; }\n  100% { opacity: 0.85; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stPing",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stPing { \n  0% { transform: scale(0.4); opacity: 1; }\n  100% { transform: scale(2.4); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stBeamIn",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stBeamIn { \n  0% { opacity: 0; transform: scaleY(0.2); }\n  100% { opacity: 0.7; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stSpotIn",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stSpotIn { \n  0% { opacity: 0; transform: scale(0.3); }\n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stRip",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stRip { \n  0% { opacity: 0.9; transform: scale(0.5); }\n  100% { opacity: 0; transform: scale(4.2); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stOne",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stOne { \n  0% { transform: translate(180px, 498px) scale(0.52); }\n  45% { transform: translate(181px, 470px) scale(0.52) rotate(0.8deg); }\n  100% { transform: translate(180px, 450px) scale(0.5); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stBob1",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stBob1 { \n  40% { transform: translateY(-6px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stLine2",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stLine2 { \n  0% { opacity: 0; transform: translateY(10px); }\n  20%, 80% { opacity: 1; transform: none; }\n  100% { opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stSw",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stSw { \n  100% { transform: translateY(-1.5px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stOut",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stOut { \n  0% { transform: translate(180px, 482px) scale(0.5); }\n  35% { transform: translate(182px, 462px) scale(0.5) rotate(1deg); }\n  100% { transform: translate(180px, 430px) scale(0.47); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stGoal",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stGoal { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stGin",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stGin { \n  100% { opacity: 1; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stRayIn",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stRayIn { \n  100% { opacity: 0.08; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stRaySpin",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stRaySpin { \n  100% { transform: rotate(360deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "stSunIn",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stSunIn { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stBreath",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stBreath { \n  50% { transform: scale(1.07); opacity: 0.85; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stBase",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stBase { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stCol",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stCol { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stGap",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stGap { \n  100% { opacity: 1; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stDrop",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stDrop { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stPole",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stPole { \n  100% { opacity: 1; stroke-dashoffset: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "stFlagUp",
+    "sheet": "<style id=\"onestep\">",
+    "media": null,
+    "cssText": "@keyframes stFlagUp { \n  0% { opacity: 1; transform: translateY(26px); }\n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Push",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Push { \n  0% { transform: scale(1.06) translateY(10px); }\n  100% { transform: scale(1) translateY(0px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Tw",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Tw { \n  100% { opacity: 0.2; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4In",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4In { \n  100% { opacity: 0.14; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Sway",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Sway { \n  0% { transform: rotate(-3deg); }\n  100% { transform: rotate(3deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Halo",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Halo { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Breath",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Breath { \n  50% { transform: scale(1.05); opacity: 0.86; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Drift",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Drift { \n  100% { transform: translateX(16px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Rise",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Rise { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Col",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Col { \n  100% { opacity: 1; transform: none; filter: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Lit",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Lit { \n  0% { opacity: 0; }\n  40% { opacity: 1; filter: brightness(1.35); }\n  100% { opacity: 1; filter: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Spin",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Spin { \n  100% { transform: rotate(360deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Glint",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Glint { \n  0% { opacity: 0; transform: skewX(-16deg) translateX(40px); }\n  15% { opacity: 0.75; }\n  85% { opacity: 0.75; }\n  100% { opacity: 0; transform: skewX(-16deg) translateX(330px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Flag",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Flag { \n  0% { opacity: 0; transform: translateY(30px) scaleY(0.2); }\n  25% { opacity: 1; }\n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Sw",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Sw { \n  100% { transform: translateY(-1.4px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Pool",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Pool { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Ring",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Ring { \n  0% { opacity: 0.9; transform: scale(0.6); }\n  100% { opacity: 0; transform: scale(5); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Step",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Step { \n  0% { transform: translate(180px, 478px) scale(0.5); }\n  38% { transform: translate(181.5px, 458px) scale(0.5) rotate(0.8deg); }\n  100% { transform: translate(180px, 432px) scale(0.47); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Bob",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Bob { \n  40% { transform: translateY(-5px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Bok",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Bok { \n  0% { opacity: 0; transform: translate(0px, 0px); }\n  30% { opacity: 0.55; }\n  100% { opacity: 0; transform: translate(var(--dx),-120px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Type",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Type { \n  0% { opacity: 0; filter: blur(10px); letter-spacing: 0.12em; }\n  22% { opacity: 1; filter: blur(0px); letter-spacing: 0.01em; }\n  78% { opacity: 1; filter: blur(0px); }\n  100% { opacity: 0; filter: blur(6px); }\n}",
+    "effective": false
+   },
+   {
+    "name": "s4FpPast",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4FpPast { \n  0% { opacity: 0; }\n  15% { opacity: 1; }\n  100% { opacity: 0.5; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4FpNext",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4FpNext { \n  0% { opacity: 0; }\n  40% { opacity: 0.95; }\n  100% { opacity: 0.7; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4FpPulse",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4FpPulse { \n  50% { opacity: 0.35; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4In5",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4In5 { \n  100% { opacity: 0.07; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Ink",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Ink { \n  100% { stroke-dashoffset: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4LineOut",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4LineOut { \n  100% { opacity: 0.35; }\n}",
+    "effective": true
+   },
+   {
+    "name": "s4Type",
+    "sheet": "<style id=\"onestep4\">",
+    "media": null,
+    "cssText": "@keyframes s4Type { \n  0% { opacity: 0; filter: blur(8px); letter-spacing: 0.2em; }\n  25% { opacity: 1; filter: blur(0px); letter-spacing: 0.04em; }\n  80% { opacity: 1; filter: blur(0px); }\n  100% { opacity: 0; filter: blur(6px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "x4Hl",
+    "sheet": "<style id=\"xray4\">",
+    "media": null,
+    "cssText": "@keyframes x4Hl { \n  0%, 25% { transform: scaleX(0); }\n  40%, 88% { transform: scaleX(1); }\n  100% { transform: scaleX(1); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "x4Ct",
+    "sheet": "<style id=\"xray4\">",
+    "media": null,
+    "cssText": "@keyframes x4Ct { \n  0%, 30% { opacity: 0; }\n  42%, 88% { opacity: 1; }\n  100% { opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "x4Scan",
+    "sheet": "<style id=\"xray4\">",
+    "media": null,
+    "cssText": "@keyframes x4Scan { \n  100% { transform: translateY(44px); }\n}",
+    "effective": true
+   },
+   {
+    "name": "x4Pulse",
+    "sheet": "<style id=\"xray4\">",
+    "media": null,
+    "cssText": "@keyframes x4Pulse { \n  0%, 100% { box-shadow: rgba(255, 200, 40, 0) 0px 0px 0px 0px; }\n  35% { box-shadow: rgba(255, 200, 40, 0.45) 0px 0px 0px 6px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "x4In",
+    "sheet": "<style id=\"xray4\">",
+    "media": null,
+    "cssText": "@keyframes x4In { \n  0% { opacity: 0; transform: translateX(var(--dx,14px)); }\n}",
+    "effective": true
+   },
+   {
+    "name": "n2Spin",
+    "sheet": "<style id=\"notes2\">",
+    "media": null,
+    "cssText": "@keyframes n2Spin { \n  100% { transform: rotate(360deg); }\n}",
+    "effective": true
+   },
+   {
+    "name": "n2In",
+    "sheet": "<style id=\"notes2\">",
+    "media": null,
+    "cssText": "@keyframes n2In { \n  0% { opacity: 0; transform: translateY(4px); }\n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "plSheen",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "cssText": "@keyframes plSheen { \n  0% { background-position: 120% 0px; }\n  60%, 100% { background-position: -120% 0px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "plLine",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "cssText": "@keyframes plLine { \n  100% { background-position: -200% 0px; }\n}",
+    "effective": true
+   },
+   {
+    "name": "pmIn",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "cssText": "@keyframes pmIn { \n  100% { clip-path: circle(150% at var(--x,50%) var(--y,60%)); }\n}",
+    "effective": true
+   },
+   {
+    "name": "pmOut",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "cssText": "@keyframes pmOut { \n  0% { clip-path: circle(150% at 50% 50%); opacity: 1; }\n  100% { clip-path: circle(150% at 50% 50%); opacity: 0; transform: scale(1.06); }\n}",
+    "effective": true
+   },
+   {
+    "name": "pmTx",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "cssText": "@keyframes pmTx { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "pmRing",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "cssText": "@keyframes pmRing { \n  0% { transform: scale(0.85); opacity: 1; }\n  100% { transform: scale(1.5); opacity: 0; }\n}",
+    "effective": true
+   },
+   {
+    "name": "pmSw",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "cssText": "@keyframes pmSw { \n  100% { opacity: 1; transform: none; }\n}",
+    "effective": true
+   },
+   {
+    "name": "pmSp",
+    "sheet": "<style id=\"planthemes\">",
+    "media": null,
+    "cssText": "@keyframes pmSp { \n  0% { opacity: 0; transform: translate(0px, 0px) scale(0.2) rotate(0deg); }\n  20% { opacity: 1; }\n  100% { opacity: 0; transform: translate(var(--tx),var(--ty)) scale(1) rotate(160deg); }\n}",
+    "effective": true
+   }
+  ]
+ },
+ "styleSheets": [
+  {
+   "label": "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wg",
+   "unreadable": "cross-origin stylesheet (Google Fonts: @font-face only)"
+  },
+  {
+   "label": "<style> #1",
+   "rules": 4722
+  },
+  {
+   "label": "<style> #2",
+   "rules": 1
+  },
+  {
+   "label": "<style id=\"xray2\">",
+   "rules": 139
+  },
+  {
+   "label": "<style id=\"xray3\">",
+   "rules": 32
+  },
+  {
+   "label": "<style id=\"onestep\">",
+   "rules": 239
+  },
+  {
+   "label": "<style id=\"onestep4\">",
+   "rules": 156
+  },
+  {
+   "label": "<style id=\"ds-handoff\">",
+   "rules": 76
+  },
+  {
+   "label": "<style id=\"xray4\">",
+   "rules": 234
+  },
+  {
+   "label": "<style id=\"xray4-tidy\">",
+   "rules": 99
+  },
+  {
+   "label": "<style id=\"notes2\">",
+   "rules": 225
+  },
+  {
+   "label": "<style id=\"notes3\">",
+   "rules": 78
+  },
+  {
+   "label": "<style id=\"planthemes\">",
+   "rules": 91
+  },
+  {
+   "label": "<style id=\"cxcompact\">",
+   "rules": 9
+  }
+ ],
+ "fonts": {
+  "expectedFamilies": [
+   "EB Garamond",
+   "Inter Tight",
+   "Inter",
+   "Noto Sans Devanagari",
+   "Caveat"
+  ],
+  "faces": [
+   {
+    "family": "Caveat",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Caveat",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Caveat",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Caveat",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Caveat",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Caveat",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Caveat",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Caveat",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "italic",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "400",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "500",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "EB Garamond",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "italic",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "italic",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Inter",
+    "weight": "400",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Inter",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "Inter",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "Inter",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "Inter",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Inter",
+    "weight": "500",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Inter",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "Inter",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "Inter",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "Inter",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Inter",
+    "weight": "600",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Inter",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Inter",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "Inter",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "Inter",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "Inter",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Inter",
+    "weight": "700",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "700",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "700",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "800",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+460-52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "800",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "800",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+1F00-1FFF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "800",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+370-377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "800",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "800",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Inter Tight",
+    "weight": "800",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Noto Sans Devanagari",
+    "weight": "400",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+900-97F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+"
+   },
+   {
+    "family": "Noto Sans Devanagari",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Noto Sans Devanagari",
+    "weight": "400",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Noto Sans Devanagari",
+    "weight": "500",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+900-97F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+"
+   },
+   {
+    "family": "Noto Sans Devanagari",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Noto Sans Devanagari",
+    "weight": "500",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   },
+   {
+    "family": "Noto Sans Devanagari",
+    "weight": "600",
+    "style": "normal",
+    "status": "loaded",
+    "unicodeRange": "U+900-97F, U+1CD0-1CF4, U+1CF7-1CF9, U+200C-200D, U+20A8, U+"
+   },
+   {
+    "family": "Noto Sans Devanagari",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+100-2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304"
+   },
+   {
+    "family": "Noto Sans Devanagari",
+    "weight": "600",
+    "style": "normal",
+    "status": "unloaded",
+    "unicodeRange": "U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+"
+   }
+  ]
+ }
+}
