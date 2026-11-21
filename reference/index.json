@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-21T04:46:45.962Z",
+ "generatedAt": "2026-11-21T04:54:08.120Z",
  "prototype": {
   "file": "PrepAssist.html",
   "sha1": "251e92555902f41acbdeb99f9f840ab0af72d0e3",
@@ -19,8 +19,8 @@
    "deviceScaleFactor": 2.625
   },
   "ios": {
-   "width": 393,
-   "height": 852,
+   "width": 402,
+   "height": 874,
    "deviceScaleFactor": 3
   }
  },
@@ -4442,8 +4442,8 @@
       "ios/tab-home/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3150,
-     "scrollViewport": 788,
+     "scrollLength": 3125,
+     "scrollViewport": 810,
      "scrollContainer": "div#homeScroll.scroll",
      "scrollShots": 4,
      "domNodes": 376,
@@ -4975,8 +4975,8 @@
       "ios/tab-home-day/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3150,
-     "scrollViewport": 788,
+     "scrollLength": 3125,
+     "scrollViewport": 810,
      "scrollContainer": "div#homeScroll.scroll",
      "scrollShots": 4,
      "domNodes": 376,
@@ -5108,8 +5108,8 @@
       "ios/tab-home-evening/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3150,
-     "scrollViewport": 788,
+     "scrollLength": 3125,
+     "scrollViewport": 810,
      "scrollContainer": "div#homeScroll.scroll",
      "scrollShots": 4,
      "domNodes": 376,
@@ -5241,8 +5241,8 @@
       "ios/tab-home-night/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3150,
-     "scrollViewport": 788,
+     "scrollLength": 3125,
+     "scrollViewport": 810,
      "scrollContainer": "div#homeScroll.scroll",
      "scrollShots": 4,
      "domNodes": 376,
@@ -6846,14 +6846,13 @@
       "ios/tab-profile-hi/dom.json",
       "ios/tab-profile-hi/html.txt",
       "ios/tab-profile-hi/scroll-01.png",
-      "ios/tab-profile-hi/scroll-02.png",
-      "ios/tab-profile-hi/scroll-03.png"
+      "ios/tab-profile-hi/scroll-02.png"
      ],
      "missingFiles": [],
      "scrollLength": 2079,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#profileScroll.scroll",
-     "scrollShots": 3,
+     "scrollShots": 2,
      "domNodes": 178,
      "chrome": [
       "#nav",
@@ -7018,8 +7017,8 @@
       "ios/tab-home-hi/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3150,
-     "scrollViewport": 788,
+     "scrollLength": 3125,
+     "scrollViewport": 810,
      "scrollContainer": "div#homeScroll.scroll",
      "scrollShots": 4,
      "domNodes": 376,
@@ -7048,7 +7047,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 6000,
+     "fakeClockElapsedMs": 5850,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -7198,7 +7197,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 7950,
+     "fakeClockElapsedMs": 7800,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -7331,14 +7330,13 @@
       "ios/tab-learn/scroll-01.png",
       "ios/tab-learn/scroll-02.png",
       "ios/tab-learn/scroll-03.png",
-      "ios/tab-learn/scroll-04.png",
-      "ios/tab-learn/scroll-05.png"
+      "ios/tab-learn/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3417,
-     "scrollViewport": 788,
+     "scrollLength": 3373,
+     "scrollViewport": 810,
      "scrollContainer": "div#learnScroll.scroll",
-     "scrollShots": 5,
+     "scrollShots": 4,
      "domNodes": 409,
      "chrome": [
       "#nav",
@@ -7474,7 +7472,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1884,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#practiceScroll.scroll",
      "scrollShots": 2,
      "domNodes": 218,
@@ -7607,8 +7605,8 @@
       "ios/tab-practice-mains/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1318,
-     "scrollViewport": 788,
+     "scrollLength": 1302,
+     "scrollViewport": 810,
      "scrollContainer": "div#practiceScroll.scroll",
      "scrollShots": 1,
      "domNodes": 105,
@@ -7757,8 +7755,8 @@
       "ios/tab-current/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3053,
-     "scrollViewport": 788,
+     "scrollLength": 3026,
+     "scrollViewport": 810,
      "scrollContainer": "div#currentScroll.scroll",
      "scrollShots": 4,
      "domNodes": 219,
@@ -7890,8 +7888,8 @@
       "ios/tab-current-source-hindu/scroll-02.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1930,
-     "scrollViewport": 788,
+     "scrollLength": 1903,
+     "scrollViewport": 810,
      "scrollContainer": "div#currentScroll.scroll",
      "scrollShots": 2,
      "domNodes": 143,
@@ -8189,8 +8187,8 @@
       "ios/tab-current-gs3/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2808,
-     "scrollViewport": 788,
+     "scrollLength": 2781,
+     "scrollViewport": 810,
      "scrollContainer": "div#currentScroll.scroll",
      "scrollShots": 4,
      "domNodes": 204,
@@ -8342,7 +8340,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1246,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#currentScroll.scroll",
      "scrollShots": 1,
      "domNodes": 98,
@@ -9253,7 +9251,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1877,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#currentScroll.scroll",
      "scrollShots": 2,
      "domNodes": 137,
@@ -9387,8 +9385,8 @@
       "ios/tab-current-one-read/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3053,
-     "scrollViewport": 788,
+     "scrollLength": 3026,
+     "scrollViewport": 810,
      "scrollContainer": "div#currentScroll.scroll",
      "scrollShots": 4,
      "domNodes": 219,
@@ -9520,7 +9518,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1800,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#menuScroll.scroll",
      "scrollShots": 2,
      "domNodes": 123,
@@ -9657,7 +9655,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 889,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#menuScroll.scroll",
      "scrollShots": 1,
      "domNodes": 77,
@@ -9930,14 +9928,13 @@
       "ios/tab-profile/dom.json",
       "ios/tab-profile/html.txt",
       "ios/tab-profile/scroll-01.png",
-      "ios/tab-profile/scroll-02.png",
-      "ios/tab-profile/scroll-03.png"
+      "ios/tab-profile/scroll-02.png"
      ],
      "missingFiles": [],
      "scrollLength": 2079,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#profileScroll.scroll",
-     "scrollShots": 3,
+     "scrollShots": 2,
      "domNodes": 178,
      "chrome": [
       "#nav",
@@ -10067,8 +10064,8 @@
       "ios/view-lesson/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1255,
-     "scrollViewport": 852,
+     "scrollLength": 1260,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 73,
@@ -10206,7 +10203,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 931,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 70,
@@ -10341,7 +10338,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1091,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 73,
@@ -10914,8 +10911,8 @@
       "ios/view-querydb/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1062,
-     "scrollViewport": 852,
+     "scrollLength": 1047,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 59,
@@ -11043,7 +11040,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1062,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 89,
@@ -11186,8 +11183,8 @@
       "ios/view-cloud/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1393,
-     "scrollViewport": 852,
+     "scrollLength": 1374,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 117,
@@ -11325,7 +11322,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1421,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 108,
@@ -11874,7 +11871,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 2325,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 3,
      "domNodes": 133,
@@ -12002,7 +11999,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 974,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 42,
@@ -12538,8 +12535,8 @@
       "ios/view-article/scroll-03.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2446,
-     "scrollViewport": 852,
+     "scrollLength": 2424,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ar-scroll",
      "scrollShots": 3,
      "domNodes": 71,
@@ -12690,7 +12687,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1197,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 124,
@@ -12834,8 +12831,8 @@
       "ios/view-wallet/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1091,
-     "scrollViewport": 852,
+     "scrollLength": 1074,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 59,
@@ -13100,7 +13097,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 2300,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ug-scroll",
      "scrollShots": 3,
      "domNodes": 169,
@@ -13224,8 +13221,8 @@
       "ios/view-settings/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1155,
-     "scrollViewport": 852,
+     "scrollLength": 1137,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 91,
@@ -13354,7 +13351,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1045,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 136,
@@ -13489,8 +13486,8 @@
       "ios/view-legal-terms/scroll-05.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3893,
-     "scrollViewport": 852,
+     "scrollLength": 3797,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 5,
      "domNodes": 104,
@@ -13624,7 +13621,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 4472,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 6,
      "domNodes": 125,
@@ -13766,7 +13763,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 900,
-     "scrollViewport": 740,
+     "scrollViewport": 762,
      "scrollContainer": "div.scroll.pq-scroll",
      "scrollShots": 1,
      "domNodes": 49,
@@ -13905,7 +13902,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1084,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 52,
@@ -14062,7 +14059,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 2176,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 2,
      "domNodes": 173,
@@ -14354,8 +14351,8 @@
       "ios/view-upload/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1051,
-     "scrollViewport": 852,
+     "scrollLength": 1033,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 65,
@@ -14545,8 +14542,8 @@
       "ios/view-folder/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3369,
-     "scrollViewport": 852,
+     "scrollLength": 3345,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 4,
      "domNodes": 250,
@@ -14838,8 +14835,8 @@
       "ios/view-notesys/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1358,
-     "scrollViewport": 852,
+     "scrollLength": 1334,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 94,
@@ -14995,8 +14992,8 @@
       "ios/view-note2/scroll-02.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1922,
-     "scrollViewport": 852,
+     "scrollLength": 1905,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ar-scroll.nr",
      "scrollShots": 2,
      "domNodes": 124,
@@ -15153,7 +15150,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1238,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 76,
@@ -15313,8 +15310,8 @@
       "ios/view-ntNote/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 943,
-     "scrollViewport": 852,
+     "scrollLength": 922,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 48,
@@ -15622,8 +15619,8 @@
       "ios/view-quiz/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1059,
-     "scrollViewport": 852,
+     "scrollLength": 1036,
+     "scrollViewport": 874,
      "scrollContainer": "div#qzScroll.scroll",
      "scrollShots": 1,
      "domNodes": 60,
@@ -15770,8 +15767,8 @@
       "ios/view-quiz-selected/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1059,
-     "scrollViewport": 852,
+     "scrollLength": 1036,
+     "scrollViewport": 874,
      "scrollContainer": "div#qzScroll.scroll",
      "scrollShots": 1,
      "domNodes": 60,
@@ -15934,8 +15931,8 @@
       "ios/view-quiz-answered-correct/scroll-02.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1602,
-     "scrollViewport": 852,
+     "scrollLength": 1579,
+     "scrollViewport": 874,
      "scrollContainer": "div#qzScroll.scroll",
      "scrollShots": 3,
      "domNodes": 85,
@@ -15957,7 +15954,7 @@
        "scrollLeft": 0
       }
      ],
-     "scrollTopAtShot": 750,
+     "scrollTopAtShot": 705,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -16119,7 +16116,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1440,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div#qzScroll.scroll",
      "scrollShots": 2,
      "domNodes": 86,
@@ -16141,7 +16138,7 @@
        "scrollLeft": 0
       }
      ],
-     "scrollTopAtShot": 588,
+     "scrollTopAtShot": 566,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -16402,7 +16399,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1201,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div#qzScroll.scroll",
      "scrollShots": 2,
      "domNodes": 75,
@@ -16424,7 +16421,7 @@
        "scrollLeft": 0
       }
      ],
-     "scrollTopAtShot": 349,
+     "scrollTopAtShot": 327,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -16688,8 +16685,8 @@
       "ios/view-quiz-results/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 976,
-     "scrollViewport": 852,
+     "scrollLength": 977,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 46,
@@ -16860,7 +16857,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1346,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 76,
@@ -17221,7 +17218,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1394,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 2,
      "domNodes": 83,
@@ -17238,7 +17235,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 542,
+     "scrollTopAtShot": 520,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -17810,8 +17807,8 @@
       "ios/view-mainsResult/scroll-03.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2693,
-     "scrollViewport": 852,
+     "scrollLength": 2703,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 3,
      "domNodes": 109,
@@ -18018,8 +18015,8 @@
       "ios/view-mainsResult-model-open/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3534,
-     "scrollViewport": 852,
+     "scrollLength": 3543,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 5,
      "domNodes": 109,
@@ -18036,7 +18033,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 2227,
+     "scrollTopAtShot": 2226,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -18188,7 +18185,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1389,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 69,
@@ -18369,7 +18366,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1389,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 69,
@@ -18524,8 +18521,8 @@
       "ios/view-mainsResult-pushed/scroll-03.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2620,
-     "scrollViewport": 852,
+     "scrollLength": 2630,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 3,
      "domNodes": 109,
@@ -18679,7 +18676,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1353,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 77,
@@ -18846,8 +18843,8 @@
       "ios/view-answerbank-hindi/scroll-03.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2529,
-     "scrollViewport": 852,
+     "scrollLength": 2503,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 3,
      "domNodes": 139,
@@ -19030,7 +19027,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 3122,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 5,
      "domNodes": 156,
@@ -19047,7 +19044,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 509,
+     "scrollTopAtShot": 498,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [],
@@ -19234,7 +19231,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1346,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 76,
@@ -19367,8 +19364,8 @@
       "ios/view-answer-model-open/scroll-02.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2014,
-     "scrollViewport": 852,
+     "scrollLength": 1958,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 2,
      "domNodes": 42,
@@ -19514,14 +19511,13 @@
       "ios/view-article-lead/dom.json",
       "ios/view-article-lead/html.txt",
       "ios/view-article-lead/scroll-01.png",
-      "ios/view-article-lead/scroll-02.png",
-      "ios/view-article-lead/scroll-03.png"
+      "ios/view-article-lead/scroll-02.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2259,
-     "scrollViewport": 852,
+     "scrollLength": 2238,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ar-scroll",
-     "scrollShots": 3,
+     "scrollShots": 2,
      "domNodes": 70,
      "chrome": [],
      "ask": "hidden",
@@ -19671,8 +19667,8 @@
       "ios/view-article-text-larger/scroll-03.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2306,
-     "scrollViewport": 852,
+     "scrollLength": 2284,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ar-scroll",
      "scrollShots": 3,
      "domNodes": 70,
@@ -19699,7 +19695,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 5400,
+     "fakeClockElapsedMs": 5250,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -19834,8 +19830,8 @@
       "ios/view-article-text-largest/scroll-03.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2554,
-     "scrollViewport": 852,
+     "scrollLength": 2499,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ar-scroll",
      "scrollShots": 3,
      "domNodes": 70,
@@ -19862,7 +19858,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 9600,
+     "fakeClockElapsedMs": 9450,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -20035,7 +20031,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 14400,
+     "fakeClockElapsedMs": 14250,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -20213,7 +20209,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 18000,
+     "fakeClockElapsedMs": 17850,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -20330,8 +20326,8 @@
       "ios/view-article-older/scroll-03.png"
      ],
      "missingFiles": [],
-     "scrollLength": 2370,
-     "scrollViewport": 852,
+     "scrollLength": 2319,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ar-scroll",
      "scrollShots": 3,
      "domNodes": 70,
@@ -20484,7 +20480,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1434,
-     "scrollViewport": 740,
+     "scrollViewport": 762,
      "scrollContainer": "div.scroll.pq-scroll",
      "scrollShots": 3,
      "domNodes": 66,
@@ -20506,7 +20502,7 @@
        "scrollLeft": 0
       }
      ],
-     "scrollTopAtShot": 694,
+     "scrollTopAtShot": 672,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [],
@@ -20636,8 +20632,8 @@
       "ios/view-pqb-q2/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 873,
-     "scrollViewport": 740,
+     "scrollLength": 851,
+     "scrollViewport": 762,
      "scrollContainer": "div.scroll.pq-scroll",
      "scrollShots": 1,
      "domNodes": 49,
@@ -20797,8 +20793,8 @@
       "ios/view-pqb-wrong/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1193,
-     "scrollViewport": 740,
+     "scrollLength": 1170,
+     "scrollViewport": 762,
      "scrollContainer": "div.scroll.pq-scroll",
      "scrollShots": 2,
      "domNodes": 59,
@@ -20820,7 +20816,7 @@
        "scrollLeft": 0
       }
      ],
-     "scrollTopAtShot": 453,
+     "scrollTopAtShot": 408,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [],
@@ -20962,8 +20958,8 @@
       "ios/view-pqb-hindi/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1225,
-     "scrollViewport": 740,
+     "scrollLength": 1203,
+     "scrollViewport": 762,
      "scrollContainer": "div.scroll.pq-scroll",
      "scrollShots": 1,
      "domNodes": 60,
@@ -21410,7 +21406,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 998,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 54,
@@ -21749,7 +21745,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1009,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 2,
      "domNodes": 71,
@@ -21766,7 +21762,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 157,
+     "scrollTopAtShot": 135,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [],
@@ -22058,7 +22054,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 2501,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 4,
      "domNodes": 198,
@@ -22075,7 +22071,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 940,
+     "scrollTopAtShot": 929,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [],
@@ -22228,7 +22224,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 947,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 2,
      "domNodes": 70,
@@ -22245,7 +22241,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 95,
+     "scrollTopAtShot": 73,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [],
@@ -22968,7 +22964,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 884,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 65,
@@ -23153,7 +23149,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 938,
-     "scrollViewport": 692,
+     "scrollViewport": 712,
      "scrollContainer": "div.sh-body",
      "scrollShots": 1,
      "domNodes": 86,
@@ -23798,7 +23794,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1177,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 72,
@@ -23958,7 +23954,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1177,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 72,
@@ -24485,8 +24481,8 @@
       "ios/view-upload-after/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1051,
-     "scrollViewport": 852,
+     "scrollLength": 1033,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 2,
      "domNodes": 65,
@@ -24503,7 +24499,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 199,
+     "scrollTopAtShot": 159,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [],
@@ -24629,8 +24625,8 @@
       "ios/view-cloud-uploads/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1117,
-     "scrollViewport": 852,
+     "scrollLength": 1098,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 85,
@@ -24779,8 +24775,8 @@
       "ios/view-cloud-notes/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1048,
-     "scrollViewport": 852,
+     "scrollLength": 1029,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 82,
@@ -24938,8 +24934,8 @@
       "ios/view-cloud-warning-dismissed/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1304,
-     "scrollViewport": 852,
+     "scrollLength": 1286,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 112,
@@ -25295,8 +25291,8 @@
       "ios/view-cloud-search-empty/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 992,
-     "scrollViewport": 852,
+     "scrollLength": 974,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 50,
@@ -25617,8 +25613,8 @@
       "ios/view-querydb-knowledge-added/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1155,
-     "scrollViewport": 852,
+     "scrollLength": 1139,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 66,
@@ -25938,8 +25934,8 @@
       "ios/view-querydb-answer/scroll-02.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1614,
-     "scrollViewport": 852,
+     "scrollLength": 1574,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 2,
      "domNodes": 93,
@@ -26776,7 +26772,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1014,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 66,
@@ -27052,7 +27048,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1062,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 89,
@@ -27216,7 +27212,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1215,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 119,
@@ -27823,7 +27819,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 2300,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ug-scroll",
      "scrollShots": 4,
      "domNodes": 169,
@@ -27838,7 +27834,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 1448,
+     "scrollTopAtShot": 1426,
      "atRest": {
       "ambientAnimations": [
        "tw2"
@@ -27968,7 +27964,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 2300,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ug-scroll",
      "scrollShots": 4,
      "domNodes": 169,
@@ -27983,7 +27979,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 1448,
+     "scrollTopAtShot": 1426,
      "atRest": {
       "ambientAnimations": [
        "tw2"
@@ -28096,8 +28092,8 @@
       "ios/view-legal-terms-from-auth/scroll-05.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3893,
-     "scrollViewport": 852,
+     "scrollLength": 3797,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 5,
      "domNodes": 104,
@@ -28579,8 +28575,8 @@
       "ios/view-note2-saved/scroll-02.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1922,
-     "scrollViewport": 852,
+     "scrollLength": 1905,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ar-scroll.nr",
      "scrollShots": 2,
      "domNodes": 124,
@@ -28735,8 +28731,8 @@
       "ios/view-noteshub-faculty/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1297,
-     "scrollViewport": 852,
+     "scrollLength": 1273,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 87,
@@ -29048,9 +29044,9 @@
      "planTheme": "free",
      "scrollTopAtShot": null,
      "clippedOverflow": {
-      "contentHeight": 1758,
-      "visibleHeight": 852,
-      "hiddenPx": 906
+      "contentHeight": 1728,
+      "visibleHeight": 874,
+      "hiddenPx": 854
      },
      "atRest": {
       "ambientAnimations": [],
@@ -29223,9 +29219,9 @@
      "planTheme": "free",
      "scrollTopAtShot": null,
      "clippedOverflow": {
-      "contentHeight": 1758,
-      "visibleHeight": 852,
-      "hiddenPx": 906
+      "contentHeight": 1728,
+      "visibleHeight": 874,
+      "hiddenPx": 854
      },
      "atRest": {
       "ambientAnimations": [],
@@ -29404,9 +29400,9 @@
      "planTheme": "free",
      "scrollTopAtShot": null,
      "clippedOverflow": {
-      "contentHeight": 1758,
-      "visibleHeight": 852,
-      "hiddenPx": 906
+      "contentHeight": 1728,
+      "visibleHeight": 874,
+      "hiddenPx": 854
      },
      "atRest": {
       "ambientAnimations": [],
@@ -29594,9 +29590,9 @@
      "planTheme": "free",
      "scrollTopAtShot": null,
      "clippedOverflow": {
-      "contentHeight": 1691,
-      "visibleHeight": 852,
-      "hiddenPx": 839
+      "contentHeight": 1661,
+      "visibleHeight": 874,
+      "hiddenPx": 787
      },
      "atRest": {
       "ambientAnimations": [],
@@ -29794,8 +29790,8 @@
      "scrollTopAtShot": null,
      "clippedOverflow": {
       "contentHeight": 1957,
-      "visibleHeight": 852,
-      "hiddenPx": 1105
+      "visibleHeight": 874,
+      "hiddenPx": 1083
      },
      "atRest": {
       "ambientAnimations": [],
@@ -30001,9 +29997,9 @@
      "planTheme": "free",
      "scrollTopAtShot": null,
      "clippedOverflow": {
-      "contentHeight": 2212,
-      "visibleHeight": 852,
-      "hiddenPx": 1360
+      "contentHeight": 2175,
+      "visibleHeight": 874,
+      "hiddenPx": 1301
      },
      "atRest": {
       "ambientAnimations": [],
@@ -30221,9 +30217,9 @@
      "planTheme": "free",
      "scrollTopAtShot": null,
      "clippedOverflow": {
-      "contentHeight": 1691,
-      "visibleHeight": 852,
-      "hiddenPx": 839
+      "contentHeight": 1661,
+      "visibleHeight": 874,
+      "hiddenPx": 787
      },
      "atRest": {
       "ambientAnimations": [],
@@ -30355,14 +30351,13 @@
      "files": [
       "ios/sheet-xray-insight-tab1/shot.png",
       "ios/sheet-xray-insight-tab1/dom.json",
-      "ios/sheet-xray-insight-tab1/html.txt",
-      "ios/sheet-xray-insight-tab1/scroll-01.png"
+      "ios/sheet-xray-insight-tab1/html.txt"
      ],
      "missingFiles": [],
-     "scrollLength": 537,
-     "scrollViewport": 505,
-     "scrollContainer": "div#x4sBody.x4s-body",
-     "scrollShots": 1,
+     "scrollLength": null,
+     "scrollViewport": null,
+     "scrollContainer": null,
+     "scrollShots": 0,
      "domNodes": 34,
      "chrome": [
       "#nav",
@@ -30379,7 +30374,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 0,
+     "scrollTopAtShot": null,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -30557,7 +30552,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 2700,
+     "fakeClockElapsedMs": 2400,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -30688,7 +30683,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 653,
-     "scrollViewport": 505,
+     "scrollViewport": 545,
      "scrollContainer": "div#x4sBody.x4s-body",
      "scrollShots": 1,
      "domNodes": 49,
@@ -30725,7 +30720,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 3300,
+     "fakeClockElapsedMs": 3000,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -30867,7 +30862,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 884,
-     "scrollViewport": 505,
+     "scrollViewport": 545,
      "scrollContainer": "div#x4sBody.x4s-body",
      "scrollShots": 2,
      "domNodes": 59,
@@ -30886,7 +30881,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 363,
+     "scrollTopAtShot": 339,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -30904,7 +30899,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 4400,
+     "fakeClockElapsedMs": 4100,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -31058,7 +31053,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 884,
-     "scrollViewport": 505,
+     "scrollViewport": 545,
      "scrollContainer": "div#x4sBody.x4s-body",
      "scrollShots": 2,
      "domNodes": 60,
@@ -31077,7 +31072,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 363,
+     "scrollTopAtShot": 339,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -31095,7 +31090,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 6250,
+     "fakeClockElapsedMs": 5950,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -31261,7 +31256,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 884,
-     "scrollViewport": 505,
+     "scrollViewport": 545,
      "scrollContainer": "div#x4sBody.x4s-body",
      "scrollShots": 2,
      "domNodes": 59,
@@ -31280,7 +31275,7 @@
      ],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 363,
+     "scrollTopAtShot": 339,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -31298,7 +31293,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 8100,
+     "fakeClockElapsedMs": 7800,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -31503,7 +31498,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 9150,
+     "fakeClockElapsedMs": 8850,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -31714,7 +31709,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 9750,
+     "fakeClockElapsedMs": 9450,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -31931,7 +31926,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 10350,
+     "fakeClockElapsedMs": 10050,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -32143,7 +32138,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 11550,
+     "fakeClockElapsedMs": 11250,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -32260,7 +32255,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 925,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 101,
@@ -32446,7 +32441,7 @@
        "lxBeam"
       ],
       "ambientSettleMs": 400,
-      "stableFrames": false,
+      "stableFrames": true,
       "settleTimeout": false,
       "stillRunning": []
      },
@@ -32806,9 +32801,9 @@
      "planTheme": "free",
      "scrollTopAtShot": null,
      "clippedOverflow": {
-      "contentHeight": 1758,
-      "visibleHeight": 852,
-      "hiddenPx": 906
+      "contentHeight": 1728,
+      "visibleHeight": 874,
+      "hiddenPx": 854
      },
      "atRest": {
       "ambientAnimations": [
@@ -32978,7 +32973,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1075,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 124,
@@ -33145,7 +33140,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 2534,
-     "scrollViewport": 712,
+     "scrollViewport": 732,
      "scrollContainer": "div.sh-body",
      "scrollShots": 4,
      "domNodes": 207,
@@ -33678,14 +33673,13 @@
       "ios/view-tracker-folder-added/shot.png",
       "ios/view-tracker-folder-added/dom.json",
       "ios/view-tracker-folder-added/html.txt",
-      "ios/view-tracker-folder-added/scroll-01.png",
-      "ios/view-tracker-folder-added/scroll-02.png"
+      "ios/view-tracker-folder-added/scroll-01.png"
      ],
      "missingFiles": [],
      "scrollLength": 1564,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
-     "scrollShots": 2,
+     "scrollShots": 1,
      "domNodes": 114,
      "chrome": [
       "#ask"
@@ -33867,7 +33861,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 949,
-     "scrollViewport": 712,
+     "scrollViewport": 732,
      "scrollContainer": "div.sh-body",
      "scrollShots": 1,
      "domNodes": 29,
@@ -33907,7 +33901,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 9700,
+     "fakeClockElapsedMs": 9550,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -34072,14 +34066,13 @@
       "ios/view-tracker-optional-set/shot.png",
       "ios/view-tracker-optional-set/dom.json",
       "ios/view-tracker-optional-set/html.txt",
-      "ios/view-tracker-optional-set/scroll-01.png",
-      "ios/view-tracker-optional-set/scroll-02.png"
+      "ios/view-tracker-optional-set/scroll-01.png"
      ],
      "missingFiles": [],
      "scrollLength": 1546,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
-     "scrollShots": 2,
+     "scrollShots": 1,
      "domNodes": 114,
      "chrome": [
       "#ask"
@@ -34114,7 +34107,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 13600,
+     "fakeClockElapsedMs": 13450,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -34297,7 +34290,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1253,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 90,
@@ -34332,7 +34325,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 14150,
+     "fakeClockElapsedMs": 13850,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -34557,7 +34550,7 @@
        "chars": "/"
       }
      ],
-     "fakeClockElapsedMs": 14550,
+     "fakeClockElapsedMs": 14250,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -34664,7 +34657,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 684,
-     "scrollViewport": 636,
+     "scrollViewport": 656,
      "scrollContainer": "div.n2-shb",
      "scrollShots": 1,
      "domNodes": 56,
@@ -34839,7 +34832,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 748,
-     "scrollViewport": 636,
+     "scrollViewport": 656,
      "scrollContainer": "div.n2-shb",
      "scrollShots": 1,
      "domNodes": 59,
@@ -35310,7 +35303,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 682,
-     "scrollViewport": 636,
+     "scrollViewport": 656,
      "scrollContainer": "div.n2-shb",
      "scrollShots": 1,
      "domNodes": 56,
@@ -35596,7 +35589,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 714,
-     "scrollViewport": 636,
+     "scrollViewport": 656,
      "scrollContainer": "div.n2-shb",
      "scrollShots": 1,
      "domNodes": 59,
@@ -35960,8 +35953,8 @@
       "ios/view-folder-sort-az/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3369,
-     "scrollViewport": 852,
+     "scrollLength": 3345,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 4,
      "domNodes": 250,
@@ -36303,8 +36296,8 @@
       "ios/sheet-note-updates/scroll-02.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1391,
-     "scrollViewport": 625,
+     "scrollLength": 1368,
+     "scrollViewport": 645,
      "scrollContainer": "div#ntUpB.n2-shb",
      "scrollShots": 2,
      "domNodes": 93,
@@ -36462,8 +36455,8 @@
       "ios/sheet-note-updates-expanded/scroll-02.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1606,
-     "scrollViewport": 625,
+     "scrollLength": 1583,
+     "scrollViewport": 645,
      "scrollContainer": "div#ntUpB.n2-shb",
      "scrollShots": 2,
      "domNodes": 93,
@@ -36973,8 +36966,8 @@
       "ios/view-ntNote-merged/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1230,
-     "scrollViewport": 852,
+     "scrollLength": 1208,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 49,
@@ -37355,7 +37348,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 963,
-     "scrollViewport": 712,
+     "scrollViewport": 732,
      "scrollContainer": "div.sh-body",
      "scrollShots": 1,
      "domNodes": 97,
@@ -38899,8 +38892,8 @@
       "ios/sheet-mentor-answer/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 913,
-     "scrollViewport": 614,
+     "scrollLength": 874,
+     "scrollViewport": 634,
      "scrollContainer": "div#mnBody.mn-body",
      "scrollShots": 2,
      "domNodes": 59,
@@ -39204,8 +39197,8 @@
       "ios/sheet-mentor-reopened/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 913,
-     "scrollViewport": 570,
+     "scrollLength": 874,
+     "scrollViewport": 590,
      "scrollContainer": "div#mnBody.mn-body",
      "scrollShots": 2,
      "domNodes": 63,
@@ -39222,7 +39215,7 @@
      "stack": [],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 343,
+     "scrollTopAtShot": 284,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -39375,8 +39368,8 @@
       "ios/sheet-mentor-answer-plan/scroll-03.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1731,
-     "scrollViewport": 570,
+     "scrollLength": 1692,
+     "scrollViewport": 590,
      "scrollContainer": "div#mnBody.mn-body",
      "scrollShots": 4,
      "domNodes": 106,
@@ -39393,7 +39386,7 @@
      "stack": [],
      "lang": "en",
      "planTheme": "free",
-     "scrollTopAtShot": 982,
+     "scrollTopAtShot": 943,
      "atRest": {
       "ambientAnimations": [],
       "ambientElsewhere": [
@@ -39508,7 +39501,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1568,
-     "scrollViewport": 712,
+     "scrollViewport": 732,
      "scrollContainer": "div.sh-body",
      "scrollShots": 2,
      "domNodes": 131,
@@ -40976,7 +40969,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 2322,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ug-scroll",
      "scrollShots": 3,
      "domNodes": 168,
@@ -41153,8 +41146,8 @@
       "ios/tab-home-pro/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3150,
-     "scrollViewport": 788,
+     "scrollLength": 3125,
+     "scrollViewport": 810,
      "scrollContainer": "div#homeScroll.scroll",
      "scrollShots": 4,
      "domNodes": 376,
@@ -41352,14 +41345,13 @@
       "ios/tab-learn-pro/scroll-01.png",
       "ios/tab-learn-pro/scroll-02.png",
       "ios/tab-learn-pro/scroll-03.png",
-      "ios/tab-learn-pro/scroll-04.png",
-      "ios/tab-learn-pro/scroll-05.png"
+      "ios/tab-learn-pro/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3417,
-     "scrollViewport": 788,
+     "scrollLength": 3373,
+     "scrollViewport": 810,
      "scrollContainer": "div#learnScroll.scroll",
-     "scrollShots": 5,
+     "scrollShots": 4,
      "domNodes": 409,
      "chrome": [
       "#nav",
@@ -41551,7 +41543,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1884,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#practiceScroll.scroll",
      "scrollShots": 2,
      "domNodes": 218,
@@ -41586,7 +41578,7 @@
        "chars": "→"
       }
      ],
-     "fakeClockElapsedMs": 12150,
+     "fakeClockElapsedMs": 12000,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -41748,8 +41740,8 @@
       "ios/tab-current-pro/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3053,
-     "scrollViewport": 788,
+     "scrollLength": 3026,
+     "scrollViewport": 810,
      "scrollContainer": "div#currentScroll.scroll",
      "scrollShots": 4,
      "domNodes": 219,
@@ -41779,7 +41771,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 13200,
+     "fakeClockElapsedMs": 13050,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -41942,7 +41934,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1800,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#menuScroll.scroll",
      "scrollShots": 2,
      "domNodes": 123,
@@ -41970,7 +41962,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 14550,
+     "fakeClockElapsedMs": 14400,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -42138,14 +42130,13 @@
       "ios/tab-profile-pro/dom.json",
       "ios/tab-profile-pro/html.txt",
       "ios/tab-profile-pro/scroll-01.png",
-      "ios/tab-profile-pro/scroll-02.png",
-      "ios/tab-profile-pro/scroll-03.png"
+      "ios/tab-profile-pro/scroll-02.png"
      ],
      "missingFiles": [],
      "scrollLength": 2061,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#profileScroll.scroll",
-     "scrollShots": 3,
+     "scrollShots": 2,
      "domNodes": 178,
      "chrome": [
       "#nav",
@@ -42174,7 +42165,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 15600,
+     "fakeClockElapsedMs": 15450,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -42357,8 +42348,8 @@
       "ios/view-wallet-pro/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1091,
-     "scrollViewport": 852,
+     "scrollLength": 1074,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 59,
@@ -42396,7 +42387,7 @@
        "chars": "≈"
       }
      ],
-     "fakeClockElapsedMs": 16800,
+     "fakeClockElapsedMs": 16500,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -42620,7 +42611,7 @@
        "chars": "≈"
       }
      ],
-     "fakeClockElapsedMs": 17700,
+     "fakeClockElapsedMs": 17400,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -42850,7 +42841,7 @@
        "chars": "-01246INV"
       }
      ],
-     "fakeClockElapsedMs": 19500,
+     "fakeClockElapsedMs": 19200,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -43079,7 +43070,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 20700,
+     "fakeClockElapsedMs": 20400,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -43321,7 +43312,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 23400,
+     "fakeClockElapsedMs": 23100,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -43915,7 +43906,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 2332,
-     "scrollViewport": 852,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll.ug-scroll",
      "scrollShots": 3,
      "domNodes": 170,
@@ -44086,8 +44077,8 @@
       "ios/tab-home-ultimate/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3150,
-     "scrollViewport": 788,
+     "scrollLength": 3125,
+     "scrollViewport": 810,
      "scrollContainer": "div#homeScroll.scroll",
      "scrollShots": 4,
      "domNodes": 376,
@@ -44279,14 +44270,13 @@
       "ios/tab-learn-ultimate/scroll-01.png",
       "ios/tab-learn-ultimate/scroll-02.png",
       "ios/tab-learn-ultimate/scroll-03.png",
-      "ios/tab-learn-ultimate/scroll-04.png",
-      "ios/tab-learn-ultimate/scroll-05.png"
+      "ios/tab-learn-ultimate/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3417,
-     "scrollViewport": 788,
+     "scrollLength": 3373,
+     "scrollViewport": 810,
      "scrollContainer": "div#learnScroll.scroll",
-     "scrollShots": 5,
+     "scrollShots": 4,
      "domNodes": 409,
      "chrome": [
       "#nav",
@@ -44472,7 +44462,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1884,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#practiceScroll.scroll",
      "scrollShots": 2,
      "domNodes": 218,
@@ -44507,7 +44497,7 @@
        "chars": "→"
       }
      ],
-     "fakeClockElapsedMs": 12150,
+     "fakeClockElapsedMs": 12000,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -44663,8 +44653,8 @@
       "ios/tab-current-ultimate/scroll-04.png"
      ],
      "missingFiles": [],
-     "scrollLength": 3053,
-     "scrollViewport": 788,
+     "scrollLength": 3026,
+     "scrollViewport": 810,
      "scrollContainer": "div#currentScroll.scroll",
      "scrollShots": 4,
      "domNodes": 219,
@@ -44694,7 +44684,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 13200,
+     "fakeClockElapsedMs": 13050,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -44851,7 +44841,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1800,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#menuScroll.scroll",
      "scrollShots": 2,
      "domNodes": 123,
@@ -44879,7 +44869,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 14550,
+     "fakeClockElapsedMs": 14400,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -45045,7 +45035,7 @@
      ],
      "missingFiles": [],
      "scrollLength": 1898,
-     "scrollViewport": 788,
+     "scrollViewport": 810,
      "scrollContainer": "div#profileScroll.scroll",
      "scrollShots": 2,
      "domNodes": 168,
@@ -45076,7 +45066,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 15600,
+     "fakeClockElapsedMs": 15450,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -45253,8 +45243,8 @@
       "ios/view-wallet-ultimate/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1091,
-     "scrollViewport": 852,
+     "scrollLength": 1074,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 59,
@@ -45282,7 +45272,7 @@
        "spin"
       ],
       "ambientSettleMs": 400,
-      "stableFrames": false,
+      "stableFrames": true,
       "settleTimeout": false,
       "stillRunning": []
      },
@@ -45292,7 +45282,7 @@
        "chars": "≈"
       }
      ],
-     "fakeClockElapsedMs": 16650,
+     "fakeClockElapsedMs": 16500,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -45497,7 +45487,7 @@
       "stillRunning": []
      },
      "systemFontGlyphs": [],
-     "fakeClockElapsedMs": 18150,
+     "fakeClockElapsedMs": 18000,
      "pageErrors": [],
      "failedRequests": []
     }
@@ -45943,8 +45933,8 @@
       "ios/view-cloud-vault-unlocked/scroll-01.png"
      ],
      "missingFiles": [],
-     "scrollLength": 1393,
-     "scrollViewport": 852,
+     "scrollLength": 1374,
+     "scrollViewport": 874,
      "scrollContainer": "div.scroll",
      "scrollShots": 1,
      "domNodes": 117,
@@ -46498,7 +46488,7 @@
      "scrollTopAtShot": null,
      "atRest": {
       "timeline": true,
-      "timelineOffsetMs": 1509,
+      "timelineOffsetMs": 1501,
       "note": "not a rest frame: taken at a real-time offset inside a running animation sequence",
       "ambientAnimations": [
        "s4Bok",
@@ -46767,7 +46757,7 @@
      "scrollTopAtShot": null,
      "atRest": {
       "timeline": true,
-      "timelineOffsetMs": 3005,
+      "timelineOffsetMs": 3004,
       "note": "not a rest frame: taken at a real-time offset inside a running animation sequence",
       "ambientAnimations": [
        "s4Bok",
@@ -46828,7 +46818,6 @@
        "s4FpNext",
        "s4FpNext",
        "s4FpNext",
-       "s4Ring",
        "s4Type"
       ]
      },
@@ -47007,7 +46996,7 @@
      "scrollTopAtShot": null,
      "atRest": {
       "timeline": true,
-      "timelineOffsetMs": 4609,
+      "timelineOffsetMs": 4613,
       "note": "not a rest frame: taken at a real-time offset inside a running animation sequence",
       "ambientAnimations": [
        "s4Bok",
@@ -47026,14 +47015,11 @@
       "stableFrames": false,
       "settleTimeout": false,
       "stillRunning": [
-       "transition:opacity",
-       "transition:transform",
        "s4Push",
        "s4In5",
        "s4Halo",
        "s4LineOut",
        "s4Lit",
-       "s4Col",
        "s4Col",
        "s4Col",
        "s4Col",
@@ -47216,7 +47202,7 @@
      "scrollTopAtShot": null,
      "atRest": {
       "timeline": true,
-      "timelineOffsetMs": 6510,
+      "timelineOffsetMs": 6504,
       "note": "not a rest frame: taken at a real-time offset inside a running animation sequence",
       "ambientAnimations": [
        "s4Bok",
@@ -47239,6 +47225,7 @@
        "s4Lit",
        "s4Glint",
        "s4Flag",
+       "s4FpNext",
        "s4FpNext",
        "s4FpNext",
        "s4FpNext"
