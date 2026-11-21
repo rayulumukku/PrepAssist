@@ -9,7 +9,7 @@ Two rules from the product owner govern everything below:
 1. **Do not change any UI or UX.** The native app must look and behave like the HTML.
 2. **Do not create any component that is not in the design.** Nothing gets invented.
 
-The work is large (about 48 screens, 17 bottom sheets, 225 distinct actions), so it is executed by multiple agents working in parallel under one lead, with testing built into every phase.
+The work is large (about 48 screens, 17 bottom sheets, 236 distinct actions), so it is executed by multiple agents working in parallel under one lead, with testing built into every phase.
 
 The repo is already cloned at `/Users/srinivasulu/Desktop/reactnative/PrepAssist` (branch `main`, clean).
 
@@ -25,7 +25,7 @@ The repo is already cloned at `/Users/srinivasulu/Desktop/reactnative/PrepAssist
 | No new states | No loading, error or empty states beyond those in the HTML (for example the search sheet's "Nothing found") | Review against reference pack |
 | Gestures only where the HTML has them | Book page swipe, intro, Home hero, flashcard deck, article reader, compendium reader, X-Ray reader. Sheets close by scrim tap or close button only: the grab handle is decorative in the HTML, so there is no drag-to-dismiss. No swipe-back | Review |
 | Copy and data are identical | All strings and mock data are extracted from the HTML by script, not retyped | Automated deep-equal test against the original JavaScript (section 8.2) |
-| Icons are identical | The 100+ `<symbol>` icons are converted by script into the icon map | Generated file, never hand-edited |
+| Icons are identical | The 84 `<symbol>` icons are converted by script into the icon map | Generated file, never hand-edited |
 | Simulated stays simulated | AI replies, uploads, payments, social sign-in and email verification keep the same canned behaviour. No backend is added | Review |
 
 **Platform necessities.** These are not design changes, but they are listed so nothing is a surprise:
@@ -97,7 +97,7 @@ The repo has no existing code or conventions (it holds one HTML file), so these 
 | Later style blocks | 8694–9718, 10075–10326, 10636–10743, 10779–10790 | `xray2`, `xray3`, `onestep`, `onestep4`, `ds-handoff`, `xray4`, `xray4-tidy`, `notes2`, `notes3`, `planthemes`, `cxcompact` |
 | Later scripts | 9719–10073, 10327–10635, 10744–10778 | X-Ray v4, Notes Tracker v2, plan themes |
 
-Totals: 5 stages, 6 tabs, about 42 pushed views, 17 sheets, 225 distinct `data-act` verbs, 144 keyframes, English and Hindi chrome strings, synthesised Web Audio, one canvas, one embedded JPEG, one remote image with a fallback.
+Totals: 5 stages, 6 tabs, about 42 pushed views, 17 sheets, 236 action verbs, 144 keyframes, English and Hindi chrome strings, synthesised Web Audio, one canvas, one embedded JPEG, one remote image with a fallback.
 
 Line ranges come from the survey. Each agent confirms the final effective definition against the reference pack before porting, because later blocks reassign `VIEWS.xray`, `VIEWS.tracker`, `VIEWS.upgrade` and others.
 
@@ -180,7 +180,7 @@ PrepAssist/
       sheets/
     .maestro/                  emulator flows
     __tests__/
-    actions.map.json           all 225 verbs: handler, owner, test
+    actions.map.json           all 236 verbs: handler, owner, test
 ```
 
 ## 6. Multi-agent execution model
@@ -253,8 +253,8 @@ Every phase ends with a gate. Work does not move on until the gate passes.
 ### Phase 1 — Foundation (lead + 2 agents in parallel)
 
 - **1A, lead: shell and contract.** Theme tokens and the three plan themes; fonts; shared components for the classes listed in section 2; root stack, custom tab bar, stack interpolator, `Sheet`, `Toast`, Ask button; store skeleton with one slice per workstream; all routes registered with placeholders; `RichText`; deep links; ESLint restrictions; the Source-header audit script.
-- **1B, reference agent: ground truth.** A Playwright script opens `PrepAssist.html` at 412 × 915 (Pixel 7) and again at 393 × 852 (iPhone 15/16) and, for every stage, tab, view, sheet and notable state, saves a screenshot and a JSON dump of computed styles and box positions. It drives the page through the HTML's own hash jumps and `data-act` buttons. Output goes to `reference/<screen>/`. It also writes `reference/index.json`, the definitive screen list.
-- **1C, data agent: content.** Scripts in `tools/reference/` extract every data constant (`SUBJ`, `ARTICLES`, `QUIZ`, `TOOLS`, `MT`, `PLANS`, `LEGAL`, `XR`, X-Ray v4 and Notes Tracker data, and the rest), the i18n table and all icon symbols into typed modules. A test evaluates the original script in a Node sandbox and deep-compares it with the modules. It also generates `actions.map.json` with all 225 verbs.
+- **1B, reference agent: ground truth.** A Playwright script opens `PrepAssist.html` at 412 × 915 (Pixel 7) and again at 402 × 874 (iPhone 17) and, for every stage, tab, view, sheet and notable state, saves a screenshot and a JSON dump of computed styles and box positions. It drives the page through the HTML's own hash jumps and `data-act` buttons. Output goes to `reference/<screen>/`. It also writes `reference/index.json`, the definitive screen list.
+- **1C, data agent: content.** Scripts in `tools/reference/` extract every data constant (`SUBJ`, `ARTICLES`, `QUIZ`, `TOOLS`, `MT`, `PLANS`, `LEGAL`, `XR`, X-Ray v4 and Notes Tracker data, and the rest), the i18n table and all icon symbols into typed modules. A test evaluates the original script in a Node sandbox and deep-compares it with the modules. It also generates `actions.map.json` with all 236 verbs.
 
 **Gate:** types and lint clean; data-equality test green; the shell on the emulator matches the reference for the tab bar, page header, sheet, toast and Ask button; reference pack complete; contract frozen.
 
@@ -293,10 +293,10 @@ Workstreams A to F as in section 6. The test agent writes Maestro flows per work
 | 4 | Component | React Native Testing Library | Auth validation, quiz answer flow, sheet open and close, language switch, save toggles | Each workstream |
 | 5 | End to end | Maestro on the emulator | Arrival to Home; every tab; every Menu tool and back; quiz to results; Mains submit to result; mentor question; search; article save; purchase sheet; plan theme switch; Hindi switch; logout; Android back button | Phase 2 gates, Phase 4 |
 | 6 | Visual parity | Playwright reference, `adb` screenshots, pixel diff, reviewer agent | Every screen and sheet at rest; key rest frames of the book opening and One more step | Phase 3, Phase 4 |
-| 7 | Action coverage | Script over `actions.map.json` | All 225 verbs implemented and tested | Phase 4 |
+| 7 | Action coverage | Script over `actions.map.json` | All 236 verbs implemented and tested | Phase 4 |
 | 8 | Two-rule audit | Audit script + audit agent | No invented component, no UI change | Phase 4 |
 
-**Both platforms.** Layers 1 to 4 are platform-independent and run once. Layers 5 and 6 run on the Android emulator **and** the iOS Simulator at every Phase 2, 3 and 4 gate: the same Maestro flows on each, with Android screenshots compared against the 412 × 915 reference set and iOS screenshots against the 393 × 852 set. The Android back-button flow is replaced on iOS by a check that swipe-back does nothing. Running one Android emulator and one iOS simulator together fits in this Mac's 16 GB; if memory gets tight they are run one after the other.
+**Both platforms.** Layers 1 to 4 are platform-independent and run once. Layers 5 and 6 run on the Android emulator **and** the iOS Simulator at every Phase 2, 3 and 4 gate: the same Maestro flows on each, with Android screenshots compared against the 412 × 915 reference set and iOS screenshots against the 402 × 874 set. The Android back-button flow is replaced on iOS by a check that swipe-back does nothing. Running one Android emulator and one iOS simulator together fits in this Mac's 16 GB; if memory gets tight they are run one after the other.
 
 Tests use `testID` only, which is invisible, so tests add nothing to the UI.
 
@@ -307,7 +307,7 @@ A pixel diff will never be zero because Android and Chrome rasterise fonts diffe
 - `npx react-native run-android` builds and launches on the emulator from a clean checkout.
 - `npx react-native run-ios` builds and launches on the iOS Simulator, with the same end-to-end and parity results. If the Xcode install is blocked on an owner step, this item is reported as open, never as done.
 - Every screen in `reference/index.json` exists natively and passes parity review.
-- All 225 actions are implemented and covered.
+- All 236 actions are implemented and covered.
 - Layers 1 to 8 are green.
 - No WebView and no Expo dependency in `package.json`; no placeholder; every component has a valid Source header.
 - `PrepAssist.html` is unchanged.
@@ -335,3 +335,24 @@ A pixel diff will never be zero because Android and Chrome rasterise fonts diffe
 1. Phase 0: start the Xcode download (step 7.1) and the Android toolchain (steps 1 to 5) together; blank app on the Android emulator, then on the iOS Simulator.
 2. Write `PrepAssist/IMPLEMENTATION_PLAN.md` from this plan and update the plan page at https://claude.ai/artifact/PfPT3s2FKeheG5o4G6Nviv.
 3. Start Phase 1A, and launch the reference and data agents in parallel.
+
+## 12. Status log
+
+| Date | Phase | Result |
+|---|---|---|
+| 2026-11-21 | 0 | Done on both platforms. React Native 0.88.1 scaffolded; all planned native libraries compile; blank app launches on the Android emulator (Pixel 7, Android 16) and the iOS Simulator (iPhone 17, iOS 27.2, Xcode 27.2). |
+| 2026-11-21 | 1C | Done. Data, strings, 84 icons, initial state and 236 action verbs extracted by script; `verify.mjs` and 125 Jest checks guard them. |
+| 2026-11-21 | 1B | Done for Android (412 × 915). 286 states captured and verified. iOS set being re-captured at 402 × 874 to match the iPhone 17 simulator. |
+| 2026-11-21 | 1A | In progress (foundation agent). |
+
+### Facts corrected after extraction and capture
+
+- 236 action verbs (estimated 225), all with handlers. 84 icons (estimated 100+).
+- 42 views, 17 registry sheets, 286 captured states in total.
+- `data-act="tool:…"` runs the original `openTool` (L6954-6960); later reassignments never take effect. The port reproduces the actual behaviour.
+- The password-strength meter is hidden by the final CSS (`#s-auth #pwS{display:none!important}`, L1146), so it is not shown natively either.
+- Learn filter chips are dead code in the final prototype and are not ported.
+
+### Open questions for the owner
+
+1. **X-Ray reader does not scroll in the prototype.** A late CSS selector no longer matches, so about 780 px of each X-Ray article is clipped and unreachable. Port as rendered (clipped), or make it scroll? Default until answered: as rendered, since that is the "no UI/UX change" rule.
