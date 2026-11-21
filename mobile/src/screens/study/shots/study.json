@@ -1,0 +1,169 @@
+{
+  "area": "study",
+  "shots": {
+    "sheet-mentor-intro": {
+      "links": [
+        "tab/home",
+        "act/mentor"
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ]
+    },
+    "sheet-mentor-typing": {
+      "links": [
+        "tab/home",
+        "act/mentor",
+        {
+          "link": "act/mentorAsk/Explain%20Article%2032%20simply.",
+          "wait": 300
+        }
+      ],
+      "wait": 0,
+      "regions": [
+        "0,73,412,842"
+      ],
+      "note": "typing dots never rest; the at-rest loop may land on the answer (reply after 900-1400 ms)"
+    },
+    "sheet-mentor-answer": {
+      "links": [
+        "tab/home",
+        "act/mentor",
+        {
+          "link": "act/mentorAsk/Explain%20Article%2032%20simply.",
+          "wait": 2000
+        }
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ]
+    },
+    "sheet-mentor-context-off": {
+      "links": [
+        "tab/home",
+        "act/mentor",
+        {
+          "link": "act/mentorAsk/Explain%20Article%2032%20simply.",
+          "wait": 2000
+        },
+        "act/ctxToggle"
+      ],
+      "wait": 600,
+      "regions": [
+        "0,73,412,842"
+      ]
+    },
+    "sheet-mentor-reopened": {
+      "links": [
+        "tab/home",
+        "act/mentor",
+        {
+          "link": "act/mentorAsk/Explain%20Article%2032%20simply.",
+          "wait": 2000
+        },
+        "act/ctxToggle",
+        {
+          "link": "act/ctxToggle",
+          "wait": 3000
+        },
+        {
+          "link": "closeSheet",
+          "wait": 500
+        },
+        "act/mentor"
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ]
+    },
+    "sheet-mentor-answer-plan": {
+      "links": [
+        "tab/home",
+        "act/mentor",
+        {
+          "link": "act/mentorAsk/Explain%20Article%2032%20simply.",
+          "wait": 2000
+        },
+        "act/ctxToggle",
+        {
+          "link": "act/ctxToggle",
+          "wait": 3000
+        },
+        {
+          "link": "closeSheet",
+          "wait": 500
+        },
+        {
+          "link": "act/mentor",
+          "wait": 600
+        },
+        {
+          "link": "act/mentorAsk/How%20should%20I%20revise%20Polity%20in%2015%20days%3F",
+          "wait": 2000
+        }
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ]
+    },
+    "sheet-mentor-intro-pro": {
+      "links": [
+        "plan/pro",
+        "tab/profile",
+        "act/mentor"
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ],
+      "note": "reference reached through a purchase; plan/pro sets the same theme"
+    },
+    "sheet-mentor-intro-ultimate": {
+      "links": [
+        "plan/ultimate",
+        "tab/profile",
+        "act/mentor"
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ]
+    },
+    "sheet-search-empty-query": {
+      "links": [
+        "tab/home",
+        "act/cmdk"
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ],
+      "note": "the input takes focus after 350 ms as in the HTML; a soft keyboard, if the emulator shows one, covers the bottom"
+    },
+    "sheet-search-results": {
+      "links": [
+        "tab/home",
+        "sheet/search/art"
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ],
+      "note": "test-only: the sheet arg seeds the input (the reference types 'art')"
+    },
+    "sheet-search-no-result": {
+      "links": [
+        "tab/home",
+        "sheet/search/zzzz"
+      ],
+      "wait": 900,
+      "regions": [
+        "0,73,412,842"
+      ]
+    }
+  }
+}

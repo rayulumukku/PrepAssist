@@ -4,18 +4,24 @@
 // of those views that handlers change from outside the component (the HTML keeps it in the DOM).
 import type { InitialState, StateMapsItem } from '../../data/initialState';
 import type { SavedLink } from '../../screens/study/maps/mapsLogic';
+import type { MentorCtx } from '../../sheets/study/mentor/mentorLogic';
+import type { MlogEntry, MnView } from '../../sheets/study/mentor/mentorFlow';
 
 export interface StudySlice {
   /** S.saved (L5130): saved ARTICLES ids. Also read by the Current tab. */
   saved: Set<string>;
   /** S.savedLinks (L7649 block): links added with A.svSave (L8176), newest first. */
   savedLinks: SavedLink[];
-  /** S.mlog (L5131): mentor conversation. Retype when porting mentorAsk (L6868). */
-  mlog: unknown[];
+  /** S.mlog (L5131): mentor conversation, one entry per answered question (L6877). */
+  mlog: MlogEntry[];
   /** S.ctxOn (L5131) */
   ctxOn: boolean;
-  /** S.mctx (created L6847): the context openMentor computed. Retype when porting. */
-  mctx: unknown;
+  /** S.mctx (created L6847): the context openMentor computed. */
+  mctx: MentorCtx | undefined;
+  /** #mnBody of the open mentor sheet (L6852, appended to by mentorAsk L6871-L6876). */
+  mnView: MnView | null;
+  /** #mnIn textarea value (read by mentorSend L6867). */
+  mnIn: string;
   /** S.arSize (L7105): article text size 1-3. */
   arSize: number;
   /** S.maps (L7663 block): generated mindmaps. */
@@ -53,9 +59,11 @@ export function createStudySlice(seed: InitialState): StudySlice {
   return {
     saved: new Set<string>(seed.saved),
     savedLinks: seed.savedLinks as SavedLink[],
-    mlog: seed.mlog,
+    mlog: seed.mlog as MlogEntry[],
     ctxOn: seed.ctxOn,
     mctx: undefined,
+    mnView: null,
+    mnIn: '',
     arSize: seed.arSize,
     maps: seed.maps,
     // --- pages group seeds ---
