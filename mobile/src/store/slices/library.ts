@@ -17,8 +17,8 @@ import type {
   StateXr,
   StateXr2,
 } from '../../data/initialState';
-import { DOCS } from '../../data/notes';
-import type { DocsItem } from '../../data/notes';
+import { DOCS, NOTES } from '../../data/notes';
+import type { DocsItem, NotesItem } from '../../data/notes';
 import { FOLDERS, NT, OPTIONALS } from '../../data/tracker';
 import type { NtValueItem } from '../../data/tracker';
 import { XSC } from '../../data/xray';
@@ -62,12 +62,12 @@ export interface LibrarySlice {
   syl: StateSyl;
   /** S.sylDone (L7658) */
   sylDone: Record<string, number>;
-  /** S.up (L7659) */
-  up: StateUp;
+  /** S.up (L7659): `file` is set by A.upPick (L8180) */
+  up: Omit<StateUp, 'file'> & { file: { n: string; sz: string; k: string } | null };
   /** S.vlt (L7660) */
   vlt: StateVlt;
-  /** S.qdb2 (L7661) */
-  qdb2: StateQdb2;
+  /** S.qdb2 (L7661): items are pasted texts (A.qdAdd L8201), out the generated answer (A.qdGo L8205) */
+  qdb2: Omit<StateQdb2, 'items' | 'out'> & { items: string[]; out: { q: string; subj: string } | null };
   /** S.nsys (L7664) */
   nsys: StateNsys;
   /** S.optional (L7665): chosen optional subject or null. */
@@ -98,6 +98,8 @@ export interface LibrarySlice {
   ntUpsGen: number;
 
   // Data constants that handlers change (seed copies; replace, never mutate the generated modules).
+  /** NOTES (L5205): A.vlDelGo splices a note out of the vault (L8190). A copy owned here; the study screens read data/notes. */
+  NOTES: readonly NotesItem[];
   /** DOCS (L5221): A.upGo unshifts uploads (L8184). */
   DOCS: readonly DocsItem[];
   /** FOLDERS (tracker.ts): A.ntAddGo pushes a folder (L8196, L10632). */
@@ -114,9 +116,9 @@ export function createLibrarySlice(seed: InitialState): LibrarySlice {
   return {
     syl: seed.syl,
     sylDone: seed.sylDone,
-    up: seed.up,
+    up: { ...seed.up, file: null },
     vlt: seed.vlt,
-    qdb2: seed.qdb2,
+    qdb2: { ...seed.qdb2, items: [], out: null },
     nsys: seed.nsys,
     optional: seed.optional,
     folders: seed.folders,
@@ -131,6 +133,7 @@ export function createLibrarySlice(seed: InitialState): LibrarySlice {
     nn: undefined,
     ntMerge: null,
     ntUpsGen: 0,
+    NOTES: [...NOTES],
     DOCS: [...DOCS],
     FOLDERS: [...FOLDERS],
     XSC: [...XSC],
