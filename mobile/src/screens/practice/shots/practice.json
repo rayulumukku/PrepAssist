@@ -1,0 +1,42 @@
+{
+  "area": "practice",
+  "shots": {
+    "view-quiz": {
+      "links": [
+        "jump/quiz"
+      ],
+      "wait": 900,
+      "note": "timer text depends on elapsed real time"
+    },
+    "view-quiz-selected": {
+      "links": [
+        "jump/quiz;act/opt/1"
+      ],
+      "wait": 900
+    },
+    "view-quiz-answered-correct": {
+      "links": [
+        "jump/quiz;act/opt/1;act/qSubmit"
+      ],
+      "wait": 1500
+    },
+    "view-quiz-answered-wrong": {
+      "links": [
+        "jump/quiz;act/opt/1;act/qSubmit;act/qNext;act/opt/3;act/qSubmit"
+      ],
+      "wait": 1500
+    },
+    "view-quiz-last-answered": {
+      "links": [
+        "jump/quiz;act/opt/1;act/qSubmit;act/qNext;act/opt/3;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/0;act/qSubmit;act/qNext;act/opt/3;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/0;act/qSubmit;act/qNext;act/opt/1;act/qSubmit"
+      ],
+      "wait": 1500
+    },
+    "view-quiz-results": {
+      "links": [
+        "jump/quiz;act/opt/1;act/qSubmit;act/qNext;act/opt/3;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/0;act/qSubmit;act/qNext;act/opt/3;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/0;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qResults"
+      ],
+      "wait": 1200
+    }
+  }
+}
