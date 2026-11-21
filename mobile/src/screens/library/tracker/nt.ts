@@ -1,33 +1,16 @@
 // Notes Tracker v2 helpers (<script id="notes2js">, PrepAssist.html L10327-L10635), ported 1:1 over the store.
 // NT / FOLDERS / OPTIONALS live in the store (S.NT …) and are replaced, never mutated.
 import { OPT_C } from '../../../data/tracker';
-import type { NtValueItemUpsItem } from '../../../data/tracker';
 import { getS, setS } from '../../../store';
 import type { AppState } from '../../../store';
+import type { NtNote } from '../../../store/slices/library';
 
 export type Folder = readonly string[]; // [name, colour, key]
 
-export interface NtMerged {
-  n: number;
-  at: string;
-  pts: string[];
-}
-
-export interface NtNote {
-  id: string;
-  s: string;
-  t: string;
-  p: string;
-  d: string;
-  ts: number;
-  star: boolean;
-  ups: readonly NtValueItemUpsItem[];
-  tags: readonly string[];
-  merged: NtMerged | null;
-}
+export type { NtNote };
 
 /** NT as the store holds it: the generated rows with `ts` resolved to its captured value. */
-export const ntOf = (s: Pick<AppState, 'NT'> = getS()): Record<string, readonly NtNote[]> => s.NT as unknown as Record<string, readonly NtNote[]>;
+export const ntOf = (s: Pick<AppState, 'NT'> = getS()): Readonly<Record<string, readonly NtNote[]>> => s.NT;
 
 /** allNotes (L10440) */
 export const allNotes = (s: Pick<AppState, 'NT'> = getS()): NtNote[] => Object.values(ntOf(s)).flat();
@@ -59,7 +42,7 @@ export function updateNote(id: string, f: (n: NtNote) => Partial<NtNote>): void 
     const NT = ntOf(s);
     const out: Record<string, readonly NtNote[]> = {};
     for (const [k, list] of Object.entries(NT)) out[k] = list.map(n => (n.id === id ? { ...n, ...f(n) } : n));
-    return { NT: out as unknown as AppState['NT'] };
+    return { NT: out };
   });
 }
 

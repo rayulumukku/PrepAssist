@@ -39,6 +39,24 @@ export interface X4State extends Omit<StateX4, 'mcq' | 'busy'> {
 /** A scan; x4Up adds `isNew` to the copy it unshifts (L10032). */
 export type X4Scan = XscItem & { readonly isNew?: boolean };
 
+/** One NT note (L10437-L10439) with `ts` resolved to the captured value; ntMerge sets `merged`. */
+export interface NtNote extends Omit<NtValueItem, 'ts' | 'merged'> {
+  readonly ts: number;
+  readonly merged: { n: number; at: string; pts: string[] } | null;
+}
+
+/** S.nn (L10615) */
+export interface NnDraft {
+  mode: string;
+  k: string;
+  t: string;
+  b: string;
+  g: string;
+  img: number;
+  file: string;
+  busy: boolean;
+}
+
 export interface LibrarySlice {
   /** S.syl (L7657) */
   syl: StateSyl;
@@ -72,8 +90,12 @@ export interface LibrarySlice {
   ntSort: string;
   /** S._ntc (created L8195): colour picked in the New folder sheet. */
   _ntc: string | undefined;
-  /** S.nn (created L10615): the New note sheet's draft. Retype when porting. */
-  nn: unknown;
+  /** S.nn (created L10615): the New note sheet's draft. */
+  nn: NnDraft | undefined;
+  /** The merge running in the Note Updates sheet (A.ntMerge L10598-L10609 writes it into #ntUpB). */
+  ntMerge: { id: string; phase: 'proc' | 'done'; steps: string[]; c: number; pts: string[] } | null;
+  /** Bumped when the Note Updates sheet is rebuilt in place (A.ntIgn L10596). */
+  ntUpsGen: number;
 
   // Data constants that handlers change (seed copies; replace, never mutate the generated modules).
   /** DOCS (L5221): A.upGo unshifts uploads (L8184). */
@@ -85,7 +107,7 @@ export interface LibrarySlice {
   /** OPTIONALS (tracker.ts): A.ntOptCus pushes a custom subject (L10627). */
   OPTIONALS: readonly string[];
   /** NT (tracker.ts): notes per folder key; notesOf creates keys (L10442), ntSave/ntMerge change rows. */
-  NT: Readonly<Record<string, readonly NtValueItem[]>>;
+  NT: Readonly<Record<string, readonly NtNote[]>>;
 }
 
 export function createLibrarySlice(seed: InitialState): LibrarySlice {
@@ -107,10 +129,14 @@ export function createLibrarySlice(seed: InitialState): LibrarySlice {
     ntSort: seed.ntSort,
     _ntc: undefined,
     nn: undefined,
+    ntMerge: null,
+    ntUpsGen: 0,
     DOCS: [...DOCS],
     FOLDERS: [...FOLDERS],
     XSC: [...XSC],
     OPTIONALS: [...OPTIONALS],
-    NT: { ...NT },
+    NT: Object.fromEntries(
+      Object.entries(NT).map(([k, list]) => [k, list.map((n): NtNote => ({ ...n, ts: n.ts.sample, merged: null }))]),
+    ),
   };
 }

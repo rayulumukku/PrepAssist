@@ -2,11 +2,13 @@
 // OWNED BY THE LIBRARY WORKSTREAM. One entry per data-act verb whose owner in actions.map.json is
 // "library", named exactly like the verb and ported from the handler source the map points to.
 // The handler bodies live next to their screens (src/screens/library/**/…Actions.ts) and are merged here.
+import { ntHandlers } from '../screens/library/tracker/ntActions';
 import { x4Handlers, x4Hooks } from '../screens/library/xray/x4Actions';
 import type { CrossFns, HandlerMap, ShellHooks } from './types';
 
 export const handlers: HandlerMap = {
   ...x4Handlers,
+  ...ntHandlers,
 };
 
 /** Calls the shell functions make into this area (see ShellHooks in ./types). */
