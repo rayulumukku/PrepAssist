@@ -342,7 +342,7 @@ A pixel diff will never be zero because Android and Chrome rasterise fonts diffe
 |---|---|---|
 | 2026-11-21 | 0 | Done on both platforms. React Native 0.88.1 scaffolded; all planned native libraries compile; blank app launches on the Android emulator (Pixel 7, Android 16) and the iOS Simulator (iPhone 17, iOS 27.2, Xcode 27.2). |
 | 2026-11-21 | 1C | Done. Data, strings, 84 icons, initial state and 236 action verbs extracted by script; `verify.mjs` and 125 Jest checks guard them. |
-| 2026-11-21 | 1B | Done for Android (412 × 915). 286 states captured and verified. iOS set being re-captured at 402 × 874 to match the iPhone 17 simulator. |
+| 2026-11-21 | 1B | Done. 286 states captured and verified per platform: Android 412 × 915, iOS 402 × 874 (iPhone 17). |
 | 2026-11-21 | 1A | In progress (foundation agent). |
 
 ### Facts corrected after extraction and capture
