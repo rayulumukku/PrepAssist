@@ -13,7 +13,11 @@
 # Keep sessions short: other agents are waiting on the same lock.
 
 set -u
-PORT="${1:?usage: with-device.sh <port> <command...>}"; shift
+# The emulator's React Native loads JavaScript from host port 8081 (10.0.2.2:8081), so Metro must
+# listen on host 8081. The <port> argument is accepted for compatibility and ignored; the lock
+# guarantees only one checkout serves 8081 at a time.
+shift
+PORT=8081
 [ "$#" -gt 0 ] || { echo "with-device: no command given" >&2; exit 2; }
 
 # Agent shells may start with a bare PATH, so put Node (nvm, v22) and Homebrew on it explicitly.
@@ -45,6 +49,9 @@ done
 echo "$$" > "$LOCK/owner"; echo "$MOBILE_DIR" > "$LOCK/checkout"
 
 "$ADB" get-state >/dev/null 2>&1 || { echo "with-device: no Android emulator is running" >&2; exit 4; }
+if lsof -ti tcp:8081 -sTCP:LISTEN >/dev/null 2>&1; then
+  echo "with-device: host port 8081 is already in use (pid $(lsof -ti tcp:8081 -sTCP:LISTEN | tr '\n' ' ')). Stop that Metro first; it would serve the wrong checkout." >&2; exit 7
+fi
 
 # 2. Metro for this checkout
 ( cd "$MOBILE_DIR" && exec npx react-native start --port "$PORT" ) >"$LOG" 2>&1 &
