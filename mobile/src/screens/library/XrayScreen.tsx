@@ -147,7 +147,8 @@ function XrayScreen({ arg }: ViewProps): React.JSX.Element {
         showsVerticalScrollIndicator={false}
         onLayout={e => (geo.current.viewH = e.nativeEvent.layout.height)}
         testID="xray.scroll">
-        {/* .x4-lens */}
+        {/* .x4-lens (sticky: the ScrollView wraps sticky children, so the bar sits in a plain wrapper) */}
+        <View>
         <View style={styles.lens}>
           {(
             [
@@ -165,6 +166,7 @@ function XrayScreen({ arg }: ViewProps): React.JSX.Element {
               </Pressable>
             );
           })}
+        </View>
         </View>
 
         {/* article.x4-art */}
@@ -329,7 +331,7 @@ const styles = StyleSheet.create({
   tt: { flex: 1, minWidth: 0, alignItems: 'center' },
   ttSmall: { ...font('sans', 800), fontSize: 10, lineHeight: 14.5, letterSpacing: 1.4, textTransform: 'uppercase', textAlign: 'center' },
   ttB: { ...font('sans', 600), fontSize: 13.5, lineHeight: 19.575, marginTop: 1, textAlign: 'center', alignSelf: 'stretch' },
-  aa: { ...font('book', 600), fontSize: 16.5, lineHeight: 23.925, color: '#14161C' },
+  aa: { ...font('book', 600), fontSize: 16.5, lineHeight: 23.925, color: '#14161C', width: 38, textAlign: 'center' },
   prog: { position: 'absolute', left: 0, right: 0, bottom: 0, height: 2.5, backgroundColor: 'rgba(0, 0, 0, 0.05)' },
   progI: { height: 2.5, borderTopRightRadius: 2, borderBottomRightRadius: 2 },
 

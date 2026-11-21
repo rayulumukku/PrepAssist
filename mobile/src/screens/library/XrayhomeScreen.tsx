@@ -38,7 +38,7 @@ function BadgeDot(): React.JSX.Element {
     const p = t.value;
     const spread = p <= 0.7 ? 3 + (5 * p) / 0.7 : 8 - (8 * (p - 0.7)) / 0.3;
     const a = p <= 0.7 ? 0.25 * (1 - p / 0.7) : 0;
-    return { width: 6 + 2 * spread, height: 6 + 2 * spread, borderRadius: 3 + spread, left: -spread, top: -spread, backgroundColor: `rgba(63, 208, 138, ${a})` };
+    return { width: 6 + 2 * spread, height: 6 + 2 * spread, borderRadius: 3 + spread, left: -spread, top: -spread, backgroundColor: `rgba(63, 208, 138, ${a.toFixed(4)})` };
   });
   return (
     <View style={s.badgeI}>
@@ -293,7 +293,7 @@ const s = StyleSheet.create({
     backgroundPosition: 'left bottom',
   },
   hc: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: 10 },
-  h1: { ...font('book', 500), fontSize: 19, lineHeight: 20.9, color: '#FFFFFF' },
+  h1: { ...font('book', 500), fontSize: 19, lineHeight: 20.9, color: '#FFFFFF', flexShrink: 0 },
   h1Em: { ...font('book', 400, true), color: '#FFE27A' },
   badge: {
     flexDirection: 'row',
