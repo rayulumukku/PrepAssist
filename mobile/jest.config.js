@@ -10,6 +10,10 @@ const esModules = [
 
 module.exports = {
   preset: '@react-native/jest-preset',
+  // Reanimated 4.8 ships this resolver for Jest: it loads the JS (non-native) variant of the files that
+  // would otherwise call into the missing native module when `react-native-reanimated` is imported
+  // (without it: "[Reanimated] `setCSSEventHandler` is not available in JSReanimated").
+  resolver: require.resolve('react-native-reanimated/jest/resolver'),
   transformIgnorePatterns: [`node_modules/(?!(${esModules})/)`],
   setupFiles: [
     require.resolve('@react-native/jest-preset/jest/setup.js'),

@@ -22,6 +22,13 @@
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
+        <!-- Test-only deep links (prepassist://jump/quiz …), mirroring the prototype's location.hash start (PrepAssist.html L6971). -->
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="prepassist" />
+        </intent-filter>
       </activity>
     </application>
 </manifest>

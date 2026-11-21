@@ -1,0 +1,150 @@
+{
+  "area": "shell",
+  "$comment": "Shell states only. Screens are placeholders in Phase 1, so only the listed regions are meaningful; the 'full' score also counts the empty content area.",
+  "shots": {
+    "tab-home": {
+      "links": [
+        "tab/home",
+        "ask/mini"
+      ],
+      "regions": [
+        "nav",
+        "askMini"
+      ],
+      "note": "reference Ask is mini (3500 ms had passed)"
+    },
+    "overlay-ask-full": {
+      "links": [
+        "tab/home",
+        "ask/full"
+      ],
+      "regions": [
+        "askFull",
+        "nav"
+      ]
+    },
+    "overlay-ask-mini": {
+      "links": [
+        "tab/home",
+        "ask/mini"
+      ],
+      "regions": [
+        "askMini",
+        "nav"
+      ]
+    },
+    "overlay-toast": {
+      "links": [
+        "tab/home",
+        "ask/full",
+        "toast/Seat%20reserved%20%E2%80%94%20we%E2%80%99ll%20remind%20you%20on%20Saturday"
+      ],
+      "wait": 500,
+      "regions": [
+        "toast"
+      ]
+    },
+    "tab-home-hi": {
+      "links": [
+        "tab/home",
+        "lang/hi",
+        "ask/mini"
+      ],
+      "regions": [
+        "nav"
+      ]
+    },
+    "tab-home-pro": {
+      "links": [
+        "plan/pro",
+        "tab/home",
+        "ask/mini"
+      ],
+      "regions": [
+        "nav",
+        "askMini"
+      ],
+      "note": "the nav line animates forever: never at rest"
+    },
+    "tab-home-ultimate": {
+      "links": [
+        "plan/ultimate",
+        "tab/home",
+        "ask/mini"
+      ],
+      "regions": [
+        "nav",
+        "askMini"
+      ],
+      "note": "the nav line animates forever: never at rest"
+    },
+    "tab-learn": {
+      "links": [
+        "tab/learn",
+        "ask/mini"
+      ],
+      "regions": [
+        "nav"
+      ]
+    },
+    "tab-profile": {
+      "links": [
+        "tab/profile",
+        "ask/mini"
+      ],
+      "regions": [
+        "nav"
+      ]
+    },
+    "sheet-language": {
+      "links": [
+        "tab/profile",
+        "ask/mini",
+        "sheet/language"
+      ],
+      "regions": [
+        "b:0,286.27,412,72>b:96"
+      ],
+      "note": "sheet frame only (grab, head, close). The body is a placeholder, so the sheet is 96 px high instead of 286.27: the frame is compared where it is on each side"
+    },
+    "sheet-allTools": {
+      "links": [
+        "tab/home",
+        "ask/mini",
+        "sheet/allTools"
+      ],
+      "regions": [
+        "0,73.2,412,72"
+      ],
+      "note": "tall sheet: 92% high, so the frame is at the same place whatever the body holds"
+    },
+    "view-lesson": {
+      "links": [
+        "tab/home",
+        "push/lesson"
+      ],
+      "regions": [
+        "header"
+      ]
+    },
+    "view-querydb": {
+      "links": [
+        "tab/menu",
+        "push/querydb"
+      ],
+      "regions": [
+        "header"
+      ],
+      "note": ".me-page header tint; noAsk view"
+    },
+    "view-course": {
+      "links": [
+        "tab/learn",
+        "push/course/c2"
+      ],
+      "regions": [
+        "header"
+      ]
+    }
+  }
+}
