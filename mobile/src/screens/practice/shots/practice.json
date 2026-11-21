@@ -37,6 +37,50 @@
         "jump/quiz;act/opt/1;act/qSubmit;act/qNext;act/opt/3;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/0;act/qSubmit;act/qNext;act/opt/3;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qNext;act/opt/0;act/qSubmit;act/qNext;act/opt/1;act/qSubmit;act/qResults"
       ],
       "wait": 1200
+    },
+    "view-mains": {
+      "links": [
+        "jump/mains"
+      ],
+      "wait": 900
+    },
+    "view-mains-need-page-toast": {
+      "links": [
+        "jump/mains;act/mvRun"
+      ],
+      "wait": 700
+    },
+    "view-mains-pages-added": {
+      "links": [
+        "jump/mains;act/mvAdd;act/mvAdd"
+      ],
+      "wait": 900,
+      "note": "the reference scrolled #mvRun into view; deep links cannot scroll, compare the top"
+    },
+    "view-mains-evaluating": {
+      "links": [
+        "jump/mains;act/mvRun;act/mvAdd;act/mvAdd;act/mvRun;act/mForce"
+      ],
+      "wait": 1200,
+      "note": "reference is 1500 ms into mvProcess and scrolled to #mvRun"
+    },
+    "view-mainsResult": {
+      "links": [
+        "jump/mains;act/mvRun;act/mvAdd;act/mvAdd;act/mvRun;act/mForce"
+      ],
+      "wait": 5500
+    },
+    "view-mainsResult-pushed": {
+      "links": [
+        "tab/practice;push/pastevals;push/mainsResult"
+      ],
+      "wait": 1200
+    },
+    "view-mains-typed": {
+      "links": [
+        "jump/mains;act/mvMode/type"
+      ],
+      "wait": 900
     }
   }
 }

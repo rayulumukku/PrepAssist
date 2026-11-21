@@ -258,6 +258,7 @@ export const handlers: HandlerMap = {
     mainsRender();
   },
   mvRun: () => {
+    mainsRender(); // the panel was built (with its default question) before anything on it can be pressed
     const s = getS();
     const b = mvRunBlock(s.mv);
     if (b) return toast(b.msg, b.icon);

@@ -62,6 +62,9 @@ const s = StyleSheet.create({
     borderColor: '#E3E7ED',
     backgroundColor: '#FAFBFC',
     textAlignVertical: 'top',
+    // a <textarea> is inline-block: it sits on the line box's baseline, leaving the descender gap below
+    // (computed: 6.47 px between the textarea and the next block's margin)
+    marginBottom: 6.47,
   },
   focus: { borderColor: '#1B8AD3', backgroundColor: '#FFFFFF' },
   pick: { flexDirection: 'row', alignItems: 'center', gap: 6, marginTop: 8, alignSelf: 'flex-start' },
@@ -115,6 +118,8 @@ function Area({ value, onChange, rows, placeholder, testID }: { value: string; o
       onChangeText={onChange}
       placeholder={placeholder}
       placeholderTextColor="#757575"
+      // unfocused, a textarea shows its text from the top (Android scrolls a multiline input to the caret)
+      selection={f ? undefined : { start: 0, end: 0 }}
       onFocus={() => setF(true)}
       onBlur={() => setF(false)}
       testID={testID}

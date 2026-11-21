@@ -33,8 +33,15 @@ const rich = {
   b: { ...font('read', 700) },
   i: { ...font('read', 400, true) },
 };
+/** inside `.article` (VIEWS.answer) `.article .body p` (L2729, later size overrides) computes to 16.5px / 28.05px --ink-2 */
+const richArticle = {
+  base: { ...font('read', 400), fontSize: 16.5, lineHeight: 28.05, color: palettes.free.ink2 },
+  p: { marginBottom: 12 },
+  b: { ...font('read', 700) },
+  i: { ...font('read', 400, true) },
+};
 
-export function ModelBox({ id, title, open, style }: { id: 'abModel' | 'evModel'; title: string; open: boolean; style?: StyleProp<ViewStyle> }): React.JSX.Element {
+export function ModelBox({ id, title, open, article, style }: { id: 'abModel' | 'evModel'; title: string; open: boolean; article?: boolean; style?: StyleProp<ViewStyle> }): React.JSX.Element {
   const t = useTheme();
   const [h, setH] = useState(0);
   const mh = useTransition(open ? 1400 : 150, 600);
@@ -44,7 +51,7 @@ export function ModelBox({ id, title, open, style }: { id: 'abModel' | 'evModel'
       <Eyebrow style={s.eb}>{title}</Eyebrow>
       <Animated.View style={[s.body, a]}>
         <View onLayout={e => setH(e.nativeEvent.layout.height)}>
-          <RichText html={MODEL} styles={rich} />
+          <RichText html={MODEL} styles={article ? richArticle : rich} />
         </View>
         {open ? null : <View style={[s.fade, { backgroundImage: `linear-gradient(rgba(255, 255, 255, 0), ${palettes.free.paper})` }]} pointerEvents="none" />}
       </Animated.View>
