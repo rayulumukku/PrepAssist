@@ -1,0 +1,188 @@
+{
+  "area": "library",
+  "shots": {
+    "view-xrayhome": {
+      "links": [
+        "tab/learn",
+        "push/xrayhome"
+      ],
+      "wait": 900
+    },
+    "view-xrayhome-environment": {
+      "links": [
+        "tab/learn",
+        "push/xrayhome",
+        "act/x4Sub/env"
+      ],
+      "wait": 900
+    },
+    "view-xrayhome-processing": {
+      "links": [
+        "tab/learn",
+        "push/xrayhome",
+        "act/x4Sub/env",
+        "act/x4Sub/polity",
+        {
+          "link": "act/x4Up/pdf",
+          "wait": 1500
+        }
+      ],
+      "wait": 0,
+      "note": "timeline frame: 1.5 s into the 3.55 s upload"
+    },
+    "view-xray": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb"
+      ],
+      "wait": 900
+    },
+    "view-xray-lens-insights": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        "act/x4Lens/ins"
+      ],
+      "wait": 900
+    },
+    "view-xray-lens-terms": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        "act/x4Lens/term"
+      ],
+      "wait": 900
+    },
+    "view-xray-coach-dismissed": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        "act/x4Coach"
+      ],
+      "wait": 900
+    },
+    "view-xray-text-larger": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        "act/x4Coach",
+        "act/x4Aa"
+      ],
+      "wait": 3200
+    },
+    "view-xray-text-largest": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        "act/x4Coach",
+        "act/x4Aa",
+        "act/x4Aa"
+      ],
+      "wait": 3200
+    },
+    "sheet-xray-insight-tab1": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        {
+          "link": "act/x4Ins/0",
+          "wait": 600
+        }
+      ],
+      "wait": 900
+    },
+    "sheet-xray-insight-tab2": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        {
+          "link": "act/x4Ins/0",
+          "wait": 600
+        },
+        "act/x4Tab/1"
+      ],
+      "wait": 900
+    },
+    "sheet-xray-insight-tab3-mcq": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        {
+          "link": "act/x4Ins/0",
+          "wait": 600
+        },
+        "act/x4Tab/2"
+      ],
+      "wait": 900
+    },
+    "sheet-xray-insight-mcq-correct": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        {
+          "link": "act/x4Ins/0",
+          "wait": 600
+        },
+        "act/x4Tab/2",
+        "act/x4Mcq/2"
+      ],
+      "wait": 900,
+      "note": "the reference scrolled #x4sBody to .pq-v (reveal step); the device frame is at the top of the body"
+    },
+    "sheet-xray-insight-tab4": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        {
+          "link": "act/x4Ins/0",
+          "wait": 600
+        },
+        "act/x4Tab/2",
+        "act/x4Mcq/2",
+        "act/x4McqReset",
+        "act/x4Mcq/r",
+        "act/x4Tab/3"
+      ],
+      "wait": 900
+    },
+    "sheet-xray-insight-tab5": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        {
+          "link": "act/x4Ins/0",
+          "wait": 600
+        },
+        "act/x4Tab/2",
+        "act/x4Mcq/2",
+        "act/x4McqReset",
+        "act/x4Mcq/r",
+        "act/x4Tab/3",
+        "act/x4Tab/4"
+      ],
+      "wait": 900
+    },
+    "sheet-xray-term": {
+      "links": [
+        "tab/learn",
+        "push/xray/arb",
+        {
+          "link": "act/x4Ins/0",
+          "wait": 600
+        },
+        "act/x4Tab/2",
+        "act/x4Mcq/r",
+        {
+          "link": "act/x4Step/1",
+          "wait": 600
+        },
+        {
+          "link": "closeSheet",
+          "wait": 600
+        },
+        "act/x4Term/BITs"
+      ],
+      "wait": 900
+    }
+  }
+}
