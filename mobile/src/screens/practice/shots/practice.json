@@ -81,6 +81,132 @@
         "jump/mains;act/mvMode/type"
       ],
       "wait": 900
+    },
+    "view-engine": {
+      "links": [
+        "tab/practice;push/engine"
+      ],
+      "wait": 900
+    },
+    "view-engine-building": {
+      "links": [
+        "tab/practice;push/engine;act/engineGo"
+      ],
+      "wait": 400
+    },
+    "view-tests": {
+      "links": [
+        "tab/practice;push/tests"
+      ],
+      "wait": 900
+    },
+    "view-history": {
+      "links": [
+        "tab/practice;push/history"
+      ],
+      "wait": 900
+    },
+    "view-pastevals": {
+      "links": [
+        "tab/practice;push/pastevals"
+      ],
+      "wait": 900
+    },
+    "view-qbank": {
+      "links": [
+        "tab/practice;push/qbank/polity"
+      ],
+      "wait": 900
+    },
+    "view-qbank-economy": {
+      "links": [
+        "tab/practice;act/qbank/eco"
+      ],
+      "wait": 900
+    },
+    "view-answerbank": {
+      "links": [
+        "tab/menu;push/answerbank"
+      ],
+      "wait": 900
+    },
+    "view-answerbank-gs2": {
+      "links": [
+        "tab/menu;push/answerbank;act/abP/GS%20II"
+      ],
+      "wait": 900
+    },
+    "view-answerbank-hindi": {
+      "links": [
+        "tab/menu;push/answerbank;act/abLang/hi"
+      ],
+      "wait": 900
+    },
+    "view-answer": {
+      "links": [
+        "tab/menu;push/answer/mq1"
+      ],
+      "wait": 900
+    },
+    "view-testquiz": {
+      "links": [
+        "tab/menu;push/testquiz"
+      ],
+      "wait": 900
+    },
+    "view-testquiz-file-picked": {
+      "links": [
+        "tab/menu;push/testquiz;act/tqPick"
+      ],
+      "wait": 3200
+    },
+    "view-testquiz-library": {
+      "links": [
+        "tab/menu;push/testquiz;act/tqTab/lib"
+      ],
+      "wait": 900
+    },
+    "view-pqb": {
+      "links": [
+        "tab/menu;push/pqb"
+      ],
+      "wait": 900
+    },
+    "view-pqb-correct": {
+      "links": [
+        "tab/menu;push/pqb;act/pqPick/2"
+      ],
+      "wait": 1200
+    },
+    "view-pqb-q2": {
+      "links": [
+        "tab/menu;push/pqb;act/pqPick/2;act/pqNav/1"
+      ],
+      "wait": 900
+    },
+    "view-pqb-wrong": {
+      "links": [
+        "tab/menu;push/pqb;act/pqPick/2;act/pqNav/1;act/pqPick/2"
+      ],
+      "wait": 1200
+    },
+    "view-pqb-hindi": {
+      "links": [
+        "tab/menu;push/pqb;act/pqPick/2;act/pqNav/1;act/pqPick/2;act/pqLang/hi"
+      ],
+      "wait": 900
+    },
+    "sheet-pqb-attempts": {
+      "links": [
+        "tab/menu;push/pqb;act/pqPick/2;act/pqNav/1;act/pqPick/2;act/pqHist"
+      ],
+      "wait": 1000
+    },
+    "sheet-pqb-attempts-empty": {
+      "links": [
+        "tab/menu;push/pqb;act/pqHist"
+      ],
+      "wait": 1000
     }
   }
 }
