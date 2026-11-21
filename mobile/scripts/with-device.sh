@@ -16,6 +16,8 @@ set -u
 PORT="${1:?usage: with-device.sh <port> <command...>}"; shift
 [ "$#" -gt 0 ] || { echo "with-device: no command given" >&2; exit 2; }
 
+# Agent shells may start with a bare PATH, so put Node (nvm, v22) and Homebrew on it explicitly.
+export PATH="$HOME/.nvm/versions/node/v22.16.0/bin:/opt/homebrew/bin:$PATH"
 export JAVA_HOME=/opt/homebrew/opt/openjdk@17
 export ANDROID_HOME=/opt/homebrew/share/android-commandlinetools
 ADB="$ANDROID_HOME/platform-tools/adb"
