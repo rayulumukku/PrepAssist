@@ -1,0 +1,94 @@
+{
+ "area": "arrival",
+ "$comment": "Arrival states. Not listed (no deep link can reach them): stage-auth-signin-password-shown (A.eye is element-local inside the shared Field), and stage-auth-signin-empty-error, stage-auth-signup-password-typed, stage-auth-signup-mismatch (the reference types into inputs with Playwright fill; no deep link sets an input value).",
+ "shots": {
+  "stage-auth-signin": {
+   "links": [
+    "jump/auth"
+   ],
+   "wait": 1800
+  },
+  "stage-auth-signup": {
+   "links": [
+    "jump/auth",
+    "act/authTab/up"
+   ],
+   "wait": 1200
+  },
+  "stage-auth-signup-empty-error": {
+   "links": [
+    "jump/auth",
+    "act/authTab/up",
+    {
+     "link": "act/signup",
+     "wait": 100
+    }
+   ],
+   "wait": 700
+  },
+  "stage-verify": {
+   "links": [
+    "jump/verify"
+   ],
+   "wait": 1800
+  },
+  "stage-verify-resent": {
+   "links": [
+    "jump/verify",
+    "act/resend"
+   ],
+   "wait": 900
+  },
+  "stage-verify-verified": {
+   "links": [
+    "jump/verify",
+    "act/verified"
+   ],
+   "wait": 450
+  },
+  "sheet-forgot": {
+   "links": [
+    "jump/auth",
+    "act/forgot"
+   ],
+   "wait": 900
+  },
+  "sheet-changeEmail": {
+   "links": [
+    "jump/verify",
+    "act/changeEmail"
+   ],
+   "wait": 900
+  },
+  "stage-intro-1": {
+   "links": [
+    "jump/intro"
+   ],
+   "wait": 1800
+  },
+  "stage-intro-2": {
+   "links": [
+    "jump/intro",
+    "act/introNext"
+   ],
+   "wait": 2000
+  },
+  "stage-intro-3": {
+   "links": [
+    "jump/intro",
+    "act/introNext",
+    "act/introNext"
+   ],
+   "wait": 3200
+  },
+  "stage-intro-4": {
+   "links": [
+    "jump/intro",
+    "act/introNext",
+    "act/introNext",
+    "act/introNext"
+   ],
+   "wait": 4500
+  }
+ }
+}
