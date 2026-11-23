@@ -4,6 +4,7 @@
 // (DOCS, NT, FOLDERS, optional, xr, x4, XSC) and are to be merged with the library's copies later.
 import { MT, NOTESYS, OPT_C, X4SUB } from '../../../data';
 import type { DocsItem, NtValueItem, XscItem } from '../../../data';
+import type { NtNote } from '../../../store/slices/library';
 
 /** vaultMB() L7687 */
 export function vaultMB(docs: readonly DocsItem[]): number {
@@ -13,10 +14,10 @@ export function vaultMB(docs: readonly DocsItem[]): number {
   }, 0);
 }
 
-type NT = Readonly<Record<string, readonly NtValueItem[]>>;
+type NT = Readonly<Record<string, readonly (NtValueItem | NtNote)[]>>;
 
 /** allNotes() L10438 */
-export const allNotes = (nt: NT): NtValueItem[] => Object.values(nt).flat();
+export const allNotes = (nt: NT): (NtValueItem | NtNote)[] => Object.values(nt).flat();
 /** ntTotal() L10444 */
 export const ntTotal = (nt: NT): number => allNotes(nt).reduce((a, n) => a + n.ups.length, 0);
 /** foldKey(k) L10441 */
@@ -24,7 +25,7 @@ export function foldKey(folders: readonly (readonly string[])[], k: string): rea
   return folders.find(f => f[2] === k) || (k.startsWith('opt:') ? [k.slice(4), OPT_C, k] : ['Notes', '#6C5DD3', k]);
 }
 /** notesOf(k) L10442 (the HTML also creates the empty folder; reading it is enough here) */
-export const notesOf = (nt: NT, k: string): readonly NtValueItem[] => nt[k] || [];
+export const notesOf = (nt: NT, k: string): readonly (NtValueItem | NtNote)[] => nt[k] || [];
 /** upsOf(k) L10443 */
 export const upsOf = (nt: NT, k: string): number => notesOf(nt, k).reduce((a, n) => a + n.ups.length, 0);
 

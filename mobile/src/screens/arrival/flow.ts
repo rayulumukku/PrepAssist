@@ -1,12 +1,154 @@
 // Source: PrepAssist.html L5896-L5985 (setIntro, introNext, authTab, submitAuth, verified, resend)
+// Source: PrepAssist.html L5783-L5794 (runBook)
+// Source: PrepAssist.html L5806-L5819 (openBook)
+// Source: PrepAssist.html L5820-L5831 (turnPage)
+// Source: PrepAssist.html L5833-L5840 (bookExit)
 // Source: PrepAssist.html L5616-L5627 (go: the intro / auth / verify resets), L6984-L6992 (the A entries)
-// The logic of the intro, auth and verify stages, working on the store instead of the DOM. The stages
-// render from the fields this module writes (see store/slices/arrival.ts).
+// The logic of the arrival stage (book, intro, auth and verify), working on the store instead of the DOM.
 import { closeSheet, go, openSheet, toast } from '../../navigation/nav';
 import { getS, setS } from '../../store';
 import type { AuthFieldId } from '../../store/slices/arrival';
+import { sfx } from './sfx';
 
 const wait = (ms: number): Promise<void> => new Promise(r => setTimeout(r, ms));
+
+// ---------------- book ----------------
+
+let autoT: ReturnType<typeof setTimeout> | undefined;
+let bookExitT: ReturnType<typeof setTimeout> | undefined;
+
+/** runBook() L5783-L5794 */
+export function runBook(): void {
+  if (autoT) clearTimeout(autoT);
+  if (bookExitT) clearTimeout(bookExitT);
+  autoT = undefined;
+  bookExitT = undefined;
+  setS(s => ({
+    bkStep: 0,
+    bkRun: s.bkRun + 1,
+    bk: {
+      ready: true,
+      opened: false,
+      close: false,
+      readyCtl: false,
+      revealed: 0,
+      auto: 0,
+      exit: false,
+    },
+  }));
+}
+
+/** openBook() L5806-L5819 */
+export function openBook(): void {
+  const s = getS();
+  if (s.bkStep !== 0) return;
+  sfx('cover');
+  setS(st => ({
+    bkStep: 1,
+    bk: {
+      ...st.bk,
+      opened: true,
+      close: true,
+      readyCtl: true,
+      revealed: 1,
+    },
+  }));
+  startAutoNext();
+}
+
+/** turnPage(fromP, dur) L5820-L5831 */
+export function turnPage(): void {
+  const s = getS();
+  if (s.bkStep === 0) {
+    openBook();
+    return;
+  }
+  if (s.bkStep >= 4) {
+    bookExit();
+    return;
+  }
+  sfx('page');
+  const next = s.bkStep + 1;
+  setS(st => ({
+    bkStep: next,
+    bk: {
+      ...st.bk,
+      revealed: Math.max(st.bk.revealed, next),
+      auto: st.bk.auto + 1,
+    },
+  }));
+  startAutoNext();
+}
+
+/** bookNext() L6984: stopAuto(); turnPage(); */
+export function bookNext(): void {
+  stopAuto();
+  turnPage();
+}
+
+/** bookPrev() */
+export function bookPrev(): void {
+  const s = getS();
+  if (s.bkStep <= 1) return;
+  stopAuto();
+  sfx('page');
+  const prev = s.bkStep - 1;
+  setS(st => ({
+    bkStep: prev,
+    bk: {
+      ...st.bk,
+      auto: st.bk.auto + 1,
+    },
+  }));
+  startAutoNext();
+}
+
+/** bookReplay() L6984: runBook() */
+export function bookReplay(): void {
+  stopAuto();
+  runBook();
+}
+
+/** bookExit(arg) L5833-L5840 */
+export function bookExit(): void {
+  const s = getS();
+  if (s.bk.exit) return;
+  if (s.bkStep >= 1) sfx('page');
+  stopAuto();
+  setS(st => ({ bk: { ...st.bk, exit: true } }));
+  if (bookExitT) clearTimeout(bookExitT);
+  bookExitT = setTimeout(() => {
+    setS(st => ({ bk: { ...st.bk, exit: false } }));
+    go('auth');
+  }, 520);
+}
+
+/** toggleSound() L6984 */
+export function toggleSound(): void {
+  const cur = getS().SFX.on;
+  setS(s => ({ SFX: { ...s.SFX, on: !cur } }));
+  if (!cur) sfx('page');
+}
+
+/** autoNext() L5798-L5805 */
+export function startAutoNext(delay = 3500): void {
+  stopAuto();
+  const s = getS();
+  if (s.stage !== 'book' || s.bkStep >= 4) return;
+  autoT = setTimeout(() => {
+    const cur = getS();
+    if (cur.stage === 'book' && cur.bkStep < 4) {
+      turnPage();
+    }
+  }, delay);
+}
+
+export function stopAuto(): void {
+  if (autoT) {
+    clearTimeout(autoT);
+    autoT = undefined;
+  }
+}
 
 // ---------------- intro ----------------
 
@@ -131,8 +273,9 @@ export function emailSave(): void {
   toast('Link sent to ' + email, 'mail');
 }
 
-/** go(name) L5621-L5623: the intro / verify resets. (#s-auth scrollTop = 0 is a no-op: #s-auth itself never scrolls.) */
+/** go(name) L5620-L5623: the book / intro / verify resets. */
 export function onStageArrival(stage: string): void {
+  if (stage === 'book') runBook();
   if (stage === 'intro') setIntro(0, true);
   if (stage === 'verify') setS({ vfDone: false });
 }
@@ -141,6 +284,10 @@ export function onStageArrival(stage: string): void {
 export function __resetFlowTimers(): void {
   if (focusT) clearTimeout(focusT);
   if (resendT) clearInterval(resendT);
+  if (autoT) clearTimeout(autoT);
+  if (bookExitT) clearTimeout(bookExitT);
   focusT = undefined;
   resendT = undefined;
+  autoT = undefined;
+  bookExitT = undefined;
 }

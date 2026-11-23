@@ -10,6 +10,9 @@
 import { go, openSheet } from '../navigation/nav';
 import {
   authTab,
+  bookExit,
+  bookNext,
+  bookReplay,
   changeEmail,
   emailSave,
   forgotSend,
@@ -19,6 +22,7 @@ import {
   setIntro,
   social,
   submitAuth,
+  toggleSound,
   verified,
 } from '../screens/arrival/flow';
 import { sfx } from '../screens/arrival/sfx';
@@ -27,6 +31,10 @@ import type { CrossFns, HandlerMap, ShellHooks } from './types';
 
 export const handlers: HandlerMap = {
   // L6984
+  bookExit: () => bookExit(),
+  bookNext: () => bookNext(),
+  bookReplay: () => bookReplay(),
+  sound: () => toggleSound(),
   introNext: () => introNext(),
   introPrev: () => setIntro(getS().intro - 1),
   introGo: i => setIntro(Number(i)),

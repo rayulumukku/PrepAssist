@@ -11,17 +11,18 @@ import { noteBy, ntTotal, sorted } from './nt';
 
 jest.useFakeTimers();
 
+let activeTree: ReactTestRenderer.ReactTestRenderer | null = null;
+
 function tree(): ReactTestRenderer.ReactTestRenderer {
-  let r!: ReactTestRenderer.ReactTestRenderer;
   ReactTestRenderer.act(() => {
-    r = ReactTestRenderer.create(
+    activeTree = ReactTestRenderer.create(
       <AppSizeContext.Provider value={{ w: 412, h: 915 }}>
         <PageLayer />
         <SheetHost />
       </AppSizeContext.Provider>,
     );
   });
-  return r;
+  return activeTree!;
 }
 const texts = (r: ReactTestRenderer.ReactTestRenderer): string =>
   r.root
@@ -32,6 +33,15 @@ const step = (f: () => void): void => {
   ReactTestRenderer.act(f);
   ReactTestRenderer.act(() => jest.advanceTimersByTime(500));
 };
+
+afterEach(() => {
+  if (activeTree) {
+    ReactTestRenderer.act(() => {
+      activeTree?.unmount();
+    });
+    activeTree = null;
+  }
+});
 
 beforeEach(() => {
   __resetNavTimers();

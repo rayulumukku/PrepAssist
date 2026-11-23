@@ -550,7 +550,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -624,7 +624,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -650,7 +650,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -676,7 +676,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -1148,7 +1148,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -1412,7 +1412,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -1636,7 +1636,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -1662,7 +1662,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -1729,7 +1729,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -1759,7 +1759,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -1785,7 +1785,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -1811,7 +1811,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -4833,7 +4833,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -5095,7 +5095,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -5121,7 +5121,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -5150,7 +5150,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -5177,7 +5177,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {
@@ -6320,7 +6320,7 @@
       "directCalls": [],
       "fallthrough": "A.<verb> exists, so it is called as A[verb](arg, el). (If it did not exist the click would be swallowed silently.)",
       "owner": "arrival",
-      "native": null,
+      "native": "src/actions/arrival.ts",
       "test": null
     },
     {

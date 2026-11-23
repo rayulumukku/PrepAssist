@@ -11,10 +11,14 @@ function texts(el: React.ReactElement): string {
   act(() => {
     r = ReactTestRenderer.create(el);
   });
-  return r.root
+  const res = r.root
     .findAllByType(Txt)
     .map(t => (typeof t.props.children === 'string' ? t.props.children : ''))
     .join('|');
+  act(() => {
+    r.unmount();
+  });
+  return res;
 }
 
 describe('account screens render their copy', () => {

@@ -15,17 +15,27 @@ const texts = (r: ReactTestRenderer.ReactTestRenderer): string =>
     .map(n => n.children.filter(c => typeof c === 'string').join(''))
     .join('|');
 
+let activeTree: ReactTestRenderer.ReactTestRenderer | null = null;
+
 function render(): ReactTestRenderer.ReactTestRenderer {
-  let r!: ReactTestRenderer.ReactTestRenderer;
   ReactTestRenderer.act(() => {
-    r = ReactTestRenderer.create(
+    activeTree = ReactTestRenderer.create(
       <AppSizeContext.Provider value={{ w: 412, h: 915 }}>
         <CurrentTab />
       </AppSizeContext.Provider>,
     );
   });
-  return r;
+  return activeTree!;
 }
+
+afterEach(() => {
+  if (activeTree) {
+    ReactTestRenderer.act(() => {
+      activeTree?.unmount();
+    });
+    activeTree = null;
+  }
+});
 
 beforeEach(() => {
   resetStore();
