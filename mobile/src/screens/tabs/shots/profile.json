@@ -1,0 +1,10 @@
+{
+  "area": "tabs",
+  "$comment": "tab-profile is in scripts/shots/shell.json (frozen). The pro/ultimate references were reached through a purchase, so S.me.credits there is 110 / 210: the plan deep link changes the plan only.",
+  "shots": {
+    "tab-profile-pro": { "links": ["plan/pro", "tab/profile", "ask/full"], "wait": 1200 },
+    "tab-profile-ultimate": { "links": ["plan/ultimate", "tab/profile", "ask/full"], "wait": 1200 },
+    "tab-profile-hi": { "links": ["tab/profile", "lang/hi", "ask/mini"], "wait": 1200 },
+    "tab-profile-hi-toast": { "links": ["tab/profile", "ask/full", "act/setLang/hi"], "wait": 600 }
+  }
+}

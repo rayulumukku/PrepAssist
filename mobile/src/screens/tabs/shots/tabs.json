@@ -1,0 +1,30 @@
+{
+  "area": "tabs",
+  "shots": {
+    "tab-home-day": {
+      "links": [
+        "clock/2026-10-24T14%3A10%3A00%2B05%3A30",
+        "tab/home",
+        "ask/full"
+      ],
+      "wait": 1800
+    },
+    "tab-home-evening": {
+      "links": [
+        "clock/2026-10-24T18%3A20%3A00%2B05%3A30",
+        "tab/home",
+        "ask/full"
+      ],
+      "wait": 1800
+    },
+    "tab-home-night": {
+      "links": [
+        "clock/2026-10-24T21%3A30%3A00%2B05%3A30",
+        "tab/home",
+        "ask/full"
+      ],
+      "wait": 1800
+    }
+  },
+  "$comment": "tab-home, tab-home-hi, tab-home-pro, tab-home-ultimate, tab-learn, tab-profile and sheet-allTools are defined in scripts/shots/shell.json (frozen); they are run from there."
+}

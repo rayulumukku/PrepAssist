@@ -1,0 +1,13 @@
+{
+  "area": "tabs",
+  "$comment": "Learn tab states. tab-learn itself is defined in scripts/shots/shell.json (frozen) and is run from there.",
+  "shots": {
+    "tab-learn-pro": { "links": ["plan/pro", "tab/learn", "ask/full"], "wait": 1500 },
+    "tab-learn-ultimate": { "links": ["plan/ultimate", "tab/learn", "ask/full"], "wait": 1500 },
+    "tab-learn-note-saved-toast": {
+      "links": ["tab/learn", "ask/mini", "act/ntNew", "act/ntMode/pdf", { "link": "act/ntPick", "wait": 1700 }, "act/ntSave"],
+      "wait": 500,
+      "note": "needs the library area's ntNew / ntMode / ntPick / ntSave handlers"
+    }
+  }
+}
