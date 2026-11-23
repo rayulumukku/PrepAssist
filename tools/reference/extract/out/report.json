@@ -1,0 +1,1691 @@
+{
+  "generatedFrom": "PrepAssist.html",
+  "htmlSha256": "3ad4ba76448d6b4efefa2c15b5e2cddaa12345b6aa653dc670a27346fe4722a1",
+  "referenceEnv": {
+    "clock": "2026-01-15T04:30:00.000Z",
+    "timezoneId": "Asia/Kolkata",
+    "locale": "en-IN"
+  },
+  "blockedNetworkRequests": [
+    "https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter+Tight:wght@500;600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;500;600&family=Caveat:wght@500;600&display=swap"
+  ],
+  "bindings": {
+    "total": 337,
+    "byClass": {
+      "data": 74,
+      "state": 1,
+      "i18n": 1,
+      "function": 239,
+      "function-table": 3,
+      "mutable": 15,
+      "handle": 1,
+      "excluded": 3
+    },
+    "constDeclarations": 178,
+    "constNonFunction": 83,
+    "constExported": 76,
+    "constNotExported": [
+      {
+        "key": "VIEWS",
+        "source": "L6509-L6659",
+        "class": "function-table",
+        "reason": "An object whose members are all functions (code, not data)."
+      },
+      {
+        "key": "SHEETS",
+        "source": "L6917-L6936",
+        "class": "function-table",
+        "reason": "An object whose members are all functions (code, not data)."
+      },
+      {
+        "key": "A",
+        "source": "L6963-L7043",
+        "class": "function-table",
+        "reason": "An object whose members are all functions (code, not data)."
+      },
+      {
+        "key": "startAt",
+        "source": "L8682",
+        "class": "excluded",
+        "reason": "Derived from location.hash at load (\"\" in the capture). Environment input, not content."
+      },
+      {
+        "key": "n@iife@L8692",
+        "source": "L8692",
+        "class": "excluded",
+        "reason": "Local of the status-bar clock IIFE: `new Date()` for the fake 9:41 bar, which the app replaces with the OS status bar."
+      },
+      {
+        "key": "e@iife@L8692",
+        "source": "L8692",
+        "class": "handle",
+        "reason": "Holds a DOM node or a browser object."
+      },
+      {
+        "key": "NT@window",
+        "source": "L10431",
+        "class": "excluded",
+        "reason": "Same object as NT in the notes2js IIFE (`const NT = window.NT = {}`); exported once from tracker.ts."
+      }
+    ],
+    "mutable": [
+      "m@iife@L4 (L4)",
+      "toastT (L5116)",
+      "bkTimers (L5615)",
+      "bkLeaves (L5736)",
+      "BK (L5736)",
+      "CAM (L5759)",
+      "camRaf (L5759)",
+      "autoT (L5796)",
+      "drag@iife@L5842 (L5843)",
+      "dustRaf (L5871)",
+      "x0@iife@L5909 (L5910)",
+      "cdT (L5930)",
+      "resendT (L5971)",
+      "RV (L6367)",
+      "seq@#notes2js (L10432)"
+    ]
+  },
+  "modules": [
+    {
+      "module": "mobile/src/data/subjects.ts",
+      "export": "SUBJ",
+      "scope": "global",
+      "source": "L5143-L5152",
+      "kind": "object",
+      "count": 8
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "BANNERS",
+      "scope": "global",
+      "source": "L5154-L5159",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "BRIEF",
+      "scope": "global",
+      "source": "L5161-L5165",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "FLASH",
+      "scope": "global",
+      "source": "L5167-L5178",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "COVER",
+      "scope": "global",
+      "source": "L5180-L5182",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "WEEK",
+      "scope": "global",
+      "source": "L5183",
+      "kind": "array",
+      "count": 7
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "REVISIONS",
+      "scope": "global",
+      "source": "L5390-L5394",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "REELS",
+      "scope": "global",
+      "source": "L5396-L5421",
+      "kind": "array",
+      "count": 6
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "MEGA",
+      "scope": "global",
+      "source": "L6027",
+      "kind": "string",
+      "count": 238
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "ANN",
+      "scope": "global",
+      "source": "L6028-L6033",
+      "kind": "object",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "ANN_IC",
+      "scope": "global",
+      "source": "L6034",
+      "kind": "object",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "DAYPLAN",
+      "scope": "global",
+      "source": "L6399",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/home.ts",
+      "export": "SKYLINE",
+      "scope": "global",
+      "source": "L6416-L6428",
+      "kind": "string",
+      "count": 1732
+    },
+    {
+      "module": "mobile/src/data/learn.ts",
+      "export": "COURSES",
+      "scope": "global",
+      "source": "L5200-L5206",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/learn.ts",
+      "export": "MORE_COURSES",
+      "scope": "global",
+      "source": "L5207-L5212",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/learn.ts",
+      "export": "LX",
+      "scope": "global",
+      "source": "L8237-L8246",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/notes.ts",
+      "export": "NOTES",
+      "scope": "global",
+      "source": "L5214-L5219",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/notes.ts",
+      "export": "DOCS",
+      "scope": "global",
+      "source": "L5221-L5227",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/notes.ts",
+      "export": "MM_NOTES",
+      "scope": "global",
+      "source": "L6678-L6685",
+      "kind": "array",
+      "count": 6
+    },
+    {
+      "module": "mobile/src/data/notes.ts",
+      "export": "NOTESYS",
+      "scope": "global",
+      "source": "L7788-L7817",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/practice.ts",
+      "export": "QUIZ",
+      "scope": "global",
+      "source": "L5295-L5362",
+      "kind": "array",
+      "count": 10
+    },
+    {
+      "module": "mobile/src/data/practice.ts",
+      "export": "MAINSQ",
+      "scope": "global",
+      "source": "L5364-L5368",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/practice.ts",
+      "export": "ANSWERBANK",
+      "scope": "global",
+      "source": "L5369-L5374",
+      "kind": "array",
+      "count": 7
+    },
+    {
+      "module": "mobile/src/data/practice.ts",
+      "export": "AB_META",
+      "scope": "global",
+      "source": "L7769-L7777",
+      "kind": "object",
+      "count": 7
+    },
+    {
+      "module": "mobile/src/data/practice.ts",
+      "export": "PASTEVALS",
+      "scope": "global",
+      "source": "L5375-L5380",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/practice.ts",
+      "export": "TESTS",
+      "scope": "global",
+      "source": "L5381-L5385",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/practice.ts",
+      "export": "QB",
+      "scope": "global",
+      "source": "L5386-L5389",
+      "kind": "array",
+      "count": 8
+    },
+    {
+      "module": "mobile/src/data/practice.ts",
+      "export": "PQB",
+      "scope": "global",
+      "source": "L7747-L7756",
+      "kind": "array",
+      "count": 11
+    },
+    {
+      "module": "mobile/src/data/practice.ts",
+      "export": "MODEL",
+      "scope": "global",
+      "source": "L6694-L6701",
+      "kind": "string",
+      "count": 1617
+    },
+    {
+      "module": "mobile/src/data/current.ts",
+      "export": "ARTICLES",
+      "scope": "global",
+      "source": "L5229-L5293",
+      "kind": "array",
+      "count": 11
+    },
+    {
+      "module": "mobile/src/data/current.ts",
+      "export": "SRC",
+      "scope": "global",
+      "source": "L7173",
+      "kind": "object",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/current.ts",
+      "export": "GSC",
+      "scope": "global",
+      "source": "L7174",
+      "kind": "object",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/current.ts",
+      "export": "TODAY",
+      "scope": "global",
+      "source": "L7092",
+      "kind": "object",
+      "count": 2
+    },
+    {
+      "module": "mobile/src/data/current.ts",
+      "export": "MONS",
+      "scope": "global",
+      "source": "L7096",
+      "kind": "array",
+      "count": 12
+    },
+    {
+      "module": "mobile/src/data/current.ts",
+      "export": "MONL",
+      "scope": "global",
+      "source": "L7097",
+      "kind": "array",
+      "count": 12
+    },
+    {
+      "module": "mobile/src/data/current.ts",
+      "export": "DOWS",
+      "scope": "global",
+      "source": "L7098",
+      "kind": "array",
+      "count": 7
+    },
+    {
+      "module": "mobile/src/data/plans.ts",
+      "export": "PLAN_N",
+      "scope": "global",
+      "source": "L7118",
+      "kind": "object",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/plans.ts",
+      "export": "PLAN_CAP",
+      "scope": "global",
+      "source": "L7119",
+      "kind": "object",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/plans.ts",
+      "export": "PLANS",
+      "scope": "global",
+      "source": "L7120-L7127",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/plans.ts",
+      "export": "PACKS",
+      "scope": "global",
+      "source": "L7128",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/plans.ts",
+      "export": "TH",
+      "scope": "#planthemesjs",
+      "source": "L10746-L10750",
+      "kind": "object",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/legal.ts",
+      "export": "LEGAL",
+      "scope": "global",
+      "source": "L7404-L7434",
+      "kind": "object",
+      "count": 2
+    },
+    {
+      "module": "mobile/src/data/menu.ts",
+      "export": "MT",
+      "scope": "global",
+      "source": "L7669-L7683",
+      "kind": "object",
+      "count": 13
+    },
+    {
+      "module": "mobile/src/data/menu.ts",
+      "export": "SYL",
+      "scope": "global",
+      "source": "L7758-L7767",
+      "kind": "array",
+      "count": 8
+    },
+    {
+      "module": "mobile/src/data/tools.ts",
+      "export": "TOOLS",
+      "scope": "global",
+      "source": "L5185-L5198",
+      "kind": "array",
+      "count": 12
+    },
+    {
+      "module": "mobile/src/data/xray.ts",
+      "export": "XSC",
+      "scope": "window",
+      "source": "L9732-L9852",
+      "kind": "array",
+      "count": 6
+    },
+    {
+      "module": "mobile/src/data/xray.ts",
+      "export": "X4SUB",
+      "scope": "#xray4js",
+      "source": "L9725",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/xray.ts",
+      "export": "TABS",
+      "scope": "#xray4js",
+      "source": "L9728",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/xray.ts",
+      "export": "NCOL",
+      "scope": "#xray4js",
+      "source": "L9729",
+      "kind": "object",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/xray.ts",
+      "export": "RIC",
+      "scope": "#xray4js",
+      "source": "L9730",
+      "kind": "object",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/xray.ts",
+      "export": "XR",
+      "scope": "global",
+      "source": "L6686-L6692",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/xray.ts",
+      "export": "XRB_META",
+      "scope": "global",
+      "source": "L8379-L8384",
+      "kind": "object",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/xray.ts",
+      "export": "XRP",
+      "scope": "global",
+      "source": "L8387-L8414",
+      "kind": "array",
+      "count": 2
+    },
+    {
+      "module": "mobile/src/data/xray.ts",
+      "export": "XR_LAB",
+      "scope": "global",
+      "source": "L8416",
+      "kind": "object",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/tracker.ts",
+      "export": "FOLDERS",
+      "scope": "global",
+      "source": "L7821",
+      "kind": "array",
+      "count": 7
+    },
+    {
+      "module": "mobile/src/data/tracker.ts",
+      "export": "OPTIONALS",
+      "scope": "global",
+      "source": "L7822",
+      "kind": "array",
+      "count": 14
+    },
+    {
+      "module": "mobile/src/data/tracker.ts",
+      "export": "NT_OPTS",
+      "scope": "#notes2js",
+      "source": "L10335",
+      "kind": "array",
+      "count": 14
+    },
+    {
+      "module": "mobile/src/data/tracker.ts",
+      "export": "OPT_C",
+      "scope": "#notes2js",
+      "source": "L10338",
+      "kind": "string",
+      "count": 7
+    },
+    {
+      "module": "mobile/src/data/tracker.ts",
+      "export": "SRC",
+      "scope": "#notes2js",
+      "source": "L10340-L10346",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/tracker.ts",
+      "export": "UD",
+      "scope": "#notes2js",
+      "source": "L10347",
+      "kind": "array",
+      "count": 6
+    },
+    {
+      "module": "mobile/src/data/tracker.ts",
+      "export": "COOP_UPS",
+      "scope": "#notes2js",
+      "source": "L10349-L10354",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/tracker.ts",
+      "export": "RAW",
+      "scope": "#notes2js",
+      "source": "L10367-L10429",
+      "kind": "object",
+      "count": 7
+    },
+    {
+      "module": "mobile/src/data/tracker.ts",
+      "export": "NT",
+      "scope": "#notes2js",
+      "source": "L10431",
+      "kind": "object",
+      "count": 7
+    },
+    {
+      "module": "mobile/src/data/book.ts",
+      "export": "CAM_CLOSED",
+      "scope": "global",
+      "source": "L5756",
+      "kind": "object",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/book.ts",
+      "export": "CAM_SPREAD",
+      "scope": "global",
+      "source": "L5757",
+      "kind": "object",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/book.ts",
+      "export": "CAM_FINAL",
+      "scope": "global",
+      "source": "L5758",
+      "kind": "object",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/book.ts",
+      "export": "SFX",
+      "scope": "global",
+      "source": "L5688",
+      "kind": "object",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/auth.ts",
+      "export": "PRELIMS_AT",
+      "scope": "global",
+      "source": "L5930",
+      "kind": "object",
+      "count": 2
+    },
+    {
+      "module": "mobile/src/data/onestep.ts",
+      "export": "IN_OUTLINE",
+      "scope": "global",
+      "source": "L8503",
+      "kind": "array",
+      "count": 105
+    },
+    {
+      "module": "mobile/src/data/onestep.ts",
+      "export": "IN_PATH",
+      "scope": "global",
+      "source": "L8505",
+      "kind": "string",
+      "count": 1341
+    },
+    {
+      "module": "mobile/src/data/onestep.ts",
+      "export": "IN_CITIES",
+      "scope": "global",
+      "source": "L8506",
+      "kind": "array",
+      "count": 20
+    },
+    {
+      "module": "mobile/src/data/onestep.ts",
+      "export": "STS",
+      "scope": "global",
+      "source": "L8510",
+      "kind": "object",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/illustrations.ts",
+      "export": "INDIA",
+      "scope": "global",
+      "source": "L5442",
+      "kind": "string",
+      "count": 242
+    },
+    {
+      "module": "mobile/src/data/illustrations.ts",
+      "export": "ART",
+      "scope": "global",
+      "source": "L5519-L5559",
+      "kind": "object",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_renderLearn_L6203",
+      "scope": "inside renderLearn()",
+      "source": "L6203",
+      "kind": "array",
+      "count": 6
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_qbank_L6631",
+      "scope": "inside qbank()",
+      "source": "L6631",
+      "kind": "object",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_calSlots_L6663",
+      "scope": "inside calSlots()",
+      "source": "L6663",
+      "kind": "array",
+      "count": 6
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_mindmapSVG_L6667",
+      "scope": "inside mindmapSVG()",
+      "source": "L6667-L6670",
+      "kind": "array",
+      "count": 6
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_renderMains_L6786",
+      "scope": "inside renderMains()",
+      "source": "L6786",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_ctx_L6836",
+      "scope": "inside ctx()",
+      "source": "L6836",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_ctx_L6840",
+      "scope": "inside ctx()",
+      "source": "L6840",
+      "kind": "object",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_ctx_L6843",
+      "scope": "inside ctx()",
+      "source": "L6843",
+      "kind": "object",
+      "count": 6
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_credits_L6919",
+      "scope": "inside credits()",
+      "source": "L6919",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_prefs_L6926",
+      "scope": "inside prefs()",
+      "source": "L6926",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_payments_L6930",
+      "scope": "inside payments()",
+      "source": "L6930",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_settings_L6931",
+      "scope": "inside settings()",
+      "source": "L6931",
+      "kind": "array",
+      "count": 5
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_privacy_L6932",
+      "scope": "inside privacy()",
+      "source": "L6932",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_upload_L6935",
+      "scope": "inside upload()",
+      "source": "L6935",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_draw_L6943",
+      "scope": "inside draw()",
+      "source": "L6943",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_openTool_L6957",
+      "scope": "inside openTool()",
+      "source": "L6957",
+      "kind": "object",
+      "count": 11
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_qdbAnswer_L7048",
+      "scope": "inside qdbAnswer()",
+      "source": "L7048",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_planResult_L7052",
+      "scope": "inside planResult()",
+      "source": "L7052-L7054",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_caFilter_L7596",
+      "scope": "inside caFilter()",
+      "source": "L7596",
+      "kind": "array",
+      "count": 4
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_meTog_L7625",
+      "scope": "inside meTog()",
+      "source": "L7625",
+      "kind": "object",
+      "count": 9
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_VIEWS_mindmap_L8013",
+      "scope": "inside VIEWS.mindmap()",
+      "source": "L8013",
+      "kind": "array",
+      "count": 6
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_qdOutHTML_L8102",
+      "scope": "inside qdOutHTML()",
+      "source": "L8102",
+      "kind": "array",
+      "count": 3
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_renderLearn_L8253",
+      "scope": "inside renderLearn()",
+      "source": "L8253",
+      "kind": "array",
+      "count": 11
+    },
+    {
+      "module": "mobile/src/data/inline.ts",
+      "export": "INLINE_ntMerge_L10602",
+      "scope": "inside ntMerge()",
+      "source": "L10602",
+      "kind": "array",
+      "count": 4
+    }
+  ],
+  "initialState": {
+    "kind": "object",
+    "count": 46,
+    "sha256": "397d8bdb1981b570aec01aab1f5e926bb683a7ecbf21e6ec43148d6f6200cdbc",
+    "fields": [
+      "stage",
+      "tab",
+      "stack",
+      "lang",
+      "fcLang",
+      "fc",
+      "hero",
+      "heroTimer",
+      "intro",
+      "authMode",
+      "authTries",
+      "user",
+      "saved",
+      "ca",
+      "quiz",
+      "toolGroup",
+      "mlog",
+      "ctxOn",
+      "rendered",
+      "mainsQ",
+      "pages",
+      "revDone",
+      "arSize",
+      "me",
+      "menuQ",
+      "savedLinks",
+      "pqb",
+      "tq",
+      "mv",
+      "ab",
+      "syl",
+      "sylDone",
+      "up",
+      "vlt",
+      "qdb2",
+      "maps",
+      "nsys",
+      "optional",
+      "folders",
+      "nsRead",
+      "nsSaved",
+      "nh",
+      "xr",
+      "xr2",
+      "x4",
+      "ntSort"
+    ],
+    "source": "L5126-L5133",
+    "envKeys": [
+      "ca.date"
+    ],
+    "laterFields": 7
+  },
+  "i18n": {
+    "langs": [
+      "en",
+      "hi"
+    ],
+    "keys": 16,
+    "source": "L5136-L5139"
+  },
+  "crossCheck": {
+    "about": "Constants whose runtime value was also compared with their source literal evaluated in isolation.",
+    "checked": 62,
+    "constants": [
+      "I18N",
+      "SUBJ",
+      "BANNERS",
+      "BRIEF",
+      "FLASH",
+      "COVER",
+      "WEEK",
+      "TOOLS",
+      "COURSES",
+      "MORE_COURSES",
+      "NOTES",
+      "DOCS",
+      "QUIZ",
+      "PASTEVALS",
+      "TESTS",
+      "QB",
+      "REVISIONS",
+      "REELS",
+      "INDIA",
+      "SFX",
+      "CAM_CLOSED",
+      "CAM_SPREAD",
+      "CAM_FINAL",
+      "MEGA",
+      "ANN_IC",
+      "DAYPLAN",
+      "MM_NOTES",
+      "XR",
+      "MODEL",
+      "MONS",
+      "MONL",
+      "DOWS",
+      "PLAN_N",
+      "PLAN_CAP",
+      "PLANS",
+      "PACKS",
+      "SRC",
+      "GSC",
+      "LEGAL",
+      "MT",
+      "SYL",
+      "AB_META",
+      "NOTESYS",
+      "FOLDERS",
+      "XRB_META",
+      "XRP",
+      "XR_LAB",
+      "IN_OUTLINE",
+      "IN_CITIES",
+      "STS",
+      "X4SUB@#xray4js",
+      "TABS@#xray4js",
+      "NCOL@#xray4js",
+      "RIC@#xray4js",
+      "NT_OPTS@#notes2js",
+      "OPT_C@#notes2js",
+      "SRC@#notes2js",
+      "UD@#notes2js",
+      "COOP_UPS@#notes2js",
+      "RAW@#notes2js",
+      "TH@#planthemesjs",
+      "XSC@window"
+    ],
+    "notChecked": [
+      {
+        "constant": "ARTICLES",
+        "because": "it is changed after its declaration (L7131-L7172)"
+      },
+      {
+        "constant": "ANSWERBANK",
+        "because": "its initializer contains a spread"
+      },
+      {
+        "constant": "ART",
+        "because": "its initializer contains a function"
+      },
+      {
+        "constant": "PRELIMS_AT",
+        "because": "its initializer contains a call"
+      },
+      {
+        "constant": "ANN",
+        "because": "its initializer contains a template with ${…}"
+      },
+      {
+        "constant": "SKYLINE",
+        "because": "its initializer contains a template with ${…}"
+      },
+      {
+        "constant": "TODAY",
+        "because": "its initializer contains a call"
+      },
+      {
+        "constant": "PQB",
+        "because": "its initializer contains a spread"
+      },
+      {
+        "constant": "OPTIONALS",
+        "because": "it is changed after its declaration (L10336)"
+      },
+      {
+        "constant": "LX",
+        "because": "its initializer contains a template with ${…}"
+      },
+      {
+        "constant": "IN_PATH",
+        "because": "its initializer contains a call"
+      },
+      {
+        "constant": "NT@#notes2js",
+        "because": "its initializer uses the variable window"
+      }
+    ],
+    "changedThroughSharing": [
+      {
+        "constant": "MAINSQ",
+        "source": "L5364-L5368",
+        "differsAt": [
+          "MAINSQ[0]",
+          "MAINSQ[1]",
+          "MAINSQ[2]"
+        ],
+        "sharedWith": [
+          "ANSWERBANK"
+        ]
+      }
+    ]
+  },
+  "sharedObjects": {
+    "about": "The same object reachable from two places among the script-level constants (first = where it was met first).",
+    "count": 76,
+    "pairs": [
+      {
+        "first": "MAINSQ[0]",
+        "again": "ANSWERBANK[1]"
+      },
+      {
+        "first": "MAINSQ[1]",
+        "again": "ANSWERBANK[2]"
+      },
+      {
+        "first": "MAINSQ[2]",
+        "again": "ANSWERBANK[3]"
+      },
+      {
+        "first": "QUIZ[0].st",
+        "again": "PQB[1].st"
+      },
+      {
+        "first": "QUIZ[0].o",
+        "again": "PQB[1].o"
+      },
+      {
+        "first": "QUIZ[0].path",
+        "again": "PQB[1].path"
+      },
+      {
+        "first": "QUIZ[1].st",
+        "again": "PQB[2].st"
+      },
+      {
+        "first": "QUIZ[1].o",
+        "again": "PQB[2].o"
+      },
+      {
+        "first": "QUIZ[1].path",
+        "again": "PQB[2].path"
+      },
+      {
+        "first": "QUIZ[2].st",
+        "again": "PQB[3].st"
+      },
+      {
+        "first": "QUIZ[2].o",
+        "again": "PQB[3].o"
+      },
+      {
+        "first": "QUIZ[2].path",
+        "again": "PQB[3].path"
+      },
+      {
+        "first": "QUIZ[3].st",
+        "again": "PQB[4].st"
+      },
+      {
+        "first": "QUIZ[3].o",
+        "again": "PQB[4].o"
+      },
+      {
+        "first": "QUIZ[3].path",
+        "again": "PQB[4].path"
+      },
+      {
+        "first": "QUIZ[4].st",
+        "again": "PQB[5].st"
+      },
+      {
+        "first": "QUIZ[4].o",
+        "again": "PQB[5].o"
+      },
+      {
+        "first": "QUIZ[4].path",
+        "again": "PQB[5].path"
+      },
+      {
+        "first": "QUIZ[5].st",
+        "again": "PQB[6].st"
+      },
+      {
+        "first": "QUIZ[5].o",
+        "again": "PQB[6].o"
+      },
+      {
+        "first": "QUIZ[5].path",
+        "again": "PQB[6].path"
+      },
+      {
+        "first": "QUIZ[6].st",
+        "again": "PQB[7].st"
+      },
+      {
+        "first": "QUIZ[6].o",
+        "again": "PQB[7].o"
+      },
+      {
+        "first": "QUIZ[6].path",
+        "again": "PQB[7].path"
+      },
+      {
+        "first": "QUIZ[7].st",
+        "again": "PQB[8].st"
+      },
+      {
+        "first": "QUIZ[7].o",
+        "again": "PQB[8].o"
+      },
+      {
+        "first": "QUIZ[7].path",
+        "again": "PQB[8].path"
+      },
+      {
+        "first": "QUIZ[8].st",
+        "again": "PQB[9].st"
+      },
+      {
+        "first": "QUIZ[8].o",
+        "again": "PQB[9].o"
+      },
+      {
+        "first": "QUIZ[8].path",
+        "again": "PQB[9].path"
+      },
+      {
+        "first": "QUIZ[9].st",
+        "again": "PQB[10].st"
+      },
+      {
+        "first": "QUIZ[9].o",
+        "again": "PQB[10].o"
+      },
+      {
+        "first": "QUIZ[9].path",
+        "again": "PQB[10].path"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.polity[1].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[1].src",
+        "again": "NT.polity[1].ups[1].src"
+      },
+      {
+        "first": "NT.polity[0].ups[1].src",
+        "again": "NT.polity[2].ups[0].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.polity[2].ups[1].src"
+      },
+      {
+        "first": "NT.polity[0].ups[3].src",
+        "again": "NT.polity[2].ups[2].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.polity[3].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[3].src",
+        "again": "NT.polity[3].ups[1].src"
+      },
+      {
+        "first": "NT.polity[0].ups[3].src",
+        "again": "NT.polity[4].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.polity[5].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.polity[6].ups[0].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.polity[8].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.polity[10].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.polity[11].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[1].src",
+        "again": "NT.polity[11].ups[1].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.polity[13].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.history[0].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.history[1].ups[0].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.history[3].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.geo[0].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.geo[0].ups[1].src"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.geo[1].ups[0].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.geo[3].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.geo[5].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.eco[0].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.eco[0].ups[1].src"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.eco[1].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[1].src",
+        "again": "NT.eco[2].ups[0].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.eco[2].ups[1].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.eco[3].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.eco[5].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[1].src",
+        "again": "NT.eco[7].ups[0].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.eco[7].ups[1].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.env[0].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.env[1].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[1].src",
+        "again": "NT.env[1].ups[1].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.env[3].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[3].src",
+        "again": "NT.env[4].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.art[0].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[0].src",
+        "again": "NT.snt[0].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[2].src",
+        "again": "NT.snt[1].ups[0].src"
+      },
+      {
+        "first": "NT.polity[0].ups[1].src",
+        "again": "NT.snt[2].ups[0].src"
+      },
+      {
+        "first": "NT.polity[1].ups[2].src",
+        "again": "NT.snt[2].ups[1].src"
+      },
+      {
+        "first": "NT.polity[0].ups[3].src",
+        "again": "NT.snt[4].ups[0].src"
+      }
+    ]
+  },
+  "changedAtRuntime": {
+    "about": "Data constants that functions (handlers) modify by name after load. Element changes made through another variable are not traceable statically and are not listed.",
+    "constants": {
+      "SFX": [
+        "L5692 assignment",
+        "L5698 assignment",
+        "L6984 assignment",
+        "L7622 assignment",
+        "L8511 assignment"
+      ],
+      "DOCS": [
+        "L8184 .unshift()"
+      ],
+      "FOLDERS": [
+        "L8196 .push()"
+      ],
+      "STS": [
+        "L8513 assignment",
+        "L8516 .push()",
+        "L8520 .push()",
+        "L8521 .push()",
+        "L8527 .push()",
+        "L8531 .push()",
+        "L8533 .push()",
+        "L8535 .push()",
+        "L8537 .push()",
+        "L8540 .push()",
+        "L8546 assignment"
+      ],
+      "XSC": [
+        "L10032 .unshift()"
+      ],
+      "NT": [
+        "L10442 assignment"
+      ],
+      "OPTIONALS": [
+        "L10627 .push()"
+      ]
+    }
+  },
+  "envDerived": {
+    "count": 50,
+    "byConstant": {
+      "S": 1,
+      "PRELIMS_AT": 1,
+      "TODAY": 1,
+      "NT@#notes2js": 47
+    }
+  },
+  "functionsInData": [
+    {
+      "path": "ART.plan",
+      "name": "plan",
+      "params": 0,
+      "source": "PrepAssist.html L5520-L5529",
+      "returnsRecorded": true
+    },
+    {
+      "path": "ART.notice",
+      "name": "notice",
+      "params": 0,
+      "source": "PrepAssist.html L5530-L5540",
+      "returnsRecorded": true
+    },
+    {
+      "path": "ART.xray",
+      "name": "xray",
+      "params": 0,
+      "source": "PrepAssist.html L5541-L5548",
+      "returnsRecorded": true
+    },
+    {
+      "path": "ART.live",
+      "name": "live",
+      "params": 0,
+      "source": "PrepAssist.html L5549-L5558",
+      "returnsRecorded": true
+    }
+  ],
+  "inlineLiterals": {
+    "found": 82,
+    "exported": 24,
+    "notPure": [
+      "articleArt_L5573 (L5573-L5585): contains a template with ${…}",
+      "renderHome_L6051 (L6051-L6055): uses the variable done",
+      "lesson_L6510 (L6510-L6520): contains a template with ${…}",
+      "course_L6521 (L6521-L6526): uses the variable c",
+      "courses_L6527 (L6527-L6532): contains a template with ${…}",
+      "note_L6533 (L6533-L6541): uses the variable id",
+      "xray_L6542 (L6542-L6550): contains a template with ${…}",
+      "mindmap_L6551 (L6551-L6559): contains a template with ${…}",
+      "querydb_L6560 (L6560-L6566): contains a template with ${…}",
+      "calendar_L6567 (L6567-L6575): contains a template with ${…}",
+      "cloud_L6576 (L6576-L6583): contains a template with ${…}",
+      "tracker_L6584 (L6584-L6590): contains a template with ${…}",
+      "engine_L6591 (L6591-L6600): contains a template with ${…}",
+      "tests_L6601 (L6601-L6606): contains a template with ${…}",
+      "history_L6607 (L6607-L6612): contains a template with ${…}",
+      "answerbank_L6613 (L6613-L6618): contains a template with ${…}",
+      "answer_L6619 (L6619-L6625): uses the variable q",
+      "pastevals_L6626 (L6626-L6630): contains a template with ${…}",
+      "qbank_L6631_2 (L6631-L6636): uses the variable sj",
+      "plan_L6637 (L6637-L6644): contains a template with ${…}",
+      "article_L6645 (L6645-L6655): uses the variable a",
+      "mainsResult_L6658 (L6658): contains a template with ${…}",
+      "ctx_L6838 (L6838): uses the variable S",
+      "ctx_L6839 (L6839): uses the variable a",
+      "account_L6924 (L6924): uses the variable S",
+      "account_L7472 (L7472-L7487): contains a template with ${…}",
+      "wallet_L7489 (L7489-L7499): contains a template with ${…}",
+      "payments_L7501 (L7501-L7508): contains a template with ${…}",
+      "upgrade_L7510 (L7510-L7536): contains a template with ${…}",
+      "settings_L7539 (L7539-L7546): contains a template with ${…}",
+      "status_L7548 (L7548-L7563): contains a template with ${…}",
+      "legal_L7565 (L7565-L7572): uses the variable D",
+      "mStat_L7690 (L7690-L7695): contains a template with ${…}",
+      "testquiz_L7831 (L7831-L7846): contains a template with ${…}",
+      "answerbank_L7849 (L7849-L7862): contains a template with ${…}",
+      "mains_L7865 (L7865-L7887): contains a template with ${…}",
+      "syllabus_L7895 (L7895-L7905): contains a template with ${…}",
+      "saved_L7908 (L7908-L7915): uses the variable liftFloat",
+      "upload_L7918 (L7918-L7930): contains a template with ${…}",
+      "cloud_L7937 (L7937-L7949): contains a template with ${…}",
+      "tracker_L7954 (L7954-L7964): contains a template with ${…}",
+      "folder_L7965 (L7965-L7971): uses the variable name",
+      "querydb_L7974 (L7974-L7984): uses the variable liftFloat",
+      "mindmaps_L7987 (L7987-L7994): contains a template with ${…}",
+      "notesys_L7999 (L7999-L8005): contains a template with ${…}",
+      "VIEWS_mindmap_L8016 (L8016-L8021): contains a template with ${…}",
+      "tqGo_L8147 (L8147): uses the variable S",
+      "upGo_L8184 (L8184): uses the variable U",
+      "mvProcess_L8219 (L8219): uses the variable S",
+      "lxStat_L8247 (L8247): contains a template with ${…}",
+      "noteshub_L8329 (L8329-L8340): uses the variable liftFloat",
+      "xrayhome_L8343 (L8343-L8351): contains a template with ${…}",
+      "x4Home_L9866 (L9866): uses the variable B",
+      "genUp_L10357 (L10357-L10363): contains a template with ${…}",
+      "VIEWS_folder_L10496 (L10496-L10502): uses the variable name",
+      "VIEWS_ntNote_L10509 (L10509-L10520): uses the variable F",
+      "ntMerge_L10598 (L10598): uses the variable c",
+      "ntPick_L10620 (L10620): contains a call"
+    ]
+  },
+  "iconReferences": {
+    "about": "Icon names the page asks for (literal <use href=\"#i-NAME\">, literal ic('NAME') calls, `ic` fields in extracted data) against the extracted icons. Names passed to ic() through other variables are not traced.",
+    "referenced": 73,
+    "referencedButNotDefined": [],
+    "definedButNeverReferencedByName": [
+      "bell",
+      "card",
+      "eyeoff",
+      "flag",
+      "hl",
+      "motion",
+      "phone",
+      "type",
+      "user",
+      "wifi"
+    ]
+  },
+  "icons": {
+    "count": 84,
+    "illustrationSymbols": [
+      "s4A",
+      "s4B",
+      "s4C"
+    ],
+    "symbolsInSource": 87,
+    "issues": [],
+    "byOrigin": {
+      "static-markup": 65,
+      "injected-by-script": 19
+    }
+  },
+  "actions": {
+    "verbs": 236,
+    "verbsInMarkupOrTemplates": 226,
+    "verbsOnlyFromData": [
+      "mvRun",
+      "sheet"
+    ],
+    "verbsWithStaleHandlerReference": [
+      "tool"
+    ],
+    "verbsWithoutHandler": [],
+    "unreferencedHandlers": [
+      "caDate",
+      "caDay",
+      "caTopic",
+      "fcNav",
+      "flip",
+      "nrBackSync",
+      "target",
+      "toolGroup"
+    ],
+    "dataActSites": 561,
+    "dynamicSites": 16,
+    "renderHarvest": {
+      "values": 3376,
+      "viewsRendered": 179,
+      "errors": 6
+    },
+    "inlineHandlers": 21
+  },
+  "markup": {
+    "constants": 100,
+    "strings": 3248,
+    "stringsWithMarkup": 113,
+    "distinctTags": 15,
+    "distinctClasses": 8,
+    "distinctStyleProperties": 0,
+    "distinctEntities": 1
+  },
+  "codeTemplates": {
+    "templateLiterals": 740,
+    "functionsWithMarkup": 172,
+    "staticGroups": 8,
+    "distinctTags": 67,
+    "distinctClasses": 1243,
+    "distinctStyleProperties": 69,
+    "distinctEntities": 4,
+    "toastCalls": 81,
+    "tagsOnlyInCode": [
+      "a",
+      "animate",
+      "animateTransform",
+      "article",
+      "aside",
+      "blockquote",
+      "button",
+      "canvas",
+      "clipPath",
+      "defs",
+      "div",
+      "ellipse",
+      "em",
+      "feColorMatrix",
+      "feComponentTransfer",
+      "feFuncA",
+      "feGaussianBlur",
+      "feMerge",
+      "feMergeNode",
+      "feTurbulence",
+      "filter",
+      "footer",
+      "form",
+      "h1",
+      "h2",
+      "h3",
+      "h6",
+      "header",
+      "img",
+      "input",
+      "kbd",
+      "label",
+      "linearGradient",
+      "mark",
+      "nav",
+      "polyline",
+      "radialGradient",
+      "section",
+      "small",
+      "span",
+      "stop",
+      "sup",
+      "symbol",
+      "table",
+      "tbody",
+      "td",
+      "template",
+      "textarea",
+      "th",
+      "tr",
+      "u",
+      "use"
+    ]
+  },
+  "files": [
+    "mobile/__tests__/data/generatedData.test.ts",
+    "mobile/__tests__/data/snapshot.json",
+    "mobile/actions.map.json",
+    "mobile/src/data/auth.ts",
+    "mobile/src/data/book.ts",
+    "mobile/src/data/current.ts",
+    "mobile/src/data/home.ts",
+    "mobile/src/data/illustrations.ts",
+    "mobile/src/data/index.ts",
+    "mobile/src/data/initialState.ts",
+    "mobile/src/data/inline.ts",
+    "mobile/src/data/learn.ts",
+    "mobile/src/data/legal.ts",
+    "mobile/src/data/markers.ts",
+    "mobile/src/data/menu.ts",
+    "mobile/src/data/notes.ts",
+    "mobile/src/data/onestep.ts",
+    "mobile/src/data/plans.ts",
+    "mobile/src/data/practice.ts",
+    "mobile/src/data/subjects.ts",
+    "mobile/src/data/tools.ts",
+    "mobile/src/data/tracker.ts",
+    "mobile/src/data/xray.ts",
+    "mobile/src/i18n/strings.ts",
+    "mobile/src/icons/iconPaths.generated.ts",
+    "tools/reference/extract/out/bindings.json",
+    "tools/reference/extract/out/inline-literals.json",
+    "tools/reference/extract/out/markup-inventory.json",
+    "tools/reference/extract/out/template-inventory.json"
+  ]
+}

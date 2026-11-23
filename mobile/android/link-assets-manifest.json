@@ -1,0 +1,77 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Caveat-Medium.ttf",
+      "sha1": "141c37cf3763c7d7742c57ddee6fb5d53d7fe4ac"
+    },
+    {
+      "path": "assets/fonts/Caveat-SemiBold.ttf",
+      "sha1": "d78d03924d8b991f982bbb549932ebc14b06d951"
+    },
+    {
+      "path": "assets/fonts/EBGaramond-Italic.ttf",
+      "sha1": "b6196e91a05314ba2a9ce2724c2007209c964cba"
+    },
+    {
+      "path": "assets/fonts/EBGaramond-Medium.ttf",
+      "sha1": "5489e5fe0b52e1102044321b06e4c637f86b51f7"
+    },
+    {
+      "path": "assets/fonts/EBGaramond-Regular.ttf",
+      "sha1": "f57c6137d305eb94e119b5e8b1a22e53818361d7"
+    },
+    {
+      "path": "assets/fonts/EBGaramond-SemiBold.ttf",
+      "sha1": "80764a9693862f26c224adea1f1b7879d2bc380f"
+    },
+    {
+      "path": "assets/fonts/Inter-Bold.ttf",
+      "sha1": "b7ab5dc5e8d605338223de7a8ffe3ebea409d3bc"
+    },
+    {
+      "path": "assets/fonts/Inter-Italic.ttf",
+      "sha1": "d69aee7947e21b46bde36a51a63ba99bf2a62687"
+    },
+    {
+      "path": "assets/fonts/Inter-Medium.ttf",
+      "sha1": "78f01e4f13a7da5c283f4d0b5d36dc489eb5ab73"
+    },
+    {
+      "path": "assets/fonts/Inter-Regular.ttf",
+      "sha1": "78eae8a823f461192b4df2d67d7eaa818cf09b5a"
+    },
+    {
+      "path": "assets/fonts/Inter-SemiBold.ttf",
+      "sha1": "1048573ec372a0c4a60bd3d5b3ab3b82bc3973da"
+    },
+    {
+      "path": "assets/fonts/InterTight-Bold.ttf",
+      "sha1": "200e04b1799cdb45982c55baa790cc806507ac08"
+    },
+    {
+      "path": "assets/fonts/InterTight-ExtraBold.ttf",
+      "sha1": "932eca41722f5a502b8d021fc70f944bdefa2e9a"
+    },
+    {
+      "path": "assets/fonts/InterTight-Medium.ttf",
+      "sha1": "8c9d52016253325b96be5e81dd7c970daf433010"
+    },
+    {
+      "path": "assets/fonts/InterTight-SemiBold.ttf",
+      "sha1": "5c23fcbe01e4fa8adbce16805d9bdf1a9a61ef64"
+    },
+    {
+      "path": "assets/fonts/NotoSansDevanagari-Medium.ttf",
+      "sha1": "60c1a773bbca53d9623eff8faf35e21e36cb8c12"
+    },
+    {
+      "path": "assets/fonts/NotoSansDevanagari-Regular.ttf",
+      "sha1": "80d0aa95681f9323eec7f35d67c1e6aa34e6d00e"
+    },
+    {
+      "path": "assets/fonts/NotoSansDevanagari-SemiBold.ttf",
+      "sha1": "099cbf52ff293cbc2309c4f02ed1a1caf12f5b3e"
+    }
+  ]
+}

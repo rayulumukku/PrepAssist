@@ -1,0 +1,12 @@
+{
+  "name": "prepassist-reference-tools",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Dev-only tooling: captures PrepAssist.html as the visual source of truth and extracts its data. Not shipped in the app.",
+  "type": "module",
+  "devDependencies": {
+    "pixelmatch": "^8.0.0",
+    "playwright": "^1.65.1",
+    "pngjs": "^7.0.0"
+  }
+}

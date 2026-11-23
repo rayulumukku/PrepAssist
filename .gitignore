@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+*.log
+
+# Reference pack: the per-screen captures (about 500 MB of PNG/DOM dumps) are regenerated with
+#   cd tools/reference && node capture/capture.mjs
+# Only the index, runtime facts and README are tracked.
+reference/android/
+reference/ios/
+reference/verify-report.json
+parity/
