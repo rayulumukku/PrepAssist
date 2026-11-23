@@ -1,0 +1,14 @@
+{
+  "area": "tabs",
+  "$comment": "Current tab states. Every shot starts from reset at the reference clock; the edition is today (24 Oct 2026).",
+  "shots": {
+    "tab-current": { "links": ["tab/current", "ask/full"], "wait": 1200 },
+    "tab-current-source-hindu": { "links": ["tab/current", "ask/full", "act/caSrc/The%20Hindu"], "wait": 1200 },
+    "sheet-current-filter": { "links": ["tab/current", "ask/mini", "act/caFilter"], "wait": 1200 },
+    "tab-current-gs3": { "links": ["tab/current", "ask/mini", "act/caGs/gs3"], "wait": 1200 },
+    "tab-current-pib-gs3": { "links": ["tab/current", "ask/full", "act/caGs/gs3", "act/caSrc/PIB"], "wait": 1200 },
+    "tab-current-empty": { "links": ["tab/current", "ask/full", "act/caGs/gs2", "act/caSrc/PIB"], "wait": 1200 },
+    "tab-current-pro": { "links": ["plan/pro", "tab/current", "ask/full"], "wait": 1200 },
+    "tab-current-ultimate": { "links": ["plan/ultimate", "tab/current", "ask/full"], "wait": 1200 }
+  }
+}

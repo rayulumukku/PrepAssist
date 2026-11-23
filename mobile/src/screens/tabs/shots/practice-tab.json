@@ -1,0 +1,9 @@
+{
+  "area": "tabs",
+  "shots": {
+    "tab-practice": { "links": ["tab/practice", "ask/full"], "wait": 1500 },
+    "tab-practice-mains": { "links": ["tab/practice", "act/pxGo/mains", "ask/full"], "wait": 1500 },
+    "tab-practice-pro": { "links": ["plan/pro", "tab/practice", "ask/full"], "wait": 1500 },
+    "tab-practice-ultimate": { "links": ["plan/ultimate", "tab/practice", "ask/full"], "wait": 1500 }
+  }
+}

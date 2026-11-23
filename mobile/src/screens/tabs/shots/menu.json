@@ -1,0 +1,9 @@
+{
+  "area": "tabs",
+  "$comment": "tab-menu-search and tab-menu-search-empty need text typed into #menuQ; no deep link fills a field, so they are reached by an adb probe (see the tabs report).",
+  "shots": {
+    "tab-menu": { "links": ["tab/menu", "ask/full"], "wait": 1200 },
+    "tab-menu-pro": { "links": ["plan/pro", "tab/menu", "ask/full"], "wait": 1200, "note": "the nav line animates forever: never at rest" },
+    "tab-menu-ultimate": { "links": ["plan/ultimate", "tab/menu", "ask/full"], "wait": 1200, "note": "the nav line animates forever: never at rest" }
+  }
+}
