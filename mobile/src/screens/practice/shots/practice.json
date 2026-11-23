@@ -207,6 +207,48 @@
         "tab/menu;push/pqb;act/pqHist"
       ],
       "wait": 1000
+    },
+    "view-answerbank-row-open": {
+      "links": [
+        "tab/menu;push/answerbank;act/abOpen/mq1"
+      ],
+      "wait": 900,
+      "note": "the reference scrolled the opened card into view"
+    },
+    "view-mains-from-answerbank": {
+      "links": [
+        "tab/menu;push/answerbank;act/mainsWith/mq1"
+      ],
+      "wait": 900
+    },
+    "view-answer-model-open": {
+      "links": [
+        "tab/menu;push/answer/mq1;act/modelOpen/abModel"
+      ],
+      "wait": 1200
+    },
+    "view-mainsResult-model-open": {
+      "links": [
+        {
+          "link": "jump/mains;act/mvRun;act/mvAdd;act/mvAdd;act/mvRun;act/mForce",
+          "wait": 5500
+        },
+        "act/modelOpen/evModel"
+      ],
+      "wait": 1200,
+      "note": "the reference scrolled #evModel into view"
+    },
+    "view-testquiz-building": {
+      "links": [
+        "tab/menu;push/testquiz;act/tqPick;act/tqGo"
+      ],
+      "wait": 1000
+    },
+    "view-testquiz-library-new": {
+      "links": [
+        "tab/menu;push/testquiz;act/tqPick;act/tqGo"
+      ],
+      "wait": 5500
     }
   }
 }
