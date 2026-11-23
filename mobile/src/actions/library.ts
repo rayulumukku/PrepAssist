@@ -3,6 +3,7 @@
 // "library", named exactly like the verb and ported from the handler source the map points to.
 // The handler bodies live next to their screens (src/screens/library/**/…Actions.ts) and are merged here.
 import { nsHandlers } from '../screens/library/notes/nsActions';
+import { qdHandlers } from '../screens/library/querydb/qdActions';
 import { syHandlers } from '../screens/library/syllabus/syActions';
 import { ntHandlers } from '../screens/library/tracker/ntActions';
 import { vlHandlers } from '../screens/library/vault/vlActions';
@@ -15,6 +16,7 @@ export const handlers: HandlerMap = {
   ...syHandlers,
   ...vlHandlers,
   ...nsHandlers,
+  ...qdHandlers,
 };
 
 /** Calls the shell functions make into this area (see ShellHooks in ./types). */
