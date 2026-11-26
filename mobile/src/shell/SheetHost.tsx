@@ -16,6 +16,7 @@ import { act } from '../actions';
 import { SHEETS } from '../navigation/registry';
 import { useStore } from '../store';
 import { durations, palettes } from '../theme/tokens';
+import { useInsets } from '../theme/useTheme';
 import { easeCss, useTransition } from './anim';
 import { useAppSize } from './AppSize';
 
@@ -34,8 +35,11 @@ const styles = StyleSheet.create({
     backgroundColor: palettes.free.paper,
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
-    boxShadow: '0px -20px 40px -20px rgba(0, 0, 0, 0.3)',
     flexDirection: 'column',
+  },
+  // Applied only while Content is mounted so 0-height bounds + negative spread don't emit CG NaN on iOS.
+  sheetShadow: {
+    boxShadow: '0px -20px 40px -20px rgba(0, 0, 0, 0.3)',
   },
   // children are clipped to the rounded top corners (a child with its own background would cover them)
   clip: {
@@ -81,6 +85,7 @@ function useKeyboardLift(): number {
 export function SheetHost(): React.JSX.Element {
   const sheet = useStore(s => s.sheet);
   const { h: appH } = useAppSize();
+  const { sat } = useInsets();
   const lift = useKeyboardLift();
   const h = useSharedValue(0);
   // .on: transform none; otherwise translateY(105%) of the sheet's own height
@@ -92,10 +97,11 @@ export function SheetHost(): React.JSX.Element {
     h.value = e.nativeEvent.layout.height;
   };
   const Content = sheet.key ? SHEETS[sheet.key] : null;
-  const size = sheet.tall ? { height: appH * 0.92, maxHeight: appH * 0.92 } : { maxHeight: appH * 0.88 };
+  const maxH = lift > 0 ? Math.max(240, appH - sat - 12 - lift) : appH * (sheet.tall ? 0.92 : 0.88);
+  const size = sheet.tall ? { height: Math.min(appH * 0.92, maxH), maxHeight: maxH } : { maxHeight: maxH };
   return (
     <Animated.View
-      style={[styles.sheet, { bottom: lift }, size, anim]}
+      style={[styles.sheet, Content ? styles.sheetShadow : null, { bottom: lift }, size, anim]}
       onLayout={onLayout}
       pointerEvents={sheet.on ? 'auto' : 'none'}
       accessibilityViewIsModal={sheet.on}

@@ -31,7 +31,7 @@ import { Field, Logo, PenCTA, Icon } from '../../components';
 import { easeVar } from '../../shell/anim';
 import { getS, setS, useStore } from '../../store';
 import type { AuthFieldId } from '../../store/slices/arrival';
-import { font, palettes } from '../../theme';
+import { font, palettes, useInsets } from '../../theme';
 import { Txt } from '../../theme/Txt';
 import { AuthBg } from './AuthBg';
 import { Ul } from './Ul';
@@ -91,13 +91,14 @@ function LiveDot(): React.JSX.Element {
   const ring = useAnimatedStyle(() => {
     const k = t.value <= 1 ? t.value : 0;
     const s = t.value <= 1 ? 7 * k : 0;
+    const a = t.value <= 1 ? Math.max(0, 0.6 * (1 - k)) : 0;
     return {
       top: -s,
       left: -s,
       right: -s,
       bottom: -s,
       borderRadius: 3 + s,
-      backgroundColor: `rgba(245, 160, 31, ${t.value <= 1 ? 0.6 * (1 - k) : 0})`,
+      backgroundColor: `rgba(245, 160, 31, ${a.toFixed(3)})`,
     };
   });
   return (
@@ -153,9 +154,9 @@ function AppleMark(): React.JSX.Element {
 }
 
 /** .pl-foot (L5010-L5013) */
-function Foot({ up }: { up: boolean }): React.JSX.Element {
+function Foot({ up, sab }: { up: boolean; sab: number }): React.JSX.Element {
   return (
-    <View style={up ? styles.footUp : styles.foot}>
+    <View style={[up ? styles.footUp : styles.foot, up && { paddingBottom: 18 + sab }]}>
       <View style={[styles.alt2, up && styles.alt2Up]}>
         <Ul
           onPress={() => act('social:Google')}
@@ -237,6 +238,7 @@ function AuthField({
 // ---------------------------------------------------------------- stage
 
 function AuthStage(): React.JSX.Element {
+  const { sat, sab } = useInsets();
   const mode = useStore(s => s.authMode);
   const up = mode === 'up';
   // a stage that becomes display:block again restarts its CSS animations (formIn, the underline)
@@ -253,7 +255,7 @@ function AuthStage(): React.JSX.Element {
   }, [focusN]);
 
   const inBody = (
-    <View style={styles.wrap}>
+    <View style={[styles.wrap, { paddingTop: sat + 10, paddingBottom: sab + 12 }]}>
       <View style={styles.halo} />
       <View style={styles.top}>
         <View style={styles.logo}>
@@ -301,15 +303,17 @@ function AuthStage(): React.JSX.Element {
       <Animated.View style={[styles.penRow, wiggle]}>
         <PenCTA label="Sign in" onPress={() => act('signin')} testID="auth.signin" />
       </Animated.View>
-      <Foot up={false} />
+      <Foot up={false} sab={sab} />
     </View>
   );
 
   const upBody = (
     <ScrollView
       style={styles.fill}
-      contentContainerStyle={styles.wrapUp}
+      contentContainerStyle={[styles.wrapUp, { paddingTop: sat + 4 }]}
       showsVerticalScrollIndicator={false}
+      automaticallyAdjustKeyboardInsets
+      keyboardDismissMode="interactive"
       keyboardShouldPersistTaps="handled">
       <View style={styles.letterUp}>
         <View style={styles.upBar}>
@@ -341,7 +345,7 @@ function AuthStage(): React.JSX.Element {
           </Animated.View>
         </FormIn>
       </View>
-      <Foot up />
+      <Foot up sab={sab} />
     </ScrollView>
   );
 

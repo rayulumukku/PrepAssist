@@ -17,7 +17,7 @@
 //               em absolute right 10 top 10, 20 high min 22, radius 10, #1FA463, ring 2 #fff, Inter 800 10.5 #fff;
 //               .add transparent, ring inset 1.5 #D5DCE5, span #EEF1F6 plus #5B6472
 import React, { useEffect, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withRepeat, withSequence, withTiming } from 'react-native-reanimated';
 import Svg, { Rect } from 'react-native-svg';
 import { act } from '../../../actions';
@@ -198,7 +198,16 @@ const styles = StyleSheet.create({
   dotRing: { position: 'absolute' },
   dotCore: { width: 6, height: 6, borderRadius: 3, backgroundColor: '#7CF0A8' },
   num: { flexDirection: 'row', alignItems: 'flex-end', gap: 10 },
-  numB: { ...font('book', 500), fontSize: 48, lineHeight: 43.2, letterSpacing: -0.96, color: '#fff' },
+  numB: {
+    ...font('book', 500),
+    fontSize: 48,
+    ...Platform.select({
+      ios: { lineHeight: 50, marginTop: -3, marginBottom: -3 },
+      default: { lineHeight: 43.2 },
+    }),
+    letterSpacing: -0.96,
+    color: '#fff',
+  },
   numSpan: { paddingBottom: 3 },
   numT: { ...font('sans', 700), fontSize: 15, lineHeight: 17.25, color: '#fff' },
   numSmall: { ...font('sans', 500), fontSize: 12, lineHeight: 13.8, color: 'rgba(255,255,255,0.72)', marginTop: 3 },

@@ -14,6 +14,7 @@ import { Icon } from '../components/Icon';
 import { useStore } from '../store';
 import { durations, metrics, palettes } from '../theme/tokens';
 import { Txt } from '../theme/Txt';
+import { useInsets } from '../theme/useTheme';
 import { useTransition } from './anim';
 import { useAppSize } from './AppSize';
 
@@ -48,6 +49,7 @@ const styles = StyleSheet.create({
 export function Toast(): React.JSX.Element {
   const toast = useStore(s => s.toast);
   const { w } = useAppSize();
+  const { sab } = useInsets();
   const p = useTransition(toast.on ? 1 : 0, durations.toast);
   const anim = useAnimatedStyle(() => ({ opacity: p.value, transform: [{ translateY: 20 * (1 - p.value) }] }));
   // shrink-to-fit: a wrapped message takes the whole available width
@@ -56,10 +58,10 @@ export function Toast(): React.JSX.Element {
   const onTextLayout = (e: TextLayoutEvent): void => {
     if (e.nativeEvent.lines.length > 1) setWrapped(true);
   };
-  const half = w / 2;
+  const maxW = Math.min(206, (w || 412) * 0.5);
   return (
-    <View style={styles.wrap} pointerEvents="none">
-      <Animated.View style={[styles.toast, wrapped ? { width: half } : { maxWidth: half }, anim]} testID="toast">
+    <View style={[styles.wrap, { bottom: metrics.navH + sab + 76 }]} pointerEvents="none">
+      <Animated.View style={[styles.toast, { maxWidth: maxW }, anim]} testID="toast">
         {toast.icon ? <Icon name={toast.icon} color={palettes.free.paper} /> : null}
         <Txt style={[styles.text, wrapped && styles.textWrapped]} onTextLayout={onTextLayout} testID="toast.text">
           {toast.msg}

@@ -24,7 +24,7 @@
 //   .mv-note      row centred gap 6, margin-top 10, 12.5px / 18.125px #7A8494; spark 14 #6C5DD3
 // After mvProcess() the HTML turns this page into the evaluation report in place (top.id = 'mainsResult').
 import React, { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, TextInput, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, TextInput, View } from 'react-native';
 import type { DimensionValue } from 'react-native';
 import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 import { act } from '../../actions';
@@ -111,7 +111,7 @@ function Area({ value, onChange, rows, placeholder, testID }: { value: string; o
   const [f, setF] = useState(false);
   return (
     <TextInput
-      style={[s.area, { height: rows * 21.75 + 24 + 2 }, f && s.focus]}
+      style={[s.area, { height: rows * 21.75 + (Platform.OS === 'ios' ? 34 : 26) }, f && s.focus]}
       multiline
       allowFontScaling={false}
       value={value}

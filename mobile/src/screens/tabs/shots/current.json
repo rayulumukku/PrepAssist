@@ -8,6 +8,7 @@
     "tab-current-gs3": { "links": ["tab/current", "ask/mini", "act/caGs/gs3"], "wait": 1200 },
     "tab-current-pib-gs3": { "links": ["tab/current", "ask/full", "act/caGs/gs3", "act/caSrc/PIB"], "wait": 1200 },
     "tab-current-empty": { "links": ["tab/current", "ask/full", "act/caGs/gs2", "act/caSrc/PIB"], "wait": 1200 },
+    "tab-current-past-edition": { "links": ["tab/current", "act/caPick/2026-10-21", "act/caDone"], "wait": 1200 },
     "tab-current-pro": { "links": ["plan/pro", "tab/current", "ask/full"], "wait": 1200 },
     "tab-current-ultimate": { "links": ["plan/ultimate", "tab/current", "ask/full"], "wait": 1200 }
   }

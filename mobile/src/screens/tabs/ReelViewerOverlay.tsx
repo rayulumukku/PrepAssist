@@ -6,10 +6,11 @@ import { act } from '../../actions';
 import { Icon } from '../../components';
 import { REELS, SUBJ } from '../../data';
 import { useStore } from '../../store';
-import { font, Txt } from '../../theme';
+import { font, Txt, useInsets } from '../../theme';
 
 function ReelViewerOverlay(): React.JSX.Element | null {
   const reel = useStore(s => s.reel);
+  const { sat, sab } = useInsets();
   if (!reel.on) return null;
 
   const r = REELS[reel.i] || REELS[0];
@@ -20,8 +21,18 @@ function ReelViewerOverlay(): React.JSX.Element | null {
   const isLast = reel.i >= REELS.length - 1;
   const nextReel = !isLast ? REELS[reel.i + 1] : null;
 
+  const tapTop = Math.max(110, sat + 72);
   return (
-    <View style={[s.overlay, { backgroundColor: subjColor }]} testID="overlay.reel">
+    <View
+      style={[
+        s.overlay,
+        {
+          paddingTop: Math.max(48, sat + 10),
+          paddingBottom: Math.max(28, sab + 12),
+          backgroundColor: subjColor,
+        },
+      ]}
+      testID="overlay.reel">
       <View style={s.barsRow}>
         {r.slides.map((_, k) => {
           const isDone = k < reel.j;
@@ -48,8 +59,8 @@ function ReelViewerOverlay(): React.JSX.Element | null {
         <Txt style={s.desc}>{sl[1]}</Txt>
       </View>
 
-      <Pressable style={s.tapL} onPress={() => act('reelStep', '-1')} testID="reel.tapL" />
-      <Pressable style={s.tapR} onPress={() => act('reelStep', '1')} testID="reel.tapR" />
+      <Pressable style={[s.tapL, { top: tapTop }]} onPress={() => act('reelStep', '-1')} testID="reel.tapL" />
+      <Pressable style={[s.tapR, { top: tapTop }]} onPress={() => act('reelStep', '1')} testID="reel.tapR" />
 
       <View style={s.actRow}>
         <Pressable style={s.actBtn} onPress={() => act('reelSave')} testID="reel.save">

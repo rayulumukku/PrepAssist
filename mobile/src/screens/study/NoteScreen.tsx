@@ -8,7 +8,7 @@
 //   .eyebrow   margin 18px 0 8px (inline); chips row: wrap, gap 8px
 // The input and textarea are uncontrolled, like the HTML's (their text lives only in the element).
 import React from 'react';
-import { Pressable, StyleSheet, TextInput, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { act } from '../../actions';
 import { Chip, Eyebrow, Icon, pageHeaderActStyle, Tag } from '../../components';
 import { NOTES, SUBJ } from '../../data';
@@ -37,10 +37,12 @@ const styles = StyleSheet.create({
   taBox: { height: 200, borderWidth: 1, borderColor: C.rule2, borderRadius: 6, backgroundColor: '#FFFFFF' },
   ta: {
     flex: 1,
-    padding: 16,
+    paddingHorizontal: 16,
+    paddingTop: Platform.select({ ios: 14, default: 16 }),
+    paddingBottom: Platform.select({ ios: 14, default: 16 }),
     ...font('serif', 400),
     fontSize: fontPx(16.5),
-    lineHeight: 28,
+    lineHeight: Platform.select({ ios: 24, default: 28 }),
     color: C.ink,
     textAlignVertical: 'top',
   },

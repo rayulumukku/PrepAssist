@@ -23,7 +23,7 @@
 // Bars: animateRubric() (L6803) sets the widths 120 ms after the report replaces the mains page; a plain
 // push:mainsResult never calls it, so the bars stay at 0 (reference view-mainsResult-pushed).
 import React, { useEffect, useState } from 'react';
-import { Pressable, StyleSheet, View } from 'react-native';
+import { Platform, Pressable, StyleSheet, View } from 'react-native';
 import { act } from '../../actions';
 import { Btn, Icon, RatioBar, pageHeaderActStyle } from '../../components';
 import { ANSWERBANK, MAINSQ } from '../../data';
@@ -43,7 +43,16 @@ const s = StyleSheet.create({
   k: { ...font('sans', 700), fontSize: 10.5, lineHeight: 22.475, letterSpacing: 1.47, textTransform: 'uppercase', color: C.muted },
   h1: { ...font('serif', 600), fontSize: 18, lineHeight: 24.3, letterSpacing: -0.18, marginTop: 6 },
   score: { alignItems: 'flex-end' },
-  scoreLine: { ...font('serif', 700), fontSize: 58, lineHeight: 49.3, letterSpacing: -1.74, textAlign: 'right' },
+  scoreLine: {
+    ...font('serif', 700),
+    fontSize: 58,
+    ...Platform.select({
+      ios: { lineHeight: 62, marginTop: -6, marginBottom: -6 },
+      default: { lineHeight: 49.3 },
+    }),
+    letterSpacing: -1.74,
+    textAlign: 'right',
+  },
   scoreS: { ...font('serif', 400), fontSize: 20, letterSpacing: 0, color: C.muted },
   scoreSm: { fontSize: 11.5, lineHeight: 16.675, color: C.muted, marginTop: 6, textAlign: 'right' },
   remark: {
@@ -155,7 +164,7 @@ export function MainsReport({ animate, entryKey }: { animate: boolean; entryKey:
       </View>
       <View style={s.rub}>
         {RUB.map(([k, v]) => (
-          <RatioBar key={k} label={k} percent={grown ? v * 10 : 0} value={`${v}/10`} />
+          <RatioBar key={k} label={k} percent={grown ? v * 10 : 0} value={`${v}/10`} valueWidth={48} />
         ))}
         <View style={s.rubK}>
           <View style={[s.rubKi, { backgroundColor: t.brand }]} />

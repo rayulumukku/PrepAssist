@@ -7,14 +7,18 @@ import Svg, { Circle, Defs, G, LinearGradient, Path, RadialGradient, Rect, Stop 
 import { act } from '../../actions';
 import { Icon } from '../../components';
 import type { ViewDef } from '../../navigation/routes';
-import { font, Txt } from '../../theme';
+import { getS } from '../../store';
+import { font, Txt, useInsets } from '../../theme';
 import { stPlay, stStop } from './stepSound';
 
 function OnestepScreen(): React.JSX.Element {
+  const { sat, sab } = useInsets();
+  const isZero = getS().insetsMode === 'zero';
   const [sndOn, setSndOn] = useState(true);
-  const [phase, setPhase] = useState(0);
+  const [phase, setPhase] = useState(() => (isZero ? 4 : 0));
 
   useEffect(() => {
+    if (isZero) return;
     stPlay();
     const t1 = setTimeout(() => setPhase(1), 1500);
     const t2 = setTimeout(() => setPhase(2), 3500);
@@ -28,7 +32,7 @@ function OnestepScreen(): React.JSX.Element {
       clearTimeout(t4);
       stStop();
     };
-  }, []);
+  }, [isZero]);
 
   const toggleSound = (): void => {
     if (sndOn) {
@@ -42,13 +46,19 @@ function OnestepScreen(): React.JSX.Element {
 
   return (
     <View style={s.wrap} testID="view.onestep">
-      <Pressable style={s.closeBtn} onPress={() => act('back')} testID="onestep.close">
-        <Icon name="close" size={18} color="#FFFFFF" />
+      <Pressable style={[s.closeBtn, { top: Math.max(48, sat) }]} onPress={() => act('back')} testID="onestep.close">
+        <Icon name="close" size={16} color="#E2C48C" />
       </Pressable>
 
-      <Pressable style={s.sndBtn} onPress={toggleSound} testID="onestep.sound">
-        <Icon name={sndOn ? 'volume' : 'x'} size={18} color="#FFFFFF" />
+      <Pressable style={[s.sndBtn, { top: Math.max(48, sat) }]} onPress={toggleSound} testID="onestep.sound">
+        <Icon name={sndOn ? 'volume' : 'x'} size={16} color="#E2C48C" />
       </Pressable>
+
+      {/* Top watermark */}
+      <View style={[s.mark, { top: Math.max(54, sat + 6) }]}>
+        <View style={s.markDot} />
+        <Txt style={s.markTxt}>PrepAssist · CSE 2027</Txt>
+      </View>
 
       <View style={s.canvas}>
         <Svg width="100%" height="100%" viewBox="0 0 360 560" preserveAspectRatio="xMidYMax slice">
@@ -110,55 +120,147 @@ function OnestepScreen(): React.JSX.Element {
         </Svg>
       </View>
 
-      <View style={s.textOverlay}>
-        {phase < 2 ? (
-          <View style={s.msgBox}>
-            <Txt style={s.msgSub}>A JOURNEY OF A THOUSAND MILES</Txt>
-            <Txt style={s.msgTitle}>Every morning, thousands begin.</Txt>
-          </View>
-        ) : phase === 2 ? (
-          <View style={s.msgBox}>
-            <Txt style={s.msgSub}>THE HORIZON</Txt>
-            <Txt style={s.msgTitle}>A syllabus so vast, most get lost.</Txt>
-          </View>
-        ) : phase === 3 ? (
-          <View style={s.msgBox}>
-            <Txt style={s.msgSub}>YOUR PATH</Txt>
-            <Txt style={s.msgTitle}>Focus on the one step in front of you.</Txt>
-          </View>
-        ) : (
-          <View style={s.msgBox}>
-            <Txt style={s.msgSub}>TODAY</Txt>
-            <Txt style={s.msgTitle}>PrepAssist · One step closer today.</Txt>
-            <View style={s.btnRow}>
-              <Pressable style={s.goBtn} onPress={() => act('stepGo')} testID="onestep.go">
-                <Txt style={s.goBtnTx}>Take today’s step</Txt>
-                <Icon name="arrow" size={16} color="#FFFFFF" />
-              </Pressable>
-              <Pressable style={s.replayBtn} onPress={() => act('stepReplay')} testID="onestep.replay">
-                <Icon name="refresh" size={18} color="#FFFFFF" />
-              </Pressable>
-            </View>
-          </View>
-        )}
-      </View>
+      {phase < 4 ? (
+        <View style={s.copyOverlay}>
+          {phase < 2 && (
+            <Txt style={s.copyLine}>
+              Every year, <Txt style={s.copyEm}>lakhs</Txt> dream of it.
+            </Txt>
+          )}
+          {phase >= 2 && (
+            <Txt style={s.copyLine}>
+              It takes <Txt style={s.copyEm}>one step</Txt> to stand apart.
+            </Txt>
+          )}
+        </View>
+      ) : (
+        <View style={[s.endCard, { paddingBottom: Math.max(40, sab + 12) }]}>
+          <View style={s.rule} />
+          <Txt style={s.eb}>Day 239 · 126 days to Prelims</Txt>
+          <Txt style={s.title}>
+            You took it.{'\n'}
+            <Txt style={s.titleEm}>Take one more today.</Txt>
+          </Txt>
+          <Txt style={s.subText}>
+            The nation needs its next officer — one lecture, one PYQ, one answer at a time.
+          </Txt>
+          <Pressable style={s.ctaBtn} onPress={() => act('stepGo')} testID="onestep.go">
+            <Txt style={s.ctaBtnTx}>TAKE TODAY’S STEP</Txt>
+            <Icon name="arrow" size={15} color="#1A1230" />
+          </Pressable>
+          <Pressable style={s.replayBtn} onPress={() => act('stepReplay')} testID="onestep.replay">
+            <Icon name="refresh" size={14} color="rgba(214,182,122,0.85)" />
+            <Txt style={s.replayBtnTx}>WATCH AGAIN</Txt>
+          </Pressable>
+        </View>
+      )}
     </View>
   );
 }
 
 const s = StyleSheet.create({
   wrap: { ...StyleSheet.absoluteFill, backgroundColor: '#0E0A22' },
-  closeBtn: { position: 'absolute', top: 48, left: 20, zIndex: 10, width: 40, height: 40, borderRadius: 20, backgroundColor: 'rgba(255,255,255,0.15)', alignItems: 'center', justifyContent: 'center' },
-  sndBtn: { position: 'absolute', top: 48, right: 20, zIndex: 10, width: 40, height: 40, borderRadius: 20, backgroundColor: 'rgba(255,255,255,0.15)', alignItems: 'center', justifyContent: 'center' },
+  closeBtn: {
+    position: 'absolute',
+    top: 48,
+    left: 20,
+    zIndex: 10,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: 'rgba(214,182,122,0.45)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  sndBtn: {
+    position: 'absolute',
+    top: 48,
+    right: 20,
+    zIndex: 10,
+    width: 36,
+    height: 36,
+    borderRadius: 18,
+    borderWidth: 1,
+    borderColor: 'rgba(214,182,122,0.45)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  mark: {
+    position: 'absolute',
+    top: 54,
+    left: 0,
+    right: 0,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    zIndex: 4,
+  },
+  markDot: { width: 4.5, height: 4.5, borderRadius: 2.25, backgroundColor: '#D6B67A' },
+  markTxt: { ...font('sans', 600), fontSize: 10.5, letterSpacing: 2, color: 'rgba(214,182,122,0.75)', textTransform: 'uppercase' },
   canvas: { ...StyleSheet.absoluteFill },
-  textOverlay: { position: 'absolute', left: 20, right: 20, bottom: 48, alignItems: 'center' },
-  msgBox: { width: '100%', alignItems: 'center' },
-  msgSub: { ...font('sans', 800), fontSize: 11, letterSpacing: 2, color: 'rgba(255,255,255,0.7)', textTransform: 'uppercase' },
-  msgTitle: { ...font('book', 500), fontSize: 26, lineHeight: 32, color: '#FFFFFF', textAlign: 'center', marginTop: 10 },
-  btnRow: { flexDirection: 'row', gap: 10, marginTop: 24, width: '100%' },
-  goBtn: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8, height: 50, borderRadius: 14, backgroundColor: '#1B8AD3' },
-  goBtnTx: { ...font('sans', 700), fontSize: 14.5, color: '#FFFFFF' },
-  replayBtn: { width: 50, height: 50, borderRadius: 14, backgroundColor: 'rgba(255,255,255,0.2)', alignItems: 'center', justifyContent: 'center' },
+  copyOverlay: {
+    position: 'absolute',
+    left: 24,
+    right: 24,
+    bottom: 90,
+    alignItems: 'center',
+  },
+  copyLine: {
+    ...font('book', 400),
+    fontSize: 24,
+    lineHeight: 30,
+    color: '#F6ECDD',
+    textAlign: 'center',
+  },
+  copyEm: {
+    color: '#E2C48C',
+    fontStyle: 'italic',
+  },
+  endCard: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: 0,
+    paddingHorizontal: 32,
+    paddingBottom: 40,
+    paddingTop: 80,
+    alignItems: 'center',
+    backgroundColor: 'rgba(14,10,34,0.92)',
+  },
+  rule: { width: 44, height: 1, backgroundColor: '#D6B67A', marginBottom: 14, opacity: 0.8 },
+  eb: { ...font('sans', 600), fontSize: 9.5, letterSpacing: 3, color: '#D6B67A', textTransform: 'uppercase' },
+  title: { ...font('book', 400), fontSize: 30, lineHeight: 34, color: '#F6ECDD', textAlign: 'center', marginTop: 10 },
+  titleEm: { color: '#E2C48C', fontStyle: 'italic' },
+  subText: { ...font('sans', 400), fontSize: 13, lineHeight: 18, color: 'rgba(246,236,221,0.62)', textAlign: 'center', maxWidth: 280, marginTop: 8 },
+  ctaBtn: {
+    marginTop: 22,
+    width: '100%',
+    height: 50,
+    borderRadius: 25,
+    backgroundColor: '#E9D3A2',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    shadowColor: '#D6B67A',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.4,
+    shadowRadius: 16,
+    elevation: 6,
+  },
+  ctaBtnTx: { ...font('sans', 700), fontSize: 13, letterSpacing: 1.5, color: '#1A1230' },
+  replayBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 6,
+    marginTop: 16,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+  },
+  replayBtnTx: { ...font('sans', 600), fontSize: 11.5, letterSpacing: 1.5, color: 'rgba(214,182,122,0.85)' },
 });
 
 const view: ViewDef = {

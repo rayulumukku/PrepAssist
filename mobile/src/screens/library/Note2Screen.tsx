@@ -4,13 +4,24 @@
 import React, { useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { act } from '../../actions';
-import { Icon } from '../../components';
+import { Icon, RichText } from '../../components';
+import type { RichTextStyles } from '../../components';
 import { NOTESYS } from '../../data';
 import type { ViewDef, ViewProps } from '../../navigation/routes';
 import { useStore } from '../../store';
-import { font, Txt } from '../../theme';
+import { font, Txt, useInsets } from '../../theme';
+
+const bodyRichStyles: RichTextStyles = {
+  base: { fontSize: 14, lineHeight: 22, color: '#25272D' },
+  b: font('sans', 700),
+  p: { marginTop: 6 },
+  ul: { paddingLeft: 18, marginTop: 6 },
+  li: { fontSize: 14, lineHeight: 22, color: '#25272D', marginTop: 4 },
+  first: { p: { marginTop: 0 }, ul: { marginTop: 0 } },
+};
 
 function Note2Screen({ arg }: ViewProps): React.JSX.Element {
+  const { sat, sab } = useInsets();
   const id = arg || 'ns1';
   const n = NOTESYS.find(x => x.id === id) || NOTESYS[0];
   const idx = NOTESYS.indexOf(n);
@@ -33,7 +44,7 @@ function Note2Screen({ arg }: ViewProps): React.JSX.Element {
 
   return (
     <View style={s.root} testID="view.note2">
-      <View style={s.topBar}>
+      <View style={[s.topBar, { paddingTop: sat, height: 48 + sat }]}>
         <Pressable style={s.topIb} onPress={() => act('back')} testID="note2.back">
           <Icon name="back" size={18} color="#14161C" />
         </Pressable>
@@ -145,7 +156,7 @@ function Note2Screen({ arg }: ViewProps): React.JSX.Element {
                     ))}
                   </View>
                 ) : (
-                  <Txt style={s.secBody}>{String(sec[1])}</Txt>
+                  <RichText html={String(sec[1])} styles={bodyRichStyles} />
                 )}
               </View>
             );
@@ -174,7 +185,7 @@ function Note2Screen({ arg }: ViewProps): React.JSX.Element {
         </View>
       </ScrollView>
 
-      <View style={s.dock}>
+      <View style={[s.dock, { paddingBottom: Math.max(6, sab) }]}>
         <Pressable style={s.dockBtn} onPress={() => act('mentor')} testID="note2.dock.ask">
           <Icon name="spark" size={18} color="#6C5DD3" />
           <Txt style={s.dockTx}>Ask</Txt>

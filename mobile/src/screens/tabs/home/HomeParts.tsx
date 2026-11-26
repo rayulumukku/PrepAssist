@@ -115,14 +115,14 @@ function Pulse(): React.JSX.Element {
   }, [p]);
   const ring = useAnimatedStyle(() => {
     const spread = p.value <= 1 ? 8 * p.value : 8 * (2 - p.value);
-    const a = p.value <= 1 ? 0.6 * (1 - p.value) : 0;
+    const a = p.value <= 1 ? Math.max(0, 0.6 * (1 - p.value)) : 0;
     return {
       width: 8 + 2 * spread,
       height: 8 + 2 * spread,
       borderRadius: 4 + spread,
       left: -spread,
       top: -spread,
-      backgroundColor: `rgba(245,160,31,${a})`,
+      backgroundColor: `rgba(245,160,31,${a.toFixed(3)})`,
     };
   });
   return (

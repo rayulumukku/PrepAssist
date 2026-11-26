@@ -53,7 +53,8 @@ export function openBook(): void {
       revealed: 1,
     },
   }));
-  startAutoNext();
+  // Camera glide takes 2000ms before the 3000ms Page 1 read timer (PrepAssist.html L5814-L5817)
+  startAutoNext(5000);
 }
 
 /** turnPage(fromP, dur) L5820-L5831 */
@@ -77,7 +78,8 @@ export function turnPage(): void {
       auto: st.bk.auto + 1,
     },
   }));
-  startAutoNext();
+  // 1100ms page turn + 3000ms read (3500ms on Page 3 so X-Ray strip settles cleanly before Page 4)
+  startAutoNext(next === 3 ? 4600 : 4100);
 }
 
 /** bookNext() L6984: stopAuto(); turnPage(); */
@@ -134,6 +136,7 @@ export function toggleSound(): void {
 export function startAutoNext(delay = 3500): void {
   stopAuto();
   const s = getS();
+  if (s.insetsMode === 'zero') return;
   if (s.stage !== 'book' || s.bkStep >= 4) return;
   autoT = setTimeout(() => {
     const cur = getS();
