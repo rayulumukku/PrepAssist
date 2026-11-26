@@ -22,8 +22,9 @@ PORT=8081
 
 # Agent shells may start with a bare PATH, so put Node (nvm, v22) and Homebrew on it explicitly.
 export PATH="$HOME/.nvm/versions/node/v22.16.0/bin:/opt/homebrew/bin:$PATH"
-export JAVA_HOME=/opt/homebrew/opt/openjdk@17
-export ANDROID_HOME=/opt/homebrew/share/android-commandlinetools
+export JAVA_HOME="${JAVA_HOME:-$(/usr/libexec/java_home 2>/dev/null || echo /opt/homebrew/opt/openjdk@17)}"
+export ANDROID_HOME="${ANDROID_HOME:-$HOME/Library/Android/sdk}"
+export PATH="$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$PATH"
 ADB="$ANDROID_HOME/platform-tools/adb"
 APP_ID=com.prepassist.app
 LOCK=/tmp/prepassist-device.lock

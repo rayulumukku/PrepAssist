@@ -2,6 +2,46 @@
  "area": "arrival",
  "$comment": "Arrival states. Not listed (no deep link can reach them): stage-auth-signin-password-shown (A.eye is element-local inside the shared Field), and stage-auth-signin-empty-error, stage-auth-signup-password-typed, stage-auth-signup-mismatch (the reference types into inputs with Playwright fill; no deep link sets an input value).",
  "shots": {
+  "stage-book-0-closed": {
+   "links": [
+    "stage/book"
+   ],
+   "wait": 350
+  },
+  "stage-book-1-page1": {
+   "links": [
+    "stage/book",
+    "act/openBook"
+   ],
+   "wait": 1800
+  },
+  "stage-book-2-page2": {
+   "links": [
+    "stage/book",
+    "act/openBook",
+    "act/bookNext"
+   ],
+   "wait": 1800
+  },
+  "stage-book-3-page3": {
+   "links": [
+    "stage/book",
+    "act/openBook",
+    "act/bookNext",
+    "act/bookNext"
+   ],
+   "wait": 1800
+  },
+  "stage-book-4-final": {
+   "links": [
+    "stage/book",
+    "act/openBook",
+    "act/bookNext",
+    "act/bookNext",
+    "act/bookNext"
+   ],
+   "wait": 1800
+  },
   "stage-auth-signin": {
    "links": [
     "jump/auth"
@@ -30,7 +70,7 @@
    "links": [
     "jump/verify"
    ],
-   "wait": 1800
+   "wait": 350
   },
   "stage-verify-resent": {
    "links": [
@@ -65,7 +105,7 @@
    "links": [
     "jump/intro"
    ],
-   "wait": 1800
+   "wait": 350
   },
   "stage-intro-2": {
    "links": [

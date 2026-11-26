@@ -27,6 +27,7 @@ import { setClockOverride } from '../env/clock';
 import { ICONS } from '../icons/iconPaths.generated';
 import type { IconName } from '../icons/iconPaths.generated';
 import { __cancelAskTimer, __resetNavTimers, back, closeSheet, go, openSheet, pushRaw, setPlanTheme, toast } from '../navigation/nav';
+import { openBook } from '../screens/arrival/flow';
 import { SHEET_TALL, isSheetKey, isStage, isTab, isViewId } from '../navigation/routes';
 import { getS, resetStore, setS } from '../store';
 import type { Plan } from '../theme/tokens';
@@ -101,6 +102,10 @@ function run(link: ParsedLink): void {
       }
       return;
     case 'act':
+      if (a0 === 'openBook') {
+        openBook();
+        return;
+      }
       if (a0 !== undefined) act(a0, link.args.length > 1 ? link.args.slice(1).join('/') : undefined);
       return;
     case 'lang':
@@ -152,7 +157,7 @@ function reload(): void {
   const insetsMode = getS().insetsMode;
   __resetNavTimers();
   resetStore();
-  setS({ insetsMode });
+  setS({ insetsMode, homeGen: Date.now() });
 }
 
 /** Run every command of a link, in order. Returns false when the URL is not ours. */

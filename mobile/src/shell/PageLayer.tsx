@@ -52,6 +52,8 @@ function StandardPage({ def, props, phBg }: { def: ViewDef; props: ViewProps; ph
         style={styles.scroll}
         contentContainerStyle={[styles.scrollContent, { paddingTop: pageHeaderHeight(sat) }]}
         showsVerticalScrollIndicator={false}
+        automaticallyAdjustKeyboardInsets
+        keyboardDismissMode="interactive"
         keyboardShouldPersistTaps="handled">
         <Screen {...props} />
       </ScrollView>

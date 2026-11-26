@@ -20,7 +20,7 @@ import { act } from '../../actions';
 import { PenCTA } from '../../components';
 import { useTransition } from '../../shell/anim';
 import { useStore } from '../../store';
-import { font, palettes } from '../../theme';
+import { font, palettes, useInsets } from '../../theme';
 import { Txt } from '../../theme/Txt';
 import { Ul } from './Ul';
 
@@ -135,6 +135,7 @@ function Illustration({ done, run }: { done: boolean; run: number }): React.JSX.
 }
 
 function VerifyStage(): React.JSX.Element {
+  const { sat, sab } = useInsets();
   const done = useStore(s => s.vfDone);
   const email = useStore(s => s.user.email);
   const resendN = useStore(s => s.resendN);
@@ -143,7 +144,7 @@ function VerifyStage(): React.JSX.Element {
 
   return (
     <View style={styles.stage} testID="verify">
-      <View style={styles.vf2}>
+      <View style={[styles.vf2, { paddingTop: sat + 14, paddingBottom: sab + 20 }]}>
         <View style={styles.main}>
           <Illustration done={done} run={run} />
           <Txt style={styles.t}>{done ? 'Email verified' : 'Check your inbox'}</Txt>

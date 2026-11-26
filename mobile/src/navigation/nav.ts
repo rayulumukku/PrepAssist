@@ -200,9 +200,10 @@ export const sheetIsOpen = (): boolean => getS().sheet.on;
 export function toast(msg: string, icon: IconName | null = 'check'): void {
   setS(s => ({ toast: { n: s.toast.n + 1, msg, icon, on: true } }));
   if (toastT) clearTimeout(toastT);
+  const hold = getS().insetsMode === 'zero' ? 6000 : durations.toastHold;
   toastT = setTimeout(() => {
     setS(s => ({ toast: { ...s.toast, on: false } }));
-  }, durations.toastHold);
+  }, hold);
 }
 
 // ---------------- plan theme ----------------

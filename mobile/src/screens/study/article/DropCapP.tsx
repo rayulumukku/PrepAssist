@@ -7,7 +7,7 @@
 // The cap is 51.92 px tall (45.92 + 6), so it sits beside the first two lines at every text size
 // (28.38, 30.1 and 33.15 px lines).
 import React, { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 import type { LayoutChangeEvent, TextLayoutEvent, TextStyle } from 'react-native';
 import { font, Txt } from '../../../theme';
 
@@ -16,7 +16,15 @@ const CAP_H = 45.92 + 6;
 const s = StyleSheet.create({
   row: { flexDirection: 'row', alignItems: 'flex-start' },
   cap: { paddingTop: 6, paddingRight: 8 },
-  capT: { ...font('book', 600), fontSize: 56, lineHeight: 45.92, color: '#14304F' },
+  capT: {
+    ...font('book', 600),
+    fontSize: 56,
+    ...Platform.select({
+      ios: { lineHeight: 58, marginTop: -6, marginBottom: -6 },
+      default: { lineHeight: 45.92 },
+    }),
+    color: '#14304F',
+  },
   side: { flex: 1 },
   ghost: { position: 'absolute', left: 0, top: 0, opacity: 0 },
 });

@@ -38,15 +38,17 @@
         { "link": "act/buy/plan:pro", "wait": 900 },
         "act/byPay/plan:pro"
       ],
-      "wait": 500
+      "wait": 500,
+      "noRest": true
     },
     "sheet-purchase-done-pro": {
       "links": [
         "jump/plans",
         { "link": "act/buy/plan:pro", "wait": 900 },
-        "act/byPay/plan:pro"
+        { "link": "act/byPay/plan:pro", "wait": 0 }
       ],
-      "wait": 1550
+      "wait": 1850,
+      "noRest": true
     },
     "overlay-plan-magic-pro": {
       "links": [
@@ -77,6 +79,22 @@
     "sheet-language-hi": {
       "links": ["jump/profile", "lang/hi", "sheet/language"],
       "wait": 900
+    },
+    "sheet-credits": {
+      "links": ["jump/home", "sheet/credits"],
+      "wait": 900
+    },
+    "sheet-subscription": {
+      "links": ["jump/profile", "sheet/subscription"],
+      "wait": 900
+    },
+    "sheet-revisions": {
+      "links": ["jump/home", "sheet/revisions"],
+      "wait": 900
+    },
+    "view-onestep": {
+      "links": ["jump/profile", "push/onestep"],
+      "wait": 10000
     }
   }
 }

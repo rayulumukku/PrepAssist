@@ -16,9 +16,10 @@ import { Circ, Icon, SheetGrab } from '../../components';
 import type { SheetProps } from '../../navigation/routes';
 import { scanBy, subN, termCount } from '../../screens/library/xray/x4';
 import { useStore } from '../../store';
-import { font, Txt } from '../../theme';
+import { font, Txt, useInsets } from '../../theme';
 
 function XrayTermSheet({ arg }: SheetProps): React.JSX.Element {
+  const { sab } = useInsets();
   const scan = useStore(s => s.x4.scan);
   const list = useStore(s => s.XSC);
   const k = arg ?? '';
@@ -28,7 +29,7 @@ function XrayTermSheet({ arg }: SheetProps): React.JSX.Element {
   return (
     <>
       <SheetGrab />
-      <View style={s.x4d}>
+      <View style={[s.x4d, { paddingBottom: Math.max(18, sab + 14) }]}>
         <View style={s.top}>
           <View style={s.k}>
             <Icon name="learn" size={14} color="#0B7FA6" />

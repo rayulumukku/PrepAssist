@@ -121,7 +121,7 @@ for (const id of ids) {
     }
     await sleep(def.wait ?? 900);
     const file = path.join(dir, 'shot.png');
-    const rest = await atRest(file);
+    const rest = def.noRest ? (screenshot(file), { stable: true, tries: 1 }) : await atRest(file);
     fs.writeFileSync(
       path.join(dir, 'meta.json'),
       JSON.stringify({ id, platform, takenAt: new Date().toISOString(), links: steps.map(s => SCHEME + s.link), atRest: rest, map: def.file, note: def.note ?? null }, null, 1),

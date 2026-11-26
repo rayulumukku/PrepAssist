@@ -13,11 +13,12 @@
 //   .tl-stats row gap 8, margin-top 16; cell flex 1, padding 9 10, radius 12, rgba(255,255,255,.13),
 //             1px rgba(255,255,255,.16); b Inter Tight 800 18/18; span 10.5 / 15.225 rgba(255,255,255,.75) mt 4
 import React, { useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import { Icon } from '../../../components';
 import { MT } from '../../../data';
 import type { IconName } from '../../../icons/iconPaths.generated';
 import { font, Txt, usePlan } from '../../../theme';
+import { hasDevanagari, splitScriptRuns } from '../../../theme/fonts';
 
 const hex = (c: string): [number, number, number] => [parseInt(c.slice(1, 3), 16), parseInt(c.slice(3, 5), 16), parseInt(c.slice(5, 7), 16)];
 /** color-mix(in srgb, a p, b) */
@@ -51,9 +52,28 @@ const s = StyleSheet.create({
   p: { fontSize: 13.5, lineHeight: 19.575, color: 'rgba(255, 255, 255, 0.82)', marginTop: 8, maxWidth: 300 },
   stats: { flexDirection: 'row', gap: 8, marginTop: 16 },
   stat: { flex: 1, paddingVertical: 9, paddingHorizontal: 10, borderRadius: 12, backgroundColor: 'rgba(255, 255, 255, 0.13)', borderWidth: 1, borderColor: 'rgba(255, 255, 255, 0.16)' },
-  statB: { ...font('serif', 800), fontSize: 18, lineHeight: 18, color: '#FFFFFF' },
+  statB: { ...font('serif', 800), fontSize: 18, ...Platform.select({ ios: { lineHeight: 22 }, default: { lineHeight: 18 } }), color: '#FFFFFF' },
   statS: { fontSize: 10.5, lineHeight: 15.225, color: 'rgba(255, 255, 255, 0.75)', marginTop: 4 },
 });
+
+function StatVal({ value }: { value: string }): React.JSX.Element {
+  if (Platform.OS === 'ios' && hasDevanagari(value)) {
+    return (
+      <Txt style={s.statB}>
+        {splitScriptRuns(value).map((r, i) =>
+          r.devanagari ? (
+            <Text key={i} allowFontScaling={false} style={{ fontFamily: 'NotoSansDevanagari-SemiBold' }}>
+              {r.text}
+            </Text>
+          ) : (
+            r.text
+          ),
+        )}
+      </Txt>
+    );
+  }
+  return <Txt style={s.statB}>{value}</Txt>;
+}
 
 export interface TlHeroProps {
   /** MT key (the tool) */
@@ -96,7 +116,7 @@ export function TlHero({ id, title, sub, stats }: TlHeroProps): React.JSX.Elemen
         <View style={s.stats}>
           {stats.map(([v, l], k) => (
             <View key={k} style={s.stat}>
-              <Txt style={s.statB}>{v}</Txt>
+              <StatVal value={v} />
               <Txt style={s.statS}>{l}</Txt>
             </View>
           ))}

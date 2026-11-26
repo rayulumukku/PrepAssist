@@ -49,12 +49,14 @@ const styles = StyleSheet.create({
 });
 
 /** The 360 x 400 map scaled to the box width (`.mm svg{width:100%}`). */
-function MapSvg({ children }: { children: React.ReactNode }): React.JSX.Element {
+function MapSvg({ wide, children }: { wide?: boolean; children: React.ReactNode }): React.JSX.Element {
   const [w, setW] = useState(0);
+  const vbW = wide ? 388 : 360;
+  const vb = wide ? '-14 0 388 400' : '0 0 360 400';
   return (
     <View style={styles.mm} onLayout={e => setW(e.nativeEvent.layout.width - 2)}>
       {w > 0 ? (
-        <Svg width={w} height={(w * 400) / 360} viewBox="0 0 360 400">
+        <Svg width={w} height={(w * 400) / vbW} viewBox={vb}>
           {children}
         </Svg>
       ) : null}
@@ -66,7 +68,7 @@ function MapSvg({ children }: { children: React.ReactNode }): React.JSX.Element 
 function FrMap(): React.JSX.Element {
   const br = INLINE_mindmapSVG_L6667;
   return (
-    <MapSvg>
+    <MapSvg wide>
       {br.map(b => (
         <Path key={`p${b[0]}`} d={`M180 200 C${(180 + b[2]) / 2} 200 ${(180 + b[2]) / 2} ${b[3]} ${b[2]} ${b[3]}`} fill="none" stroke={b[4]} strokeWidth={2} opacity={0.55} />
       ))}
@@ -74,18 +76,22 @@ function FrMap(): React.JSX.Element {
       <SvgText x={180} y={205} textAnchor="middle" fontSize={12} fontFamily={INTER_600} fill="#FFFFFF">
         Fundamental Rights
       </SvgText>
-      {br.map((b, i) => (
-        <G key={`g${b[0]}`} onPress={() => act('mm', String(i))}>
-          <Rect x={b[2] - 58} y={b[3] - 20} width={116} height={40} rx={8} fill="#FFFFFF" stroke={b[4]} strokeWidth={1.4} />
-          <SvgText x={b[2]} y={b[3] - 3} textAnchor="middle" fontSize={10.5} fontFamily={INTER_600} fill="#25272D">
-            {b[0]}
-          </SvgText>
-          <SvgText x={b[2]} y={b[3] + 11} textAnchor="middle" fontSize={9.5} fontFamily={INTER} fill={b[4]}>
-            {b[1]}
-          </SvgText>
-          {[0, 1, 5].includes(i) ? <Circle cx={b[2] + 52} cy={b[3] - 14} r={3.5} fill="#1B8AD3" /> : null}
-        </G>
-      ))}
+      {br.map((b, i) => {
+        const longLabel = b[0].length > 18;
+        const boxW = longLabel ? 124 : 118;
+        return (
+          <G key={`g${b[0]}`} onPress={() => act('mm', String(i))}>
+            <Rect x={b[2] - boxW / 2} y={b[3] - 20} width={boxW} height={40} rx={8} fill="#FFFFFF" stroke={b[4]} strokeWidth={1.4} />
+            <SvgText x={b[2]} y={b[3] - 3} textAnchor="middle" fontSize={longLabel ? 9.2 : 10.5} fontFamily={INTER_600} fill="#25272D">
+              {b[0]}
+            </SvgText>
+            <SvgText x={b[2]} y={b[3] + 11} textAnchor="middle" fontSize={9.5} fontFamily={INTER} fill={b[4]}>
+              {b[1]}
+            </SvgText>
+            {[0, 1, 5].includes(i) ? <Circle cx={b[2] + boxW / 2 - 6} cy={b[3] - 14} r={3.2} fill="#1B8AD3" /> : null}
+          </G>
+        );
+      })}
       {['Habeas corpus', 'Mandamus', 'Prohibition', 'Certiorari', 'Quo warranto'].map((w, i) => (
         <SvgText key={w} x={210 + (i % 2) * 74} y={368 + Math.floor(i / 2) * 13} fontSize={9} fontFamily={INTER} fill="#1667B0">
           {`· ${w}`}

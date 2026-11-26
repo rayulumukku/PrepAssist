@@ -95,7 +95,7 @@ export function SheetFrame({
         keyboardShouldPersistTaps="handled"
         {...scrollProps}
         style={styles.body}
-        contentContainerStyle={[styles.bodyContent, { paddingBottom: Math.max(24, sab) }, bodyStyle]}
+        contentContainerStyle={[styles.bodyContent, { paddingBottom: sab ? sab + 14 : 24 }, bodyStyle]}
         testID={testID ? `${testID}.body` : undefined}>
         {children}
       </ScrollView>

@@ -11,7 +11,7 @@ import { act } from '../../actions';
 import { Btn, Icon, Logo } from '../../components';
 import { easeCss, easeVar } from '../../shell/anim';
 import { useStore } from '../../store';
-import { font, palettes } from '../../theme';
+import { font, palettes, useInsets } from '../../theme';
 import { Txt } from '../../theme/Txt';
 import { introNext, setIntro } from './flow';
 import { useClassTransition } from './introAnim';
@@ -92,6 +92,7 @@ function TocItem({ k, intro, fresh }: { k: number; intro: number; fresh: number 
 }
 
 function IntroStage(): React.JSX.Element {
+  const { sat, sab } = useInsets();
   const intro = useStore(s => s.intro);
   const fresh = useStore(s => s.introFresh);
   // the CSS animations of the vignettes (fxb, fcu) restart when the stage is shown again
@@ -103,7 +104,7 @@ function IntroStage(): React.JSX.Element {
 
   return (
     <View style={styles.stage} testID="intro">
-      <View style={styles.top}>
+      <View style={[styles.top, { paddingTop: Math.max(18, sat) }]}>
         <View style={styles.wordmark}>
           <Logo size={24} />
           <Txt style={styles.wordmarkT}>PrepAssist</Txt>
@@ -135,7 +136,7 @@ function IntroStage(): React.JSX.Element {
           ))}
         </View>
       </View>
-      <View style={styles.foot}>
+      <View style={[styles.foot, { paddingBottom: Math.max(20, sab) }]}>
         <Animated.View style={backStyle}>
           <Pressable
             onPress={() => act('introPrev')}

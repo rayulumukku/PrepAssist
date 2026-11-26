@@ -11,7 +11,7 @@
 // renderQuiz() rebuilds the whole page (el.innerHTML), so the scroller starts at 0 and `.fb` replays
 // its tabIn animation on every render: the page is keyed on S.quizRender.
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import type { LayoutChangeEvent, ScrollViewInstance } from 'react-native';
 import Animated, { Easing, useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 import { act } from '../../actions';
@@ -98,7 +98,16 @@ const s = StyleSheet.create({
   res: { paddingTop: 20, paddingHorizontal: 20, paddingBottom: 120 },
   resEb: { lineHeight: 22.475 },
   score: { flexDirection: 'row', alignItems: 'flex-end', gap: 10, marginTop: 14, marginBottom: 4 },
-  scoreB: { ...font('serif', 700), fontSize: 84, lineHeight: 71.4, letterSpacing: -2.52 },
+  scoreB: {
+    ...font('serif', 700),
+    fontSize: 84,
+    // iOS CoreText clips glyphs when lineHeight < fontSize
+    ...Platform.select({
+      ios: { lineHeight: 88, marginTop: -8, marginBottom: -8 },
+      default: { lineHeight: 71.4 },
+    }),
+    letterSpacing: -2.52,
+  },
   scoreS: { ...font('serif', 400), fontSize: 20, lineHeight: 29, color: C.muted, paddingBottom: 8 },
   verdictP: { ...font('serif', 400), fontSize: 18, lineHeight: 26.1, color: C.ink2 },
   grid: { flexDirection: 'row', borderTopWidth: 1, borderBottomWidth: 1, borderColor: C.rule, marginVertical: 20 },
